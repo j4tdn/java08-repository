@@ -1,0 +1,3 @@
+Khac nhau giua enum va class
+
+Enum se khoi tao tat ca cac doi tuong cua no tu dau.
