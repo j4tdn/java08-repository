@@ -1,0 +1,13 @@
+Class: Car
+	-Đặc điểm(Thuộc tính)
+		+ Màu sắc
+		+ Động cơ
+		+ Loại xe
+		+ Giá tiền
+	-Tính chất (Phương thức)
+		+ Chạy tốc độ
+		+ ...
+Object
+	-Car1: Vàng, xyz, ...
+	-Car2: ...
+	-Car3: ...
