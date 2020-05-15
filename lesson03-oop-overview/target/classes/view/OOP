@@ -1,0 +1,14 @@
+Class:Car
+- Đặc điểm (Thuộc tính)
+	+ Màu sắc
+	+ Động cơ
+	+ Loại xe
+	+ Gía tiền
+- Tính chất (Phương thức)
+	+ Chạy tốc độ
+	+ Mua /Bán xe
+	
+Object
+- Car1: Vàng, xyz, abc, 100
+- Car2: Cam, xxx, yyy, 200
+- Car3: Xanh, iii, lll, 300
