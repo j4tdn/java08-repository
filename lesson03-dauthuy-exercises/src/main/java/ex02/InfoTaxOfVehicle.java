@@ -3,25 +3,20 @@ package ex02;
 import java.util.Scanner;
 public class InfoTaxOfVehicle {
 	
-	
 	public static void InputInfoVehicle(Vehicle vehicles[]) {
 		Scanner sc = new Scanner(System.in);
-		Vehicle vehicle = new Vehicle();
 		for (int i = 0; i < 3; i++) {
 			System.out.print("\nTen chu xe: ");
 			String ownerName = sc.nextLine();
 			
 			System.out.print("Loai xe: ");
 			String type = sc.nextLine();
-			vehicle.setType(type);
 			
 			System.out.print("Dung tich: ");
 			int capacity = Integer.parseInt(sc.nextLine());
-			vehicle.setCapacity(capacity);
 			
 			System.out.print("Tri gia: ");
 			double price = Double.parseDouble(sc.nextLine());
-			vehicle.setPrice(price);
 			
 		    vehicles[i] = new Vehicle(ownerName, type, capacity, price);
 		}
