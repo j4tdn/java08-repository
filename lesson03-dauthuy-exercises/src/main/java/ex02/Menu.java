@@ -10,7 +10,7 @@ public class Menu {
 		int choose;
 		do {
 			System.out.println("\n======================MENU=======================");
-			System.out.println("1. Nhap thong tin va tao cac doi tuong xe\n");
+			System.out.println("1. Nhap thong tin va tao cac doi tuong xe");
 			System.out.println("2. Xuat bang ke khai tien thue truoc ba cua cac xe");
 			System.out.println("3. Thoat");
 			System.out.println("===================================================\n");
