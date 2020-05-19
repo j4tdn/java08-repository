@@ -33,20 +33,7 @@ public class InheDemo {
 		a4.move();
 		
 		System.out.println("==============================");
-		inheritance.iiterface.Animal a5= new inheritance.iiterface.Animal() {
-			
-			// anonymous class
-			
-			@Override
-			public void move() {
-				System.out.println("a5 is moving");
-			}
-			
-			@Override
-			public void eat() {
-				System.out.println("a5 is eating");
-			}
-		};
+		inheritance.iiterface.Animal a5= new inheritance.iiterface.Dog();
 		a5.move();
 	}
 }
