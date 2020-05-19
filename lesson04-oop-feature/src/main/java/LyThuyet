@@ -17,3 +17,7 @@ II. Polymorphism (Da hinh)
 	 các lớp con. MỘt đối tượng có thể trỏ đến các dối tượng khác.
 	 Mục đích:  . che dấu đối tượng. 
 	 			. Cập nhật lại dữ liệu cho đối tượng
+	 			
+III. Ke thua
+Mặc định trong Interface các phương thức và thuộc tính là public 
+=> Code ko cần thêm public vào
