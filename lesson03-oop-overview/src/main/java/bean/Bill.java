@@ -1,0 +1,68 @@
+package bean;
+
+import view.ShopDemo;
+
+import java.time.LocalDate;
+
+public class Bill {
+    private String id;
+    private Customer Customer;
+    private Item[] items;
+    private LocalDate  date;
+    public Bill() {
+    }
+
+    public Bill(String id, bean.Customer customer, Item[] items, LocalDate date) {
+        this.id = id;
+        Customer = customer;
+        this.items = items;
+        this.date = date;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public bean.Customer getCustomer() {
+        return Customer;
+    }
+
+    public void setCustomer(bean.Customer customer) {
+        Customer = customer;
+    }
+
+    public Item[] getItems() {
+        return items;
+    }
+
+    public void setItems(Item[] items) {
+        this.items = items;
+    }
+
+    public LocalDate getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDate date) {
+        this.date = date;
+    }
+
+    public double getTotalOfMoney() {
+        double totalOfMoney = 0;
+        Item[] items = this.getItems();
+        LocalDate date = this.getDate();
+        for (int i = 0; i < items.length; i++) {
+            double price = items[i].getPrice();
+            if (date.isEqual(ShopDemo.DISCOUNT_DATE) &&(items[i].getPrice() > ShopDemo.DISCOUNT_PRICE)) {
+                totalOfMoney += price * ShopDemo.SALE_RATE_PRICE;
+            }else{
+                totalOfMoney += price;
+            }
+        }
+        return totalOfMoney;
+    }
+}

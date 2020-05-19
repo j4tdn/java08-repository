@@ -1,0 +1,28 @@
+Ghép nối lỏng- liên kết chặt:
+1. Class: là một khái niệm trừ tượng chứa một tập các đối tượng
+    + Car
+    - Đặc điểm (Thuộc tính)
+        + Màu sắc
+        + Động cơ
+        + Loại xe
+        + Giá tiền
+    - Tính chất (Phương thức)
+        + Chạy tốc độ
+        + Mua / Bán xe
+
+2. Object: một thực thể tồn tại trong thế giới thực, đại diện cho 1 class
+    - Car1: Vàng, xyz, abc, 100
+    - Car2: Cam, xxx, yyy, 200
+    - Car3: Xanh, iii, 111, 300
+
+public:
+private:
+ Getter & Setter:
+    Getter: Muốn lấy ra giá trị của thuộc tính
+    Setter: Muốn set lại giá trị của thuộc tính
+
+Khi khai báo các thuộc tính, phương thức. Thuộc tính, phương thức thuộc phạm vi của class hay đối tượng??
+    Của đối tượng vì khi khởi tạo đối tượng thì các thuộc tính mới có giá trị
+
+non-static: object scope
+static: class scope

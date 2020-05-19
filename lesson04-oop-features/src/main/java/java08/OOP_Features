@@ -1,0 +1,21 @@
+1. Các tính chất của OOP: 4 tính chất
+    * Enscapsulation: ==> Access modifier : public, private, protected, default, nothing
+            Project --> public: has scope everwhere in project
+                package --> protected, nothing: has scope in classes have the same package
+                    class  -->private: only has scope in class
+                    interface --> default: only has scope in interface
+
+    * Polymorphism(Đa hình): Trong từng trường hợp, hoàn cảnh khác nhau đối tượng sẽ thể hiện nhưng tính chất, phương thức khác nhau
+        Đa hình trong phương thức: Overloading, Override
+            + Overloading: các hàm có thể trùng tên nhưng phải:
+                - Khác kiểu dữ liệu trả về
+                - Khác số lượng tham số truyền vào
+                - Khác kiểu dữ liệu truyền vào của tham số truyền vào
+        Đa hình trong đối tượng: 1 đối tượng lúc thì là cái này lúc thì là cái kia. Được thể hiện khi một lớp cha có nhiều lớp con phụ thuộc vào thời điểm runtime
+            Mục đích: Che dấu cách khởi tạo 1 instance(Khi rumtime sẽ ko biết đối tượng tham chiếu đến ai)
+                      Cập nhật lại dữ liệu cho đối tượng
+            super là đối tượng có thể gọi đến các hàm của lớp cha
+            this là đối tượng có thể gọi đến các hàm của lớp hiện tại
+
+    * Inheritance(Kế thừa):
+        Mặc định trong interface thì access modifier của method là public
