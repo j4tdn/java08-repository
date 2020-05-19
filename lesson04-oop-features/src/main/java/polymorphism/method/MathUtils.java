@@ -39,4 +39,4 @@ public class MathUtils {
 	}
 	
 
-}
+}// da hinh trong doi tuong: la doi tuong cua lop cha tro den lop con nay lop con khac nhau khi runtime
