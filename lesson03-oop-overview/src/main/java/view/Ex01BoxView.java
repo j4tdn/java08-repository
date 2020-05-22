@@ -21,5 +21,7 @@ public class Ex01BoxView {
 		box3.setWidth(20);
 		box3 = new Box();
 		System.out.println(box3);
+
 	}
 }
+
