@@ -12,6 +12,7 @@ public class InheDemo {
         a1.setColor("Yellow");
         a1.setGender(true);
         System.out.println(a1);
+        a1.move();
         System.out.println("=================");
 
         Animal a2 = new Cat("Gray", false);

@@ -19,3 +19,9 @@
 
     * Inheritance(Kế thừa):
         Mặc định trong interface thì access modifier của method là public
+
+        Mặc định khi 1 abstract class implement 1 interface thì khi đó mặc định trong abstract đó sẽ có tất cả các hàm của interface đó
+
+        Từ java 8 trở đi trong interface có thể khai báo thân hàm bằng từ khóa 'default, static'
+
+     Tính chất trừu tượng được thể hiện thông qua class, interface, abstract class
