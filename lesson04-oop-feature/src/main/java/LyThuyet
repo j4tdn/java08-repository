@@ -8,16 +8,27 @@ I. Encapsulation
 		+ nothing: tuong tu nhu protected, nhung ko dung duoc trong class con o ngoai package
 		
 II. Polymorphism (Da hinh)
-1. Da hinh trong phuong thuc
+1. Đa hình trong phương thức
 	- Overloading: các phương thức cùng tên, khác số tham số truyền vào || kiểu tham số truyenf vào
 					|| khác kiểu trả về
 	- Overiding
-2. Da hinh trong doi tuong
+2. Đa hình trong đối tượng
 	 Khi mình có 1 lớp cha, lớp cha đó có nhiều lớp con. Lúc code, lớp cha có thể trỏ đến
 	 các lớp con. MỘt đối tượng có thể trỏ đến các dối tượng khác.
 	 Mục đích:  . che dấu đối tượng. 
 	 			. Cập nhật lại dữ liệu cho đối tượng
 	 			
-III. Ke thua
-Mặc định trong Interface các phương thức và thuộc tính là public 
+III. Kế thừa
+	- Mặc định trong Interface các phương thức và thuộc tính là public 
 => Code ko cần thêm public vào
+
+	- Khi một abstract class implement từ interface thì các hàm trừu tượng ở interface ko cần được override nữa
+Các hàm đó sẽ là hàm trừu tượng của abstract class. Nếu ko muốn overide toàn bộ hàm ở interface thì tạo một
+abstract class implement từ interface đó.
+	
+	- Interface có thể extend từ 1 interface
+	
+IV. Trừu tượng
+Được thể hiện qua class, interface, abstract.
+Ví dụ: Mình tạo 1 class trừu tượng từ những đặc điểm chung của những đối tượng trong thực tế.
+

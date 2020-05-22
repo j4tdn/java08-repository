@@ -3,6 +3,8 @@ package view;
 import inheritance.Animal;
 import inheritance.Cat;
 import inheritance.Dog;
+import inheritance.multiple.Interface01;
+import inheritance.multiple.MultipleInheritanceJava08;
 import inheritance.test.SubClass;
 import inheritance.test.SuperClass;
 
@@ -35,6 +37,10 @@ public class InheritanceDemo {
 
 		inheritance.interfaceDemo.Animal a5 = new inheritance.interfaceDemo.Dog();
 		a5.move();
+		
+		MultipleInheritanceJava08 a = new MultipleInheritanceJava08();
+		Interface01.display();
+		
 
 	}
 }
