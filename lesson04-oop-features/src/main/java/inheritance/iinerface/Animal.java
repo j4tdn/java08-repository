@@ -5,5 +5,5 @@ public interface Animal {
 	
 	 void move();// ham truu tuong(k co than ham(body))
 
-	 void eat(); // mac ding la public 
+	 void eat(); // mac dinh la public 
 }
