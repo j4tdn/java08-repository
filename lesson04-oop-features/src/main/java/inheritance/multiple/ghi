@@ -1,0 +1,18 @@
+
+
+vi neu trong nhung lop cha co nhung ham , method giong nhau thi lop con se khong biet chon method nao cua cac lop cha 
+
+
+1 class trong java chi ke thua 1 class , thuc thi tu nhieu interface khac , va co the vua ke thua , vua thuc thi , 
+
+trong java khong co da thua ke, 
+
+nhung tu java08 trong interface co default method , thi minh co the overide lai ham default ( co than ham ) cua cac interface minh implements 
+(giong giong voi da thua ke);
+
+chi co trong interface moi co access modifier la default 
+
+
+
+tinh chat trừu tuongj dudwoj the hien qua class, interface, abstract class , ... 
+

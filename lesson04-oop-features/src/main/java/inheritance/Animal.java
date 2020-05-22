@@ -38,4 +38,10 @@ public class Animal {
 	public void setGender(boolean gender) {
 		this.gender = gender;
 	}
+	
+	//default method 
+	
+	void sayHello() {
+		
+	}
 }

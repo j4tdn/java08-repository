@@ -17,6 +17,19 @@ ham super(), ham this();
 ___ Interface vs Class vs Abstract ________
 
 
+class 
+	lop con khong bat buoc phai ke thua method cua lop cha, 
+	thich thi ke thua , khong thich thi thoi 
+	
+interface : 
+	phai overide lai method 
+	
+abstract :
+	
+
+
+
+
  cha : + method bat buoc 
  		+ method khong bat buoc 
  		
