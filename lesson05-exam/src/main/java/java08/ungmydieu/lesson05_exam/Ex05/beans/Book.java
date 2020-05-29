@@ -23,6 +23,7 @@ public class Book {
 	}
 
 	public double getPrice() {
+		System.out.println("super price");
 		return price;
 	}
 

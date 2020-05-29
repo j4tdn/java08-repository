@@ -12,13 +12,19 @@ public class BookStore {
 	
 	ArrayList<Book> store = new ArrayList<Book>();
 	
-	public void init() {				
-		store.add(new TextBook(BookID.SGK + "01", 20, "Giáo Dục", true));
-		store.add(new TextBook(BookID.SGK + "02", 60, "Nhi Đồng", true));
+	public BookStore() {
+		store.add(new TextBook(BookID.SGK + "01", 60, "Giáo Dục", true));
+		store.add(new TextBook(BookID.SGK + "02", 120, "Nhi Đồng", true));
 		store.add(new TextBook(BookID.SGK + "03", 30, "Nhi Đồng", true));
 		
 		store.add(new ReferenceBook(BookID.STK + "01", 70, "Nhi Đồng", 0.2));
 		store.add(new ReferenceBook(BookID.STK + "02", 30, "Hồng Hà", 0.1));
+	}
+	
+	public void Show() {
+		for (Book book : store) {
+			System.out.println(book.toString());
+		}
 	}
 	
 	public ArrayList<Book> findBookByCompany(String company) {
@@ -35,7 +41,7 @@ public class BookStore {
 		ArrayList<Book> books = new ArrayList<Book>();
 		
 		for (Book b : store) {
-			if (b.getPrice() < price) books.add(b);
+			if (b.getPrice() <= price) books.add(b);
 		}
 		
 		return books;
@@ -45,26 +51,19 @@ public class BookStore {
 		ArrayList<Book> books = new ArrayList<Book>();
 		
 		for (Book b : store) {
-			if (b.getPrice() > 100 && b.getPrice() < 200 && b.getId().matches("SGK*")) books.add(b);
+			if (b.getPrice() > 100 && b.getPrice() < 200 && b.getId().matches("SGK.*")) books.add(b);
 		}
 		
 		return books;
 	}
 	
-	public double totalPrice(Book...books) {
+	public double totalPrice(Book...books ) {
 		if (books.length == 0) return 0;
-		
-		double total = 0;
-		
+
+		double total = 0;	
 		for (Book b : books) {
 			double price = 0;
-			if (b.getId().matches("SGK*")) price = b.getPrice()*0.7;
-			else if (b.getId().matches("STK*")) 
-				{
-					//price = b.getPrice()*(1+b.getTax);
-					
-				}
-					
+			total += b.getPrice();			
 		}
 		
 		return total;

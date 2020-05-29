@@ -9,6 +9,12 @@ public class ReferenceBook extends Book {
 		super(id, price, company);
 		this.tax = tax;
 	}
+	
+	@Override
+	public double getPrice() {		
+		System.out.println("reference Book price : " + price * (1 + tax));		
+		return price * (1 + tax);
+	} 
 
 	public double getTax() {
 		return tax;
@@ -16,5 +22,10 @@ public class ReferenceBook extends Book {
 
 	public void setTax(double tax) {
 		this.tax = tax;
+	}
+	
+	@Override
+	public String toString() {		
+		return "id: " + id + ", price: " + price + ", company:  " + company + ", tax:  " + tax;
 	}
 }
