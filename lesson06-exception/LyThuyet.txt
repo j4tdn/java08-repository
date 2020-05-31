@@ -1,0 +1,8 @@
+Có 2 loại Exception trong java là Checked và Unchecked.
+	- Checked: bắt buộc phải xử lí tại lúc Compile
+	- Unchecked: Lúc code ko bắt buộc tại Compile, nhưng lúc Run time có thể xảy ra Exception.
+	
+*Throw và Throws
+Throw new .... chỉ quăng ra trong câu điều kiện
+
+THrows quăng ra nếu bất kì dòng code nào lỗi ở trong hàm
