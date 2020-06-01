@@ -1,0 +1,2 @@
+Có 2 loại lỗi: complie and runtime
+Có 2 loại exception: checked and unchecked
