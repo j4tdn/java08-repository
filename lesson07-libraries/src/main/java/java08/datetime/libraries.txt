@@ -1,0 +1,2 @@
+GTM xác định giờ theo vòng quay của trái đất
+UTC xác định giờ theo các đồng hồ lượng tử(có độ sai lệch nhỏ nhất)
