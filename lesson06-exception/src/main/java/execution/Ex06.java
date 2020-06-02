@@ -13,8 +13,8 @@ public class Ex06 {
 		System.out.println("back to normal");
 	}
 
-	private static boolean validate(int age, int weight) throws WeightException {
-		if (age == 20 && weight<40) {
+	private static boolean validate(int age, int weight) {
+		if (age == 20 && weight < 40) {
 			throw new WeightException("Weigh is not suitbe with code");
 		}
 		

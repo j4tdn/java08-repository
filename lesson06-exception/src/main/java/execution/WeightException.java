@@ -1,6 +1,6 @@
 package execution;
 
-public class WeightException extends Exception{
+public class WeightException extends RuntimeException{
 
 	private static final long serialVersionUID = 1L;
 
