@@ -1,2 +1,6 @@
 Có 2 loại lỗi: complie and runtime
 Có 2 loại exception: checked and unchecked
+finally:dùng để thực thi những đoạn code quan trọng sẽ được thực thi khi chương trình có xảy ra ngoại lệ hay ko
+try-catch
+try-finally
+try-catch-finally

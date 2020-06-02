@@ -1,7 +1,5 @@
 package java08.execution;
 
-import java08.WeightException;
-
 public class Ex06 {
     public static void main(String[] args) {
         int age = 20;
