@@ -1,0 +1,22 @@
+
+
+Trong java có 2 loại exception :  checked ( compile ) và unchecked ( runtime) 
+
+
+Xử lí ngoại lệ :
+	+ try catch 
+	+ throws 
+	
+ mac dinh exception la compile ( checked) exception 
+ 
+ con runtime exception khi ke thua lai thi la unchecked exception 
+ 
+ con IO exception  ........................... la checked exception
+ 
+ 
+ khi naò dùng throw khong có s ( đó là khi mình muốn quen cái lỗi  theo điều kiện ) ;
+ 
+ còn throws la throws từ function 
+ 
+ 
+ 
