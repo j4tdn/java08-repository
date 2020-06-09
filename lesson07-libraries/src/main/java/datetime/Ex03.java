@@ -6,7 +6,7 @@ import java.util.Calendar;
 
 import javax.swing.text.SimpleAttributeSet;
 
-import Utils.WeekdayUtils;
+import Utils.DateUtils;
 
 public class Ex03 {
 	public static void main(String[] args) {
@@ -22,7 +22,7 @@ public class Ex03 {
 			ctmp.set(Calendar.DAY_OF_MONTH,date);
 			
 			DateFormat df = new SimpleDateFormat("dd-MM-yyyy");  // dd-MM-yyyy EEEE 
-			System.out.println(df.format(ctmp.getTime()) + "  "+ WeekdayUtils.getDayOfWeek(ctmp.get(Calendar.DAY_OF_WEEK)));
+			System.out.println(df.format(ctmp.getTime()) + "  "+ DateUtils.getDayOfWeek(ctmp.get(Calendar.DAY_OF_WEEK)));
 			
 			/*
 			 * String s = df.format(ctmp.getTime()); System.out.println(s);
