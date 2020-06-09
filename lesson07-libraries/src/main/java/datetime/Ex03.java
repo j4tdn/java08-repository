@@ -4,7 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import utils.WeekdayUtils;
+import utils.DateUtils;
 
 
 public class Ex03 {
@@ -19,11 +19,11 @@ public class Ex03 {
 			//int weekday = c.get(Calendar.DAY_OF_WEEK);
 			ctemp.set(Calendar.DAY_OF_MONTH, date);
 			DateFormat df = new SimpleDateFormat("dd-MM-yyyy");
-			System.out.println(df.format(ctemp.getTime())+" "+WeekdayUtils.getDayOfWeek(ctemp.get(Calendar.DAY_OF_WEEK)));
+			System.out.println(df.format(ctemp.getTime())+" "+DateUtils.getDayOfWeek(ctemp.get(Calendar.DAY_OF_WEEK)));
 			
 			System.out.println("+++++++++++++++++++++++++");
 			df = new SimpleDateFormat("dd-MM-yyyy EE");
-			System.out.println(df.format(ctemp.getTime())+" "+WeekdayUtils.getDayOfWeek(ctemp.get(Calendar.DAY_OF_WEEK)));
+			System.out.println(df.format(ctemp.getTime())+" "+DateUtils.getDayOfWeek(ctemp.get(Calendar.DAY_OF_WEEK)));
 		}
 	}
 	
