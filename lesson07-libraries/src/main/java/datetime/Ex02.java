@@ -3,7 +3,7 @@ package datetime;
 import java.util.Calendar;
 import java.util.GregorianCalendar;
 
-import utils.WeekdayUtils;
+import utils.DateUtils;
 
 public class Ex02 {
 	public static void main(String[] args) {
@@ -15,7 +15,7 @@ public class Ex02 {
 		int weekday = c.get(Calendar.DAY_OF_WEEK);
 		
 		
-		System.out.println("Weekday: " + WeekdayUtils.getDayOfWeek(weekday));
+		System.out.println("Weekday: " + DateUtils.getDayOfWeek(weekday));
 	}
 }
 

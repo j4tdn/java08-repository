@@ -4,7 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import utils.WeekdayUtils;
+import utils.DateUtils;
 
 public class Ex03 {
 	public static void main(String[] args) {
@@ -17,7 +17,6 @@ public class Ex03 {
 		ctemp.set(Calendar.MONTH, c.get(Calendar.MONTH));
 
 		System.out.println(c.get(Calendar.DATE));
-
 		for (int i = 1; i <= maxDayOfMonth; i++) {
 			ctemp.set(Calendar.DAY_OF_MONTH, i);
 
@@ -25,7 +24,7 @@ public class Ex03 {
 
 			System.out.println(
 					df.format(ctemp.getTime()) + " " 
-			+ WeekdayUtils.getDayOfWeek(ctemp.get(Calendar.DAY_OF_WEEK)));
+			+ DateUtils.getDayOfWeek(ctemp.get(Calendar.DAY_OF_WEEK)));
 		}
 	}
 }
