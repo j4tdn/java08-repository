@@ -2,7 +2,7 @@ package datetime;
 
 import java.util.Calendar;
 
-import util.WeekDayUtils;
+import util.DateUtils;
 
 public class Ex02 {
 	public static void main(String[] args) {
@@ -11,7 +11,7 @@ public class Ex02 {
 		int weekDay = c.get(Calendar.DAY_OF_WEEK);
 		
 		
-		System.out.println(WeekDayUtils.getDayOfWeek(weekDay));
+		System.out.println(DateUtils.getDayOfWeek(weekDay));
 		
 		
 	}

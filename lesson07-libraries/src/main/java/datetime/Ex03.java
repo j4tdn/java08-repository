@@ -6,6 +6,9 @@ import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
 public class Ex03 {
+	
+	private static final DateFormat df = new SimpleDateFormat("DD-MM-YYY EEEE");
+	
 	public static void main(String[] args) {
 		
 		Calendar c = Calendar.getInstance();
@@ -23,7 +26,7 @@ public class Ex03 {
 			
 			ctmp.set(Calendar.DAY_OF_MONTH, date);
 			
-			DateFormat df = new SimpleDateFormat("DD-MM-YYY");
+			DateFormat df = new SimpleDateFormat();
 			System.out.println(ctmp.getTime());
 			
 		}
