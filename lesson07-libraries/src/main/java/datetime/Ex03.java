@@ -4,7 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
-import utils.WeekdayUtils;
+import utils.DateUtils;
 
 public class Ex03 {
 
