@@ -1,7 +1,7 @@
 package java08.datetime;
 
 
-import java08.utils.WeekdayUtils;
+import java08.utils.DateUtils;
 
 import java.util.Calendar;
 
@@ -10,6 +10,6 @@ public class Ex02 {
         Calendar c = Calendar.getInstance();
         int weekday = c.get(Calendar.DAY_OF_WEEK);
 
-        System.out.println("DayOfWeek: " + WeekdayUtils.getDayOfWeek(weekday));
+        System.out.println("DayOfWeek: " + DateUtils.getDayOfWeek(weekday));
     }
 }

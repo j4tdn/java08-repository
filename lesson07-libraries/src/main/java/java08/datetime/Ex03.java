@@ -1,6 +1,6 @@
 package java08.datetime;
 
-import java08.utils.WeekdayUtils;
+import java08.utils.DateUtils;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
