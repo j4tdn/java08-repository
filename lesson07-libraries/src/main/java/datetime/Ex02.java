@@ -8,7 +8,7 @@ public class Ex02 {
 		int weekDay = c.get(Calendar.DAY_OF_WEEK);
 		
 
-		System.out.println("DayOfWeek :" + weekDayUtils.getDayOfWeek(weekDay));
+		System.out.println("DayOfWeek :" + DayUtils.getDayOfWeek(weekDay));
 	}
 
 }
