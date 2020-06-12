@@ -1,11 +1,8 @@
 package datetime;
 
-import java.awt.color.CMMException;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
-
-import utils.WeekDayUtils;
 
 public class Ex03 {
 
