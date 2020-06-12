@@ -4,6 +4,7 @@ import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Iterator;
+import java.util.Locale;
 
 public class Ex04 {
 
@@ -13,7 +14,7 @@ public class Ex04 {
 		// print the day (dd/MM/yyyy EEEE) in range
 		// today -> 07.08.2020
 
-		DateFormat df = new SimpleDateFormat(DATE_PATTERN);
+		DateFormat df = new SimpleDateFormat(DATE_PATTERN,Locale.US);
 		Calendar today = Calendar.getInstance();
 		Calendar until = Calendar.getInstance();
 		
