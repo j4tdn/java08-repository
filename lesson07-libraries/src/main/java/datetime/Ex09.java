@@ -14,8 +14,10 @@ public class Ex09 {
 		long duration = today.getTimeInMillis() - start.getTimeInMillis();
 
 		long days = TimeUnit.MILLISECONDS.toDays(duration);
+		
 		long remainingHoursInML = duration - TimeUnit.DAYS.toMillis(days);
 		long hours = TimeUnit.MILLISECONDS.toHours(remainingHoursInML);
+		
 		long remainingMinutesInML = remainingHoursInML - TimeUnit.HOURS.toMillis(hours);
 		long minutes = TimeUnit.MILLISECONDS.toHours(remainingMinutesInML);
 		System.out.println(days + " - " + hours + " - " + minutes);
