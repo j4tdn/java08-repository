@@ -14,6 +14,7 @@ public class Ex09 {
 		long remaingHoursInMil = duration - TimeUnit.DAYS.toMillis(days);
 		long hours = TimeUnit.MILLISECONDS.toHours(remaingHoursInMil);
 		System.out.println(days + "-" + hours);
+		
 
 	}
 }
