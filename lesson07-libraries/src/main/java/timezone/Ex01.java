@@ -10,12 +10,13 @@ public class Ex01 {
 	public static void main(String[] args) {
 
 		String[] timezone = TimeZone.getAvailableIDs();
+		System.out.println("def tz:  " +TimeZone.getDefault() );
 
 		for (String tz : timezone) {
-			// System.out.println(tz);
+			System.out.println(tz);
 		}
 
-		System.out.println("default" + TimeZone.getDefault());
+		//System.out.println("default : " + TimeZone.getDefault());
 
 		// expected:
 		// actual
