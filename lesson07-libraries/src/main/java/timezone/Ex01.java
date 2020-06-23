@@ -16,8 +16,7 @@ public class Ex01 {
 		 
 		TimeZone berlin = TimeZone.getTimeZone("Europe/Berlin");
 		Calendar c = Calendar.getInstance(berlin);
-		System.out.println("Calendar: " + c.get(Calendar.HOUR_OF_DAY));
-		
+		System.out.println("Calendar: " + c.get(Calendar.HOUR_OF_DAY));		
 		System.out.println("====================");
 		
 		Date date = c.getTime();
