@@ -12,7 +12,7 @@ public class Ex09 {
 		long day = TimeUnit.MILLISECONDS.toDays(duration);
 		long remainingHoursInMil = duration - TimeUnit.DAYS.toMillis(day);
 		long hours = TimeUnit.MILLISECONDS.toHours(remainingHoursInMil);
-		System.out.println(day + " day /" + hours + "h :");
+		System.out.println(day + " day / " + hours + "h :");
 
 	}
 }
