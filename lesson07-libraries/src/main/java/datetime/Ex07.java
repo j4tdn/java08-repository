@@ -40,7 +40,7 @@ public class Ex07 {
 		
 	private static Lesson[] getAll() {
 		return new Lesson[] {
-				new Lesson("Lesson07",2),
+				new Lesson("Lesson07",0),
 				new Lesson("Lesson08",2),
 				new Lesson("Lesson09",2),
 				new Lesson("Lesson10",2),
