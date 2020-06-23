@@ -24,7 +24,7 @@ public class Ex09 {
 		
 		
 		
-		long hours = (duration - remainingHoursInMil) / 1000/60/60;
+		long hours = (remainingHoursInMil) / 1000/60/60;
 		
 		System.out.println("hours :"+ hours);
 		
