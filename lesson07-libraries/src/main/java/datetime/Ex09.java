@@ -17,6 +17,12 @@ public class Ex09 {
 		long remainHoursInMil = duration - TimeUnit.DAYS.toMillis(days);
 		long hours = TimeUnit.MILLISECONDS.toHours(remainHoursInMil);
 		
-		System.out.println(days + "-" + hours);
+		long remainMinutesInMil = remainHoursInMil - TimeUnit.HOURS.toMillis(hours);
+		long minutes = TimeUnit.MILLISECONDS.toMinutes(remainMinutesInMil);
+		
+		long remainSecondInMil = remainMinutesInMil - TimeUnit.MINUTES.toMillis(minutes);
+		long second = TimeUnit.MILLISECONDS.toSeconds(remainSecondInMil);;
+		
+		System.out.println(days + "-" + hours + "-" + minutes + "-" + second);
 	}
 }
