@@ -1,10 +1,18 @@
 package utils;
 
+import java.util.function.Consumer;
+
 import immutable.CountCharacter;
 
 public class StringUtils {
 	private StringUtils() {
 		// TODO Auto-generated constructor stub
+	}
+
+	public static void forEach(String[] elements, Consumer<String> consumer) {
+		for (String element : elements) {
+			consumer.accept(element);
+		}
 	}
 
 	public static CountCharacter stringCounter(String str) {
