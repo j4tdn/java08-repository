@@ -1,5 +1,7 @@
 package utils;
 
+import java.util.function.Consumer;
+
 import immutable.StringCounter;
 
 public class StringUtil {
@@ -17,5 +19,12 @@ public class StringUtil {
 		}
 		
 		return new StringCounter(countLowerChars, countUpperChars, countDigits);
+	}
+	
+	public static void forEach(String[] array, Consumer<String> consumer) {
+		for (String element : array) {
+			// will call accept method at Runtime
+			consumer.accept(element);
+		}
 	}
 }
