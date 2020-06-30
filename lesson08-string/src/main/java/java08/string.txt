@@ -8,3 +8,8 @@ Trong java string có 2 loại:
 Class has final keyword don't want any sub class inheritance
 
 FunctionalInterface là interface chỉ có 1 hàm abstract vì để sau này có thể thay thế hàm đó thành biểu thức lamda
+
+final là bất biến ở stack
+immutable là bất biến ở heap
+
+speed: StringBuilder > StringBuffer > String literal > String object

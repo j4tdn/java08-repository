@@ -2,6 +2,8 @@ package java08.utils;
 
 import java08.immutable.StringCounter;
 
+import java.util.function.Consumer;
+
 public class StringUtils {
 
     private StringUtils(){}
@@ -22,5 +24,12 @@ public class StringUtils {
             }
         }
         return new StringCounter(countLowerChars, countUpperChars, countDigits);
+    }
+
+    public static void forEach(String[] elements, Consumer<String> consumer){
+        for(String element :elements){
+            //will call accept method at runtime
+            consumer.accept(element);
+        }
     }
 }
