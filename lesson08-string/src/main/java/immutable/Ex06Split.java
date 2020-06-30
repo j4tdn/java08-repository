@@ -43,10 +43,10 @@ public class Ex06Split {
 		
 	
 	}
-	private static void forEach(String[] students1, Consumer<String> consumer ) {
-		for(String student : students1) {
+	private static void forEach(String[] elements, Consumer<String> consumer ) {
+		for(String element : elements) {
 			//will call accept method at runtime
-            consumer.accept(student);
+            consumer.accept(element);
 		}
 	}
 }
