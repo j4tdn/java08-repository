@@ -1,0 +1,10 @@
+Trong java string có 2 loại:
+    + Immutable: Bất biến địa chỉ ở heap, tạo một string ra thì nó sẽ ko thay đổi
+        String Literal
+        String Object
+    + Mutable
+        String Builder
+
+Class has final keyword don't want any sub class inheritance
+
+FunctionalInterface là interface chỉ có 1 hàm abstract vì để sau này có thể thay thế hàm đó thành biểu thức lamda
