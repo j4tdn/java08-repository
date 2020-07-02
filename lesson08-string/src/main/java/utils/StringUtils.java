@@ -1,5 +1,7 @@
 package utils;
 
+import java.util.function.Consumer;
+
 import immutable.StringCounter;
 
 public class StringUtils {
@@ -23,5 +25,10 @@ public class StringUtils {
 		}
 
 		return new StringCounter(numberOfLowerChars, numberOfUpperChars, numberOfDigits);
+	}
+	public static void forEach(String[] elements, Consumer<String> consumer) {
+		for (String element: elements) {
+			consumer.accept(element);
+		}
 	}
 }
