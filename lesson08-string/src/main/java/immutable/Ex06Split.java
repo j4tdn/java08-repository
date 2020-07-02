@@ -1,0 +1,39 @@
+package immutable;
+
+import java.util.function.Consumer;
+import java.util.regex.Pattern;
+import java.util.stream.Stream;
+
+public class Ex06Split {
+
+	public static void main(String[] args) {
+		String students = "LeNa-LeTeo-HoangNa-VanTeo-LeTa";
+		String[] studentInfo = students.split("-");
+		System.out.println("Length: " + studentInfo.length);
+		for (String info: studentInfo) {
+			System.out.println(info);
+		}
+
+		System.out.println("==============================================");
+//		String[] studentInfoPattern = Pattern.compile("-").split(students);
+//		for (String info: studentInfo) {
+//			System.out.println(info);
+//		}
+		Stream<String> studentInfoPattern = Pattern.compile("-").splitAsStream(students);
+		Consumer<String> consumer = new Consumer<String>() {
+
+			public void accept(String info) {
+				System.out.println(info);
+			}
+		};
+		studentInfoPattern.forEach(consumer);
+		forEach(studentInfo, consumer);
+	}
+
+	private static void forEach(String[] students, Consumer<String> consumer) {
+		for (String student: students) {
+			consumer.accept(student);
+		}
+	}
+
+}
