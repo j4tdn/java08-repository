@@ -1,9 +1,16 @@
 package util;
 
+import java.util.function.Consumer;
+
 import immuatable.StringCounter;
 
 public class StringUtil {
 	private StringUtil() {
+	}
+	public static void foreach(String[] elements, Consumer<String> consumer) {
+		for (String element : elements) {
+			consumer.accept(element);
+		}
 	}
 
 	public static StringCounter count(String s) {
