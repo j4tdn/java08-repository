@@ -1,5 +1,7 @@
 package utils;
 
+import java.util.function.Consumer;
+
 import immuatable.StringCount;
 
 public class StringUtils {
@@ -8,6 +10,14 @@ public class StringUtils {
 
 	}
 
+	
+	public static void forEach(String[] elements, Consumer<String> consumer) {
+		for (String string : elements) {
+			consumer.accept(string);
+		}
+		
+	}
+	
 	public static StringCount StringCounter(String a) {
 		int up = 0;
 		int low = 0;
