@@ -5,6 +5,9 @@ public class StringCounter {
 	private int numberofuperchar;
 	private int numberofdigital;
 	
+	public StringCounter() {
+		
+	}
 	public StringCounter(int numberoflowerchar, int numberofuperchar, int numberofdigital) {
 		super();
 		this.numberoflowerchar = numberoflowerchar;
