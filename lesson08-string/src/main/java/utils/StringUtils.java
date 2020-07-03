@@ -1,10 +1,18 @@
 package utils;
 
+import java.util.function.Consumer;
+
 import immuatable.StringCounter;
 
 public class StringUtils {
 	private StringUtils() {
 		
+	}
+	
+	public static void forEach(String[] elements, Consumer<String> consumer) {
+		for (String element: elements) {
+			consumer.accept(element);
+		}
 	}
 	
 	public static StringCounter counter(String s) {
@@ -30,6 +38,5 @@ public class StringUtils {
 			
 		}	
 		return new StringCounter(countLowerChars, countUpperChars, countDigits);
-		
 	}
 }
