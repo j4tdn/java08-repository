@@ -39,7 +39,7 @@ public class DateUtils {
 		if(str ==null || pattern ==null) {
 			throw new RuntimeException();
 		}
-		return  toCalendar(new SimpleDateFormat().parse(str));
+		return  toCalendar(new SimpleDateFormat(pattern).parse(str));
 		
 		
 		

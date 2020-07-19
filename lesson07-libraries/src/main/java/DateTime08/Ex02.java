@@ -14,7 +14,7 @@ public class Ex02 {
 	public static void main(String[] args) {
 		LocalDateTime lstart = LocalDateTime.now().of(2020, Month.JUNE,27,16, 20, 20);
 		
-		LocalDateTime lend = LocalDateTime.now().of(2020,Month.JULY,27,10,27,30);
+		LocalDateTime lend = LocalDateTime.now().of(2020,Month.JUNE,28,10,27,30);
 		
 		
 		
@@ -34,26 +34,27 @@ public class Ex02 {
 		
 		Period period = Period.between(ldateStart, ldateEnd);
 		
+		
+		
+		
 		// duration support hour, minutes, seconds 
 		
 		Duration dr = Duration.between(ltimeStart, ltimeEnd);
 		
 		long durationAtSeconds = dr.getSeconds();
 		
+		System.out.println(dr.getSeconds());
+		
 		if(durationAtSeconds < 0) {
-			period = period.minusDays(1);
-			
-			if(period.getDays() < 0) {
-				period = period.minusMonths(1);
-				
-				int daysOfMonth = YearMonth.of(ldateStart.getYear(), ldateStart.getMonth()).lengthOfMonth();
-				
-				period = period.withDays(daysOfMonth-1);
-							
-			}
-			
 			durationAtSeconds += TimeUnit.DAYS.toSeconds(1);
+			
+			period = Period.between(ldateStart, ldateEnd.minusDays(1));
+			
 		}
+		
+	
+		
+		
 		
 		
 		
