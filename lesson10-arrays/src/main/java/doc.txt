@@ -1,0 +1,4 @@
+// stream thì chỉ duyệt phần tử của nó một lần duy nhất,
+nên khi dùng stream thì mình không nên tạo biến stream mà 
+tạo nhiều đối tượng stream 
+
