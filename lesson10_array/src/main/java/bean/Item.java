@@ -5,6 +5,10 @@ package bean;
 //entity: mapper database table
 
 public class Item {
+	@Override
+	public String toString() {
+		return "id = " + id + ", name = " + name;
+	}
 	private int id;
 	private String name;
 	
@@ -36,6 +40,12 @@ public class Item {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	public int compareTo(Item o) {
+		return getId()-o.getId();
+	}
+	
+	
 	
 
 }
