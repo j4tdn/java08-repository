@@ -35,11 +35,9 @@ public class Ex02 {
     private static void sort(String[] sequences) {
         for (int out = sequences.length - 1; out > 0; out--) {
             for (int in = 0; in < out; in++) {
-
                 if (sequences[in] == null) {
                     continue;
                 }
-
                 if (sequences[out] == null || sequences[in].compareTo(sequences[out]) > 0) {
                     String temp = sequences[in];
                     sequences[in] = sequences[out];
