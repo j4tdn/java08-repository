@@ -22,7 +22,7 @@ public class Ex02 {
 		// sort manually: bubble sort
 		// Array.sort (quick-sort)
 //		Arrays.sort(numbers); // ASC, java have not DESC
-//		Arrays.sort(sequenses, Comparator.comparing(t-> t));
+//		Arrays.sort(sequenses, Comparator.comparing(t-> t));//giong dong duoi
 //		Arrays.sort(sequenses, Comparator.comparing(Function.identity()));
 		Arrays.sort(sequenses,Comparator.nullsFirst(Comparator.comparing(Function.identity())));
 		Arrays.sort(sequenses,Comparator.nullsFirst(Comparator.comparing(Function.identity(), Comparator.reverseOrder())));
