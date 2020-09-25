@@ -1,6 +1,8 @@
 package bean;
 
-public class Iteam {
+import java.util.Comparator;
+
+public class Iteam implements Comparable<Iteam>{
 
 	private int id;
 	private String name;
@@ -27,7 +29,17 @@ public class Iteam {
 	public void setName(String name) {
 		this.name = name;
 	}
+	@Override
+	public String toString() {
+		return id + " ," + name;
+	}
 	
+	
+	@Override
+	public int compareTo(Iteam o) {	
+		//return getId()-o.getId();
+		return getName().compareTo(o.getName());
+	}
 	
 	
 
