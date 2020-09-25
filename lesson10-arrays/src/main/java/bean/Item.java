@@ -36,6 +36,17 @@ public class Item {
 		this.name = name;
 	}
 	
-	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return Id+" "+name;
+	}
+
+
+//	@Override
+//	public int compareTo(Item o) {
+//		// TODO Auto-generated method stub
+//		return getName().compareTo(o.getName());//tang dan
+//		}
 	
 }

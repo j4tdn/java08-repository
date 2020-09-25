@@ -10,11 +10,11 @@ public static void main(String[] args) {
 		
 		// array is an object
 		System.out.println(c.getClass());// mang cua string => [Ljava.lang.String; 
-											//trong java mang la 1 kieu doi tuong
+											//trong java mang la 1 doi tuong
 		
 		Item[] items= new Item[3];// khi khoi tao chua cap phat tren heap => k the set, chi dc khoi tao khi truy cap va cap phat den no
-		items[0].setId(10);
-		items[0].setName("Fan");
+		//items[0].setId(10);//loi
+		//items[0].setName("Fan");
 		
 		
 }

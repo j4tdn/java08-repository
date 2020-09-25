@@ -23,14 +23,20 @@ public class Ex02 {
 //			return o1.compareTo(o2);
 //		});
 //		
+		
+		
 		Arrays.sort(sequences, Comparator.nullsLast(Comparator.comparing(Function.identity())));
 		
 		Arrays.stream(sequences).forEach(sequence -> System.out.print(sequence + " "));
 		// khi moi pt bi null => loi
+		System.out.println();
+		System.out.println("===========================");
+		sortFirst(sequences);
+		Arrays.stream(sequences).forEach(sequence -> System.out.print(sequence + " "));
 
 	}
 
-	private static void sort(String[] sequences) {
+	private static void sortFirst(String[] sequences) {
 
 		for (int out = sequences.length - 1; out > 0; out--) {
 			for (int in = 0; in < out; in++) {
