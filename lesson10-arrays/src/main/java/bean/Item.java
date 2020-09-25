@@ -3,14 +3,14 @@ package bean;
 // pojo: plain old java object object
 // dto: data transfer object
 // entity: mapper database table
-public class Item {
+public class Item{
 	private int id;
 	private String name;
 
-	public Item() {}
+	public Item() {
+	}
 
 	public Item(int id, String name) {
-		super();
 		this.id = id;
 		this.name = name;
 	}
@@ -29,5 +29,10 @@ public class Item {
 
 	public void setName(String name) {
 		this.name = name;
-	}	
+	}
+
+	@Override
+	public String toString() {
+		return String.join(" - ", id + "", name);
+	}
 }
