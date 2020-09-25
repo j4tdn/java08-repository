@@ -3,7 +3,7 @@ package bean;
 // pojo: plain old java object object
 // dto: data transfer object
 // entity: mapper database table
-public class Item {
+public class Item implements Comparable<Item> {
 	private int id;
 	private String name;
 	
@@ -30,4 +30,15 @@ public class Item {
 	public void setName(String name) {
 		this.name = name;
 	}	
+	
+	@Override
+	public String toString() {
+		return id +"  " + name;
+	}
+
+	@Override
+	public int compareTo(Item o) {
+//		return getId() - o.getId();
+		return getName().compareTo(o.getName());
+	}
 }

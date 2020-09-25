@@ -1,5 +1,7 @@
 package sorting;
 
+import static java.util.Comparator.reverseOrder;
+
 import java.util.Arrays;
 import java.util.Comparator;
 import java.util.function.Function;
@@ -27,7 +29,7 @@ public class Ex02 {
 //					return o2.compareTo(o1) * -1;
 //				});	
 			
-			Arrays.sort(sequences, Comparator.nullsLast(Comparator.comparing(Function.identity())));
+			Arrays.sort(sequences, Comparator.nullsLast(Comparator.comparing(Function.identity(), reverseOrder())));
 			Arrays.stream(sequences).forEach(number -> System.out.print(number + " "));
 		}
 		
