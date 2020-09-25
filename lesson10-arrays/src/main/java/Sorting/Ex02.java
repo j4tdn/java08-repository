@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.Comparator;
 import java.util.function.Function;
 
-public class Ex2 {
+public class Ex02 {
 	
 	// int[] , String , Item[] id , name 
 	public static void main(String[] args) {
@@ -29,9 +29,11 @@ public class Ex2 {
 			return (o1.compareTo(o2));
 		});
 		
-		Arrays.sort(sequences, Comparator.nullsLast(Comparator.comparing(Function.identity())));
+		Arrays.sort(sequences, Comparator.nullsFirst(Comparator.comparing(Function.identity(),Comparator.reverseOrder())));
 		
 		Arrays.stream(sequences).forEach(sequence -> System.out.print(sequence+"\t"));
+		
+		
 		
 		
 		
