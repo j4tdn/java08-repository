@@ -21,7 +21,7 @@ public class Ex02 {
 		});*/
 		//o1.compareTo(o2)
 		
-		Arrays.sort(sequences, Comparator.nullsLast(Comparator.comparing(Function.identity())));;
+		//Arrays.sort(sequences, Comparator.nullsLast(Comparator.comparing(Function.identity())));;
 		
 		Arrays.stream(sequences).forEach(sequence -> System.out.print(sequence + " "));
 
