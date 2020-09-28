@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="7e43e8d6-39ce-47fb-8217-7e0b668016b7" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1i4fpks8y5RL8N6gCVUHb13McmX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RunManager" selected="Application.Ex02">
+    <configuration name="Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java08.ex01.Ex01" />
+      <module name="lesson10-lethiquynhnhi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java08.ex01.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java08.ex02.Ex02" />
+      <module name="lesson10-lethiquynhnhi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java08.ex02.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex03" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java08.ex03.Ex03" />
+      <module name="lesson10-lethiquynhnhi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java08.ex03.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex04" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="java08.ex04.Ex04" />
+      <module name="lesson10-lethiquynhnhi" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="java08.ex04.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Ex02" />
+        <item itemvalue="Application.Ex04" />
+        <item itemvalue="Application.Ex03" />
+        <item itemvalue="Application.Ex01" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="7e43e8d6-39ce-47fb-8217-7e0b668016b7" name="Default Changelist" comment="" />
+      <created>1601171971035</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601171971035</updated>
+      <workItem from="1601171972458" duration="8238000" />
+      <workItem from="1601219425781" duration="3725000" />
+      <workItem from="1601249976057" duration="3414000" />
+      <workItem from="1601266405922" duration="2165000" />
+      <workItem from="1601303156470" duration="3502000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="768" y="273" width="374" height="558" key="#com.intellij.ide.util.MemberChooser" timestamp="1601273235408">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state x="768" y="273" width="374" height="558" key="#com.intellij.ide.util.MemberChooser/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1601273235408" />
+    <state width="906" height="232" key="GridCell.Tab.0.bottom" timestamp="1601306899830">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1866" height="233" key="GridCell.Tab.0.bottom/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1601274890298" />
+    <state width="906" height="232" key="GridCell.Tab.0.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1601306899830" />
+    <state width="906" height="232" key="GridCell.Tab.0.center" timestamp="1601306899828">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1866" height="233" key="GridCell.Tab.0.center/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1601274890298" />
+    <state width="906" height="232" key="GridCell.Tab.0.center/0.28.1920.1052@0.28.1920.1052" timestamp="1601306899828" />
+    <state width="906" height="232" key="GridCell.Tab.0.left" timestamp="1601306899826">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1866" height="233" key="GridCell.Tab.0.left/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1601274890298" />
+    <state width="906" height="232" key="GridCell.Tab.0.left/0.28.1920.1052@0.28.1920.1052" timestamp="1601306899826" />
+    <state width="906" height="232" key="GridCell.Tab.0.right" timestamp="1601306899829">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1866" height="233" key="GridCell.Tab.0.right/0.28.1920.1052/1920.0.1920.1080@0.28.1920.1052" timestamp="1601274890298" />
+    <state width="906" height="232" key="GridCell.Tab.0.right/0.28.1920.1052@0.28.1920.1052" timestamp="1601306899829" />
+    <state width="1866" height="336" key="GridCell.Tab.1.bottom" timestamp="1601305940134">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1866" height="336" key="GridCell.Tab.1.bottom/0.28.1920.1052@0.28.1920.1052" timestamp="1601305940134" />
+    <state width="1866" height="336" key="GridCell.Tab.1.center" timestamp="1601305940134">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1866" height="336" key="GridCell.Tab.1.center/0.28.1920.1052@0.28.1920.1052" timestamp="1601305940134" />
+    <state width="1866" height="336" key="GridCell.Tab.1.left" timestamp="1601305940133">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1866" height="336" key="GridCell.Tab.1.left/0.28.1920.1052@0.28.1920.1052" timestamp="1601305940133" />
+    <state width="1866" height="336" key="GridCell.Tab.1.right" timestamp="1601305940134">
+      <screen x="0" y="28" width="1920" height="1052" />
+    </state>
+    <state width="1866" height="336" key="GridCell.Tab.1.right/0.28.1920.1052@0.28.1920.1052" timestamp="1601305940134" />
+  </component>
+</project>
