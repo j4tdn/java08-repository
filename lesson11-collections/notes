@@ -1,0 +1,8 @@
+List<T>
++ ArrayList: 
+==> Structure same as Array (int[],...)
+=> Dynamic length
+=> capacity (sức chứa)
+=> attribute: Object[] lelementData
+=>call List#remove, List#contains
+	+ Override T#equals
