@@ -1,0 +1,48 @@
+package collections.list;
+
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.List;
+
+public class A2 {
+	public static void main(String[] args) {
+		// T: Integer || String
+		// T: Student || Employee
+		
+		// Mảng số nguyên
+		// attribute: Object[]
+		// capacity
+		List<Integer> digits = new ArrayList<>();
+		System.out.println("size: " + digits.size());
+		
+		// add
+		digits.add(1);
+		digits.add(3);
+		digits.add(5);
+		digits.add(2);
+		digits.add(7);
+		System.out.println("size: " + digits.size());
+		
+		// remove
+		digits.remove(0);
+		digits.remove(Integer.valueOf(5));
+		
+		// removeIf
+		Iterator<Integer> iterator = digits.iterator();
+		while (iterator.hasNext()) {
+			Integer digit = iterator.next();
+			if (digit % 2 == 0) {
+				iterator.remove();
+			}
+		}
+		
+		digits.removeIf(digit -> digit % 5 == 0);
+		
+		System.out.println("Index 0: " + digits.get(0));
+		digits.set(0, 11);
+		
+		System.out.println("contains: " + digits.contains(11));
+		
+		digits.stream().forEach(digit -> System.out.println(digit));
+	}
+}
