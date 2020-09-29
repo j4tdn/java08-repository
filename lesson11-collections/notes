@@ -1,0 +1,8 @@
+List
++ArrayList:
+==> Structure same as Array
+=> Dynamic length
+=> Capacity 
+=> Attribute: object[] elementData
+=> call List #remove, #contains
+ 	+override T#equal
