@@ -1,0 +1,16 @@
+// List 
+ 	+ ArrayList<T>
+ 	==> Structure same as Array 
+ 	==> Dynamic Length
+ 	==> capacity 
+ 	==> attribute Object[] elementData
+ 	
+ 	
+ 	//call List#remove , List#contains 
+ 	
+ 	=> + overide T#equals
+ 	
+ 	
+ 	
+ 	
+ 	
