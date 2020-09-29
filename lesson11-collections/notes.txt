@@ -1,0 +1,8 @@
+List<T>
++ArrayList
+=> Structure same as array
+=>Dynamic length
+=>Capacity
+=>Attribute : object[] elementData
+=>Call List/Remove,List/contains
+ +Override Equals
