@@ -10,6 +10,16 @@
  	
  	=> + overide T#equals
  	
+ 	// ArrayList vs LinkedList 
+ 	
+ 	90% dung ArrayList 
+ 	
+ 	10% dung LinkedList 
+ 	
+ 	thong thuong, dung List<String> strs = new ArrayList<>();
+ 	( ArraysList<String> strs = new ArrayList<>())
+
+ 	
  	
  	
  	

@@ -26,13 +26,5 @@ public class Ex01 {
 
 		
 		
-		
-		
-		
-		
-		
-		
-		
-		
 	}
 }

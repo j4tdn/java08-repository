@@ -39,13 +39,20 @@ public class Ex03 {
 		
 		
 		// short syntax 
-		Arrays.sort(item,comparing(Item::getId).thenComparing(Item::getName));
-		
-		
-		Arrays.stream(item).forEach(it -> {
-			System.out.println(it.toString());
-		});
+//		Arrays.sort(item,comparing(Item::getId).thenComparing(Item::getName));
+//		
+//		
+//		Arrays.stream(item).forEach(it -> {
+//			System.out.println(it.toString());
+//		});
 	
+		
+		Arrays.sort(item, (o1,o2) -> {
+			return o1.getId() - o2.getId();
+		});
+		
+		Arrays.stream(item).forEach(el -> System.out.println(el));
+		
 	}
 	
 	private static Item[] getItem() {
