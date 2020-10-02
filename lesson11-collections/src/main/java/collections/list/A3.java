@@ -1,34 +1,56 @@
 package collections.list;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 import bean.Item;
 
 public class A3 {
 	public static void main(String[] args) {
-		
+
 		List<Item> items = getItems();
+
+		// remove, contains
+		//items.remove(new Item(2, "B"));
+		// items.sort(c);
 		
-		//remove, contains
-		items.remove(new Item(2, "B"));
-		//items.sort(c);
-		
+		items.set(0, new Item(7, "X"));
+
 		System.out.println("size: " + items.size());
 	}
-	
+
 	private static List<Item> getItems() {
 		
-		List<Item> items = new ArrayList<>(); //LinkedList
+//		List<Item> items = new ArrayList<>(); //LinkedList
+//		
+//		items.add(new Item(1, "A"));
+//		items.add(new Item(2, "B"));
+//		items.add(new Item(3, "b"));
+//		items.add(new Item(4, "a"));
+//		items.add(new Item(5, "Z"));
+//		items.add(new Item(6, "k"));
+//		
+//		return items;
 		
-		items.add(new Item(1, "A"));
-		items.add(new Item(2, "B"));
-		items.add(new Item(3, "b"));
-		items.add(new Item(4, "a"));
-		items.add(new Item(5, "Z"));
-		items.add(new Item(6, "k"));
+//		
+		return Arrays.asList( //fixed size, ko the remove
+				new Item(1, "A"),			
+				new Item(2, "B"),
+				new Item(3, "b"),
+				new Item(4, "a"),
+				new Item(5, "Z"),
+				new Item(6, "k"));
 		
-		return items;
+		
+	//unmodifiable, immutable: ko duoc thay doi j, chi view, ko cho viet ptu null
+//	return List.of(new Item(1, "A"),			
+//			new Item(2, "B"),
+//			new Item(3, "b"),
+//			new Item(4, "a"),
+//			new Item(5, "Z"),
+//			new Item(6, "k")
+//			);
 	}
 }
 
