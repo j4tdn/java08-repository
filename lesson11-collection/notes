@@ -6,3 +6,4 @@ List
 => attribute : Object[] elementData
 => call List#remove, List#contains 
 	=> Override T#equals 
+Setup JDK11
