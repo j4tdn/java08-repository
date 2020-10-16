@@ -1,4 +1,4 @@
-package java08.generic;
+package java08.generic.method;
 
 @FunctionalInterface
 public interface Condition<T> {
