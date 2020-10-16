@@ -14,20 +14,20 @@ public class Ex03 {
 		// sort bang function cua minh
 		//sort(item);
 		
-//		Arrays.sort(item,new Comparator<Item>() {
-//			@Override
-//			public int compare(Item o1, Item o2) {
-//				
-//				
-//				// nếu như lớn hơn không thì đổi vị trí, còn nhỏ hơn không hoặc bằng 0 thì không đổi vị trí với nhau
-//				
-//				if(o1.getId() == o2.getId()) {
-//					return (o1.getName().compareTo(o2.getName()));
-//				}
-//				
-//				return o1.getId()- o2.getId();
-//			}
-//		});
+		Arrays.sort(item,new Comparator<Item>() {
+			@Override
+			public int compare(Item o1, Item o2) {
+				
+				
+				// nếu như lớn hơn không thì đổi vị trí, còn nhỏ hơn không hoặc bằng 0 thì không đổi vị trí với nhau
+				
+				if(o1.getId() == o2.getId()) {
+					return (o1.getName().compareTo(o2.getName()));
+				}
+				
+				return o1.getId()- o2.getId();
+			}
+		});
 		
 		
 		//3,3,4,2,1,2
@@ -47,13 +47,26 @@ public class Ex03 {
 //		});
 	
 		
-		Arrays.sort(item, (o1,o2) -> {
-			return o1.getId() - o2.getId();
-		});
+//		Arrays.sort(item, (o1,o2) -> {
+//			return o1.getId() - o2.getId();
+//		});
+		
+		
+		
+		
+		Arrays.sort(item);
 		
 		Arrays.stream(item).forEach(el -> System.out.println(el));
 		
 	}
+	
+	
+//	@SuppressWarnings("rawtypes")
+//	public static <E extends Comparable> void sort(E[] e) {
+//		// logic o day 
+//		
+//	}
+	
 	
 	private static Item[] getItem() {
 		return new Item[] {

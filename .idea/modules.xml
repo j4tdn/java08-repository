@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/java08-repository.iml" filepath="$PROJECT_DIR$/.idea/java08-repository.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Lesson10-phanhuynhduc/Lesson10-phanhuynhduc.iml" filepath="$PROJECT_DIR$/Lesson10-phanhuynhduc/Lesson10-phanhuynhduc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson01-setup-environment/lesson01-setup-environment.iml" filepath="$PROJECT_DIR$/lesson01-setup-environment/lesson01-setup-environment.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson02-variables-datatypes/lesson02-variables-datatypes.iml" filepath="$PROJECT_DIR$/lesson02-variables-datatypes/lesson02-variables-datatypes.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson03-oop-overview/lesson03-oop-overview.iml" filepath="$PROJECT_DIR$/lesson03-oop-overview/lesson03-oop-overview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson03-phanhuynhduc-test/lesson03-phanhuynhduc-test.iml" filepath="$PROJECT_DIR$/lesson03-phanhuynhduc-test/lesson03-phanhuynhduc-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson04-oop-features/lesson04-oop-features.iml" filepath="$PROJECT_DIR$/lesson04-oop-features/lesson04-oop-features.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson06-exception/lesson06-exception.iml" filepath="$PROJECT_DIR$/lesson06-exception/lesson06-exception.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson06-phanhuynhduc/lesson06-phanhuynhduc.iml" filepath="$PROJECT_DIR$/lesson06-phanhuynhduc/lesson06-phanhuynhduc.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson07-libraries/lesson07-libraries.iml" filepath="$PROJECT_DIR$/lesson07-libraries/lesson07-libraries.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson08-string/lesson08-string.iml" filepath="$PROJECT_DIR$/lesson08-string/lesson08-string.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson10-arrays/lesson10-arrays.iml" filepath="$PROJECT_DIR$/lesson10-arrays/lesson10-arrays.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson11-collections/lesson11-collections.iml" filepath="$PROJECT_DIR$/lesson11-collections/lesson11-collections.iml" />
     </modules>
   </component>
 </project>

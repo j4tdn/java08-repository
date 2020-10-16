@@ -7,15 +7,11 @@ public class Ex01 {
 	private static final Scanner sc = new Scanner(System.in);
 	
 	public static void main(String[] args) {
-		
-		
-			int a = input();
-			
-			System.out.println("a :" + a);
-		
-		
-		
-		
+
+		int a = input();
+
+		System.out.println("a :" + a);
+
 	}
 	private static int input() {
 		

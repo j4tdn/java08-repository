@@ -1,51 +1,193 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="2ade3aca-02ef-4521-a2dd-bed8d714e70a" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="7d9e53ca-552d-4ad3-9232-f02bf1312cb3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/java08-repository.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson04-oop-features/src/main/java/polymorphism/method/MathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson04-oop-features/src/main/java/polymorphism/method/MathUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson06-exception/src/main/java/execution/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson06-exception/src/main/java/execution/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson06-exception/src/main/java/execution/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson06-exception/src/main/java/execution/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson10-arrays/src/main/java/Sorting/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson10-arrays/src/main/java/Sorting/Ex03.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson11-collections/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/.classpath" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/Bean/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/Bean/Item.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/Declaration/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/Declaration/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/collections/list/A1.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/collections/list/A1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/collections/list/A2.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/collections/list/A2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/collections/list/A3.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/collections/list/A3.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/generic/Conditional.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/generic/Conditional.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/generic/GenericMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/generic/GenericMethod.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/test/java/phanhuynhduc/lesson11_collections/AppTest.java" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="ProjectId" id="1edQ30MJoc9anfTdU4Jmzo7TycW" />
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <option value="Class" />
       </list>
     </option>
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1ipIb64bPKZDkpkVVRxuijeTjxZ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="settings.editor.selected.configurable" value="MTConfigurable" />
+  </component>
+  <component name="RunManager" selected="Application.GenericClass">
+    <configuration name="GenericClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generic.cclass.iinterface.GenericClass" />
+      <module name="lesson11-collections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="generic.cclass.iinterface.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GenericMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="generic.GenericMethod" />
+      <module name="lesson11-collections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="generic.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.GenericClass" />
+        <item itemvalue="Application.GenericMethod" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="2ade3aca-02ef-4521-a2dd-bed8d714e70a" name="Default Changelist" comment="" />
-      <created>1594648786452</created>
+      <changelist id="7d9e53ca-552d-4ad3-9232-f02bf1312cb3" name="Default Changelist" comment="" />
+      <created>1602598186449</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1594648786452</updated>
+      <updated>1602598186449</updated>
+      <workItem from="1602598190323" duration="11000" />
+      <workItem from="1602598250670" duration="234000" />
+      <workItem from="1602598504490" duration="1010000" />
+      <workItem from="1602599793947" duration="181000" />
+      <workItem from="1602606894133" duration="415000" />
+      <workItem from="1602607337730" duration="35000" />
+      <workItem from="1602607719378" duration="472000" />
+      <workItem from="1602630056065" duration="846000" />
+      <workItem from="1602635394661" duration="3887000" />
+      <workItem from="1602656274808" duration="653000" />
+      <workItem from="1602661752255" duration="719000" />
+      <workItem from="1602664120626" duration="1399000" />
+      <workItem from="1602680153692" duration="603000" />
+      <workItem from="1602743892803" duration="1413000" />
+      <workItem from="1602752469474" duration="1333000" />
+      <workItem from="1602807605670" duration="806000" />
+      <workItem from="1602834847770" duration="161000" />
+      <workItem from="1602847312152" duration="190000" />
+      <workItem from="1602849244898" duration="1080000" />
+      <workItem from="1602853931787" duration="445000" />
+      <workItem from="1602854870707" duration="7436000" />
     </task>
     <servers />
   </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1602599070214">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1602599070214" />
+    <state x="525" y="109" key="#com.intellij.ide.util.MemberChooser" timestamp="1602857657886">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="525" y="109" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1602857657886" />
+    <state x="549" y="130" key="FileChooserDialogImpl" timestamp="1602745835592">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="130" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602745835592" />
+    <state width="1493" height="212" key="GridCell.Tab.0.bottom" timestamp="1602859918098">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602859918098" />
+    <state width="1493" height="212" key="GridCell.Tab.0.center" timestamp="1602859918098">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602859918098" />
+    <state width="1493" height="212" key="GridCell.Tab.0.left" timestamp="1602859918097">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602859918097" />
+    <state width="1493" height="212" key="GridCell.Tab.0.right" timestamp="1602859918098">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="212" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602859918098" />
+    <state x="439" y="31" key="NewModule_or_Project.wizard" timestamp="1602745845489">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="439" y="31" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1602745845489" />
+    <state x="249" y="0" key="SettingsEditor" timestamp="1602646715994">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1602646715994" />
+    <state width="600" height="440" key="javadoc.popup" timestamp="1602855846636">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="600" height="440" key="javadoc.popup/0.0.1536.824@0.0.1536.824" timestamp="1602855846636" />
+    <state x="209" y="0" key="new project wizard" timestamp="1602745817772">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="209" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1602745817772" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1602807727363">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602807727363" />
+    <state x="491" y="317" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1602807641421">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="491" y="317" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.824@0.0.1536.824" timestamp="1602807641421" />
   </component>
 </project>

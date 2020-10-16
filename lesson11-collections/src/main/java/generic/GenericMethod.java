@@ -13,31 +13,29 @@ public class GenericMethod {
 		String[] strs = {"hello","there"};
 		
 		
-		show(digits);
-		show(doubles);
+//		show(digits);
+//		show(doubles);
 		//show(strs);
 		
-		
-		show(digits,new Conditional<Integer>() {
-			
-			@Override
-			public boolean test(Integer digit) {
-				// TODO Auto-generated method stub
-				return false;
-			}
-		})
-		
+//		show(digits, new Conditional<Integer>() {
+//
+//			@Override
+//			public boolean test(Integer digit) {
+//				// TODO Auto-generated method stub
+//				return digit %2 != 0 ;
+//			}
+//		}
+//		);
+		show(digits, digit -> digit %2 == 0);
+
+//		show(digits, el -> el %2 !=0);
 	}
-	
-	
 	// khi extends Number thi digit no goi y ra nhung phuong thuc cua Number
-	private static final <E extends Number> void show(E[] digits, Conditional<Integer> condition) {
+	private static  <E extends Number> void show(E[] digits, Conditional<E> condition) {
 		for(E digit : digits) {
 			if(condition.test(digit)) {
 				System.out.println(digit);
 			}
 		}
 	}
-	
-	
 }

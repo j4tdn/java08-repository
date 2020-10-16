@@ -15,10 +15,6 @@ public class MathUtils {
 	 *		- Return type 
 	 */		
 	
-	
-	
-	
-	
 	// ket qua cua ham ma khi goi doi tuong nao cung tra ve mot gia tri giong nhau thi dung static ( co nghia la khong phu thuoc vao doi tuong goi no )
 	
 	public static int max(int a, int b) {

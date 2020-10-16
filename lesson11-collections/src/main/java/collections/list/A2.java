@@ -76,20 +76,8 @@ public class A2 {
 		//check contains
 		
 		digits.contains(11);
-		
-		
-		
-		
-		
-		
-		
-		
+
 		digits.stream().forEach(el -> System.out.println(el));
-		
-		
-		
-		
-		
-		
+
 	}
 }

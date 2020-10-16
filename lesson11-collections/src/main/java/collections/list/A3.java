@@ -8,8 +8,14 @@ import Bean.Item;
 
 public class A3 {
 	public static void main(String[] args) {
-		
 		List<Item> items = getItems();
+		
+		items.forEach(el -> System.out.println(el));
+		
+		
+		// khi dung phuong thuc add cho cai arrayList fixed size thi no se quang loi ra runtime 
+//		items.add(new Item(1,"sdsdfsdf"));
+		items.forEach(el -> System.out.println(el));
 		
 		
 		// remove 
@@ -23,8 +29,7 @@ public class A3 {
 		items.set(0, new Item(2,"b"));
 		
 		// ham contains nay cung vay 
-		
-		
+
 //		items.removeIf(el -> el.getId() == 2 && el.getName() == "b");
 		
 		
@@ -42,8 +47,7 @@ public class A3 {
 //		items.add(new Item(5,"g"));
 //		items.add(new Item(6,"fff"));
 		
-		// fixed size là không add được 
-		
+		// fixed size là không add được
 		return Arrays.asList(
 				
 				new Item(1,"A"),
@@ -51,8 +55,7 @@ public class A3 {
 				new Item(3,"C"),
 				new Item(4,"c"),
 				new Item(5,"D")
-				
-				
+
 				);		
 		
 		

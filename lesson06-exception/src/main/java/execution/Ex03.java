@@ -1,5 +1,6 @@
 package execution;
 
+import java.util.Calendar;
 import java.util.Scanner;
 
 public class Ex03 {
@@ -13,7 +14,11 @@ public class Ex03 {
 	private static int divide() {
 		
 		try {
-			
+
+			Calendar c = Calendar.getInstance();
+			System.out.println(c.get(Calendar.MONTH));
+
+
 			System.out.println("Enter a : ");
 			
 			int a = Integer.parseInt(sc.nextLine());

@@ -1,5 +1,9 @@
 package generic;
 
-public interface Conditional<E> {
+
+@FunctionalInterface
+public  interface Conditional<E> {
+
 	boolean test(E digit);
+
 }
