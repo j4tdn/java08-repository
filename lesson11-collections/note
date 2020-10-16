@@ -5,3 +5,9 @@ List
 => capacity
 => attribute: Object[] elementData
 => call List#remove, List#contains -> Override T#equals
+
+-----------------------------
+Generic Type: T E 
+
+Willcard: ? -> dai dien cho Object Type, use only for call Object -> represent cho T exends Object
+ usefull:   XXX<? super E>

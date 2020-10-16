@@ -1,4 +1,4 @@
-package generic;
+package generic.method;
 
 public class GenericMethod {
 	public static void main(String[] args) {
@@ -18,6 +18,8 @@ public class GenericMethod {
 	
 	// <E extends Number> generic bounded type
 	// create Generic Type always "extends" both of class and interface
+	
+	// upper bounded type
 	private static <E extends Number> void show(E[] digits, Condition<E> condition) {
 		for (E digit: digits) {
 			if (condition.test(digit)) {
@@ -25,4 +27,13 @@ public class GenericMethod {
 			}			
 		}
 	}
+	
+	// lower bounded type
+//	public static <? super Number> void showLower(Object[] digits, Condition<E> condition) {
+//		for (Object digit: digits) {
+//			if (condition.test(digit)) {
+//				System.out.print(digit + "  ");
+//			}			
+//		}
+//	}
 }
