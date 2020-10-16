@@ -1,4 +1,6 @@
-package generic;
+package generic.method;
+
+import java.util.List;
 
 public class GenericMethod {
 
@@ -11,8 +13,16 @@ public class GenericMethod {
 		show(ints, digit -> digit % 2 != 0);
 	}
 
-	private static <E extends Number> void show(E[] digits, Conditional<Integer> condition) {
+	private static <E extends Number> void show(E[] digits, Condition<E> condition) {
 		for (E digit : digits) {
+			if (condition.test(digit)) {
+				System.out.print(digit + "  ");
+			}
+		}
+	}
+	
+	private static void show(List<? super Number> digits, Condition<E> condition) {
+		for (Object digit : digits) {
 			if (condition.test(digit)) {
 				System.out.print(digit + "  ");
 			}
