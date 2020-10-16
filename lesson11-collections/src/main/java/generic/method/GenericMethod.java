@@ -1,5 +1,5 @@
 
-package generic;
+package generic.method;
 
 public class GenericMethod {
 	public static void main(String[] args) {
