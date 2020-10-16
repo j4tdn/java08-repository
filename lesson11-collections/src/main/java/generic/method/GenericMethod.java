@@ -1,4 +1,4 @@
-package generic;
+package generic.method;
 
 public class GenericMethod {
 	public static void main(String[] args) {
@@ -20,7 +20,7 @@ public class GenericMethod {
 	}
 
 	// generic bouned type
-	private static <E extends Number> void show(E[] digits, Condition<E> condition) {
+	private static <E extends Number> void show(E[] digits, Condition<E> condition) { //E: chi kieu doi tuong ?check tai compile
 		for (E digit : digits) {
 			if (condition.test(digit)) {
 				System.out.print(digit + " ");
