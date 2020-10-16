@@ -1,4 +1,6 @@
-package generic;
+package generic.method;
+
+import java.util.List;
 
 public class GenericMethod {
 
@@ -22,5 +24,4 @@ public class GenericMethod {
 		}
 
 	}
-
 }
