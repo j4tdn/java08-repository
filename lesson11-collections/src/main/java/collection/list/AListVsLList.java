@@ -3,6 +3,7 @@ package collection.list;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Vector;
 
 public class AListVsLList {
     private static int COUNT = 50000;
@@ -10,6 +11,12 @@ public class AListVsLList {
     public static void main(String[] args) {
         List<String> alist = new ArrayList<>();
         List<String> llist = new LinkedList<>();
+        List<String> list= new Vector<>();
+        boolean a=list.add("EEEEE");
+        list.add("EEEEE");
+        list.add("EEEEE");
+        list.add("EEEEE");
+        System.out.println(list);
 
         // Add
         long start = System.currentTimeMillis();
@@ -87,5 +94,9 @@ public class AListVsLList {
         System.out.println("Remove element: LinkedList took "
                 + (System.currentTimeMillis() - start) + "ms");
     }
+    
+    
+   
+   
 
 }

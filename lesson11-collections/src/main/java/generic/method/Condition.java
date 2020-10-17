@@ -1,4 +1,4 @@
-package generic;
+package generic.method;
 @FunctionalInterface
 
 public interface Condition<T> {
