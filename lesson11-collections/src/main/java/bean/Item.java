@@ -1,5 +1,7 @@
 package bean;
 
+import java.util.Objects;
+
 public class Item {
 	private int id;
 	private String name;
@@ -29,9 +31,16 @@ public class Item {
 	public void setName(String name) {
 		this.name = name;
 	}
+	
+	@Override
+	public int hashCode() {
+		
+		return Objects.hash(id, name);	
+		}
+	
 	@Override
 	public String toString() {
-		// TODO Auto-generated method stub
+		
 		return id+name;
 	}
 	public boolean equals(Object obj) {
