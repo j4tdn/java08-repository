@@ -21,11 +21,11 @@ public class GenericMethod {
 		}
 	}
 	
-	private static void show(List<? super Number> digits, Condition<E> condition) {
-		for (Object digit : digits) {
-			if (condition.test(digit)) {
-				System.out.print(digit + "  ");
-			}
-		}
-	}
+//	private static void show(List<? super Number> digits, Condition<E> condition) {
+//		for (Object digit : digits) {
+//			if (condition.test(digit)) {
+//				System.out.print(digit + "  ");
+//			}
+//		}
+//	}
 }
