@@ -1,5 +1,7 @@
 package bean;
 
+import java.util.Objects;
+
 public class Item {
 	private int id;
 	private String name;
@@ -32,11 +34,12 @@ public class Item {
 
 	@Override
 	public int hashCode() {
-		final int prime = 31;
-		int result = 1;
-		result = prime * result + id;
-		result = prime * result + ((name == null) ? 0 : name.hashCode());
-		return result;
+//		final int prime = 31;
+//		int result = 1;
+//		result = prime * result + id;
+//		result = prime * result + ((name == null) ? 0 : name.hashCode());
+//		return result;
+		return Objects.hash(id, name);
 	}
 
 	@Override
@@ -49,7 +52,7 @@ public class Item {
 		}
 
 		Item other = (Item) obj;
-		return getId() == other.getId();
+		return getId() == other.getId() && getName().equals(other.getName());
 	}
 
 	@Override
