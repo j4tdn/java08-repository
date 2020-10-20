@@ -1,8 +1,7 @@
-package java08.collection.list;
+package java08.collections.list;
 
 import java08.bean.Item;
 
-import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 

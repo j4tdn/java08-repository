@@ -1,9 +1,8 @@
-package java08.collection.list;
+package java08.collections.list;
 
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-import java.util.function.Predicate;
 
 public class A2 {
     public static void main(String[] args) {
