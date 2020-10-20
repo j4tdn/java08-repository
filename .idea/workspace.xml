@@ -1,23 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="7d9e53ca-552d-4ad3-9232-f02bf1312cb3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/java08-repository.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson04-oop-features/src/main/java/polymorphism/method/MathUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson04-oop-features/src/main/java/polymorphism/method/MathUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson06-exception/src/main/java/execution/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson06-exception/src/main/java/execution/Ex01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson06-exception/src/main/java/execution/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson06-exception/src/main/java/execution/Ex03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson10-arrays/src/main/java/Sorting/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson10-arrays/src/main/java/Sorting/Ex03.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson11-collections/.classpath" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/.classpath" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/Bean/Item.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/Bean/Item.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/Declaration/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/Declaration/Ex01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/collections/list/A1.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/collections/list/A1.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/collections/list/A2.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/collections/list/A2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/collections/list/A3.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/collections/list/A3.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/generic/Conditional.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/generic/Conditional.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/generic/GenericMethod.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/generic/GenericMethod.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/test/java/phanhuynhduc/lesson11_collections/AppTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson11-collections/src/main/java/generic/cclass/iinterface/JavaList.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson11-collections/src/main/java/generic/cclass/iinterface/JavaList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +47,9 @@
     </option>
   </component>
   <component name="ProjectId" id="1ipIb64bPKZDkpkVVRxuijeTjxZ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -56,7 +64,33 @@
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="MTConfigurable" />
   </component>
-  <component name="RunManager" selected="Application.GenericClass">
+  <component name="RunManager" selected="Application.Ex02">
+    <configuration name="Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collections.set.Ex01" />
+      <module name="lesson11-collections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collections.set.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Ex02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collections.set.Ex02" />
+      <module name="lesson11-collections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collections.set.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GenericClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="generic.cclass.iinterface.GenericClass" />
       <module name="lesson11-collections" />
@@ -83,19 +117,37 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration name="HashcodeEquals" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collections.set.HashcodeEquals" />
+      <module name="lesson11-collections" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="collections.set.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Ex02" />
+        <item itemvalue="Application.HashcodeEquals" />
+        <item itemvalue="Application.Ex01" />
         <item itemvalue="Application.GenericClass" />
         <item itemvalue="Application.GenericMethod" />
       </list>
@@ -130,11 +182,26 @@
       <workItem from="1602849244898" duration="1080000" />
       <workItem from="1602853931787" duration="445000" />
       <workItem from="1602854870707" duration="7436000" />
+      <workItem from="1602864423426" duration="680000" />
+      <workItem from="1602895263960" duration="1332000" />
+      <workItem from="1602923319234" duration="4388000" />
+      <workItem from="1603200045457" duration="6421000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="WindowStateProjectService">
     <state x="249" y="0" key="#Project_Structure" timestamp="1602599070214">
@@ -149,22 +216,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="130" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1602745835592" />
-    <state width="1493" height="212" key="GridCell.Tab.0.bottom" timestamp="1602859918098">
+    <state width="1493" height="209" key="GridCell.Tab.0.bottom" timestamp="1603206553902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1602859918098" />
-    <state width="1493" height="212" key="GridCell.Tab.0.center" timestamp="1602859918098">
+    <state width="1493" height="209" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603206553902" />
+    <state width="1493" height="209" key="GridCell.Tab.0.center" timestamp="1603206553902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="212" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1602859918098" />
-    <state width="1493" height="212" key="GridCell.Tab.0.left" timestamp="1602859918097">
+    <state width="1493" height="209" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603206553902" />
+    <state width="1493" height="209" key="GridCell.Tab.0.left" timestamp="1603206553902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="212" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1602859918097" />
-    <state width="1493" height="212" key="GridCell.Tab.0.right" timestamp="1602859918098">
+    <state width="1493" height="209" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603206553902" />
+    <state width="1493" height="209" key="GridCell.Tab.0.right" timestamp="1603206553902">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="212" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1602859918098" />
+    <state width="1493" height="209" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603206553902" />
     <state x="439" y="31" key="NewModule_or_Project.wizard" timestamp="1602745845489">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

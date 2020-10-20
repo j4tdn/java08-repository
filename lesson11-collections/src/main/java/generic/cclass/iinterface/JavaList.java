@@ -10,8 +10,6 @@ import java.util.concurrent.locks.Condition;
 public class JavaList<E> implements Serializable {
     private int capacity ;
     private E[] elements ;
-
-
     private Class<E> classType ;
 
     public JavaList(){

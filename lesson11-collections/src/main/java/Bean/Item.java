@@ -1,16 +1,16 @@
 package Bean;
 
 import java.util.Calendar;
+import java.util.Objects;
 
-public class Item implements Comparable<Item>  {
+public class Item   {
 	private int id ;
 
 	private String name ;
 	
 	public Item() {
 
-		Calendar c = Calendar.getInstance();
-		System.out.println(c.get(Calendar.MONTH));
+
 	}
 	
 	
@@ -54,15 +54,18 @@ public class Item implements Comparable<Item>  {
 		
 		Item that = (Item)obj;
 		
-		return this.getId() == that.getId() && this.getName() == that.getName();
+		return this.getId() == that.getId() && this.getName().equals(that.getName());
 		
 	}
 
-
 	@Override
-	public int compareTo(Item o) {
-		return o.getId();
+	public int hashCode() {
+		return Objects.hash(id, name);
 	}
 
-	
+//	@Override
+//	public int compareTo(Item o) {
+//		return this.getId() - o.getId();
+//	}
+
 }
