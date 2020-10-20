@@ -1,5 +1,7 @@
 package bean;
 
+import java.util.Objects;
+
 public class Iteam {
 	private int Id;
 	private String Name;
@@ -34,12 +36,18 @@ public class Iteam {
 		if (this == obj) {
 			return true;
 		}
-		if(!(obj instanceof Iteam)) {
+		if (!(obj instanceof Iteam)) {
 			return false;
 		}
-		Iteam that=(Iteam)obj;
-		return this.getId()==that.getId()&& getName().equals(that.getName());
+		Iteam that = (Iteam) obj;
+		return this.getId() == that.getId() && getName().equals(that.getName());
+
+	}
+
+	@Override
+	public int hashCode() {
 		
+		return Objects.hash(Id,Name);
 	}
 
 	@Override
