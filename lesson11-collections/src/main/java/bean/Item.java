@@ -1,5 +1,7 @@
 package bean;
 
+import java.util.Objects;
+
 public class Item {
 	private int id;
 	private String name;
@@ -43,7 +45,13 @@ public class Item {
 		}
 		
 		Item that = (Item) obj;
-		return getId() == that.getId() && getName().equals(that.getName());
+		return getId() == that.getId() && 
+				getName().equals(that.getName());
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, name);
 	}
 	
 }
