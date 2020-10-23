@@ -10,3 +10,5 @@ wildcard: ?: là một ký tự đại diện và đại diện cho một object
 Set: chứa các phần tử không trùng nhau
     Không lưu trực tiếp vào vùng nhớ mà sẽ convert sang mã hash rồi mới lưu mã hash vào vùng nhớ => xuất hiện hàm hash code
        
+Map: lưu giá trị quan tâm tới giá trị key value. Map chứa các entry<key,value>
+    TreetMap ko được chứa key = null 
