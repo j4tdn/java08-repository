@@ -6,3 +6,6 @@ List<T>
 => attribute: Object[] elementData
 => call List#remove, List#contains 
    + Override T#equals
+ ----------------------------------------------------------------
+ Generic Type: T E N
+ wildcard: ?
