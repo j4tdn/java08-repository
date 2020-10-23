@@ -14,6 +14,8 @@ public class Ex02 {
 
         //Set<Item> items = new HashSet<>();
 
+
+
         Comparator<Item> cmp = new Comparator<Item>() {
             @Override
             public int compare(Item i1, Item i2) {
@@ -32,6 +34,8 @@ public class Ex02 {
 //        Comparator<Item> cmp = Comparator.nullsFirst(Comparator.comparing(Item::getId));
 
 
+           // HashSet , LinkedHashSet , TreeSet
+
         Set<Item> items = new TreeSet<>(cmp);
         // TreeSet nay thi no se sap xep giong nhu Arrays.sort(items);
 
@@ -41,7 +45,7 @@ public class Ex02 {
         items.add(itemD);
         System.out.println(items.size());
 
-        items.forEach(item -> System.out.println(item));
+        items.forEach(t -> System.out.println(t));
 
         //MEMORY :
             // khi cung hashcode ( true) thi khong add vao memory

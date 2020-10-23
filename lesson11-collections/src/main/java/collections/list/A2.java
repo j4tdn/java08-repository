@@ -55,7 +55,10 @@ public class A2 {
 			}
 		}
 		
-		
+
+
+
+
 		
 		//digits.removeIf(el -> el % 5 == 0  );
 		digits.removeIf(new Predicate<Integer>() {

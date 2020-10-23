@@ -19,6 +19,12 @@
  	thong thuong, dung List<String> strs = new ArrayList<>();
  	( ArraysList<String> strs = new ArrayList<>())
 
+
+
+// behavior cua cai local variable in function cua lop
+khi dua vao functional interface thi no se .....
+
+//
  	
  	
  	

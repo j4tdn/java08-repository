@@ -7,7 +7,7 @@ import java.lang.reflect.Array;
 import java.util.Arrays;
 import java.util.concurrent.locks.Condition;
 
-public class JavaList<E> implements Serializable {
+public class JavaList<E>  {
     private int capacity ;
     private E[] elements ;
     private Class<E> classType ;

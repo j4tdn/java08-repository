@@ -24,4 +24,5 @@ public class People<T> {
 	public void add(People t) {
 		this.arList.add(t);
 	}
+
 }
