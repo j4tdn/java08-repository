@@ -13,7 +13,7 @@ public class Ex02 {
 		Item candy = new Item(11,"Candy");
 		Item cake = new Item(8, "Custas");
 		Item milk = new Item(9, "Dalat");
-		//hashcode equals
+		//HashCode equals
 		
 		
 		Comparator<Item> comp = Comparator.nullsFirst(Comparator.comparing(Item::getId));
