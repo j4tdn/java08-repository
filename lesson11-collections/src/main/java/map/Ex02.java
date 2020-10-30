@@ -48,7 +48,7 @@ public class Ex02 {
 	private static Map<Integer, String> sortJava8(Map<Integer, String> modelMap) {
 		
 	
-		return modelMap.entrySet().stream().sorted(Entry.comparingByKey().re)
+		return modelMap.entrySet().stream().sorted(Entry.comparingByKey())
 				.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e1, LinkedHashMap::new));
 
 
