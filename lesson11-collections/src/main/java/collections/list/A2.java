@@ -18,11 +18,12 @@ public class A2 {
 		// attribute : Object[];
 		
 		// capacity ;
+
+		Integer[] digitss = new Integer[5];
 		
 		
 		
-		
-		List<Integer> digits = new ArrayList<Integer>();
+		List<Integer> digits = new ArrayList<>();
 		
 		System.out.println("size    "  + digits.size());
 		
@@ -53,7 +54,9 @@ public class A2 {
 			if(digit %2 ==0) {
 				iterator.remove();
 			}
-		}
+		};
+
+
 		
 
 

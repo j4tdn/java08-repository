@@ -1,16 +1,13 @@
 package collections.map;
 
-import java.util.Collection;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class Ex01 {
     // luu toan bo danh sach bien so xe
     // Tỉnh / Thành phố
 
     public static void main(String[] args) {
-        Map<Integer,String> modelMap = new HashMap<>();
+        Map<Integer,String> modelMap = new LinkedHashMap<>();
         modelMap.put(43,"Da Nang");
         modelMap.put(92,"Quang Nam");
         modelMap.put(75,"Hue");
@@ -19,6 +16,8 @@ public class Ex01 {
 
         System.out.println("size" + modelMap.size());
         printf(modelMap);
+
+       
 
 
         String danang = modelMap.get(43);
@@ -35,12 +34,14 @@ public class Ex01 {
 
 
         // loop key
+        // tai vi cai key la duy nhat nen khi tra ve se la mot Set
         Set<Integer> keySet = modelMap.keySet();
 
 
         // loop value
         Collection<String> valueCollection  = modelMap.values();
-
+       valueCollection.forEach(t -> System.out.println("hello " +t));
+        System.out.println(valueCollection.getClass());
 
         // loop entry
         Set<Map.Entry<Integer,String>> entrySet = modelMap.entrySet();

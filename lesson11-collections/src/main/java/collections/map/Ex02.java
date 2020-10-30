@@ -48,7 +48,6 @@ public class Ex02 {
 
         // local variable va cai kha nang cua doi tuong cua lop anonymous class
 
-
         sortedList.forEach(entry -> sortedMap.put(entry.getKey(),entry.getValue()));
         return modelMap;
     }
@@ -61,14 +60,13 @@ public class Ex02 {
         // a -> () : Consumer
         // () -> a : Suplier
 
-
-
-
-
         return modelMap.entrySet()
                 .stream()
                 .sorted(Map.Entry.comparingByKey())
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,(e1, e2) -> e2,LinkedHashMap::new)) ;
+
+
+
     }
 
 }

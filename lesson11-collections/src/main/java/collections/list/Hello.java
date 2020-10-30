@@ -5,8 +5,15 @@ import java.util.List;
 
 public class Hello {
     public static void main(String[] args){
-        System.out.println("hello");
+
+        Object phd = new String("hello");
+        System.out.println(phd);
+        phd = 5;
+        System.out.println(phd);
+
     }
     private List<Integer> listInt = new ArrayList<>();
+    
+
 
 }
