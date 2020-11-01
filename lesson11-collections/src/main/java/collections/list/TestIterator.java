@@ -12,6 +12,7 @@ public class TestIterator {
         System.out.println(iterator.hasNext());
 
 
+
         while(iterator.hasNext()){
             Integer digit = iterator.next();
             if(digit == 1){
@@ -33,7 +34,6 @@ public class TestIterator {
 
         digits.forEach(t -> System.out.println(t));
 
-
     }
 
     private static List<Integer> getArrList(){
@@ -42,6 +42,7 @@ public class TestIterator {
         hello.add(1);
         hello.add(4);
         hello.add(5);
+
         return hello ;
     }
 

@@ -15,6 +15,7 @@ public class A1 {
 		//List digits = new ArrayList();
 		List<Object> digits = new ArrayList<Object>();
 
+
 		digits.add(1);
 		digits.add("A");
 
