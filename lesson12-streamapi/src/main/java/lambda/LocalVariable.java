@@ -4,13 +4,13 @@ package lambda;
 // using local var: with final
 
 public class LocalVariable {
-	public static  int b1;
+	public static int b1;
 	public static void main(String[] args) {
 		test();
 	}
 	private static void test () {
 		//local variable
-		final int a=10;
+	 final int a=10;
 		Runnable runnable = ()->{
 			//a= 8;
 			System.out.println(a);

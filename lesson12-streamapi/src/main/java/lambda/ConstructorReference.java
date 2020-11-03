@@ -11,7 +11,7 @@ public class ConstructorReference {
 		
 		Stream <Integer> stream = Stream.of(1,2,3,4,5);
 		stream.forEach(System.out::println);
-		//stream.forEach(System.out::println);/ chi duoc thao tac 1 lan
+		//stream.forEach(System.out::println);/ chi duoc thao tac 1 lanw
 		
 		
 		Supplier<Item> noAgrs = Item::new;
