@@ -7,6 +7,7 @@
       <module fileurl="file://$PROJECT_DIR$/lesson02-variables-datatypes/lesson02-variables-datatypes.iml" filepath="$PROJECT_DIR$/lesson02-variables-datatypes/lesson02-variables-datatypes.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson03-oop-overview/lesson03-oop-overview.iml" filepath="$PROJECT_DIR$/lesson03-oop-overview/lesson03-oop-overview.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson03-phanhuynhduc-test/lesson03-phanhuynhduc-test.iml" filepath="$PROJECT_DIR$/lesson03-phanhuynhduc-test/lesson03-phanhuynhduc-test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../../../../java08-repository/lesson04-exercises-phanhuynhduc/lesson04-exercises-phanhuynhduc.iml" filepath="$PROJECT_DIR$/../../../../java08-repository/lesson04-exercises-phanhuynhduc/lesson04-exercises-phanhuynhduc.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson04-oop-features/lesson04-oop-features.iml" filepath="$PROJECT_DIR$/lesson04-oop-features/lesson04-oop-features.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson06-exception/lesson06-exception.iml" filepath="$PROJECT_DIR$/lesson06-exception/lesson06-exception.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson06-phanhuynhduc/lesson06-phanhuynhduc.iml" filepath="$PROJECT_DIR$/lesson06-phanhuynhduc/lesson06-phanhuynhduc.iml" />
@@ -14,6 +15,8 @@
       <module fileurl="file://$PROJECT_DIR$/lesson08-string/lesson08-string.iml" filepath="$PROJECT_DIR$/lesson08-string/lesson08-string.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson10-arrays/lesson10-arrays.iml" filepath="$PROJECT_DIR$/lesson10-arrays/lesson10-arrays.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson11-collections/lesson11-collections.iml" filepath="$PROJECT_DIR$/lesson11-collections/lesson11-collections.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson12-phanhuynhduc/lesson12-exercises.iml" filepath="$PROJECT_DIR$/lesson12-phanhuynhduc/lesson12-exercises.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson12-streamAPI/lesson12-streamAPI.iml" filepath="$PROJECT_DIR$/lesson12-streamAPI/lesson12-streamAPI.iml" />
     </modules>
   </component>
 </project>

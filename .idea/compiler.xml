@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="lesson12-streamAPI" />
+        <module name="lesson12-exercises" />
+        <module name="lesson04-exercises-phanhuynhduc" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lesson04-exercises-phanhuynhduc" target="1.5" />
+      <module name="lesson12-exercises" target="1.7" />
+      <module name="lesson12-streamAPI" target="9" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

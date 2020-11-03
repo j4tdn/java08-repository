@@ -1,25 +1,20 @@
 package collections.map;
 
 import java.util.*;
+import java.util.function.Supplier;
 import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class Ex02 {
 
     public static void main(String[] args) {
-        Map<Integer,String> modelMap = sort(mockData());
+        Map<Integer,String> modelMap = sortUsingJava08(mockData());
 
         // sort by property <K,V>
         // b1 : convert to Set<Entry<K,V>>
         // b2 : sort
         // b3 : transfers Set<Entry<K,V>> back to Map ;
-
-
         printf(modelMap);
-
-
-
-
     }
 
 
@@ -63,10 +58,11 @@ public class Ex02 {
         return modelMap.entrySet()
                 .stream()
                 .sorted(Map.Entry.comparingByKey())
-                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,(e1, e2) -> e2,LinkedHashMap::new)) ;
-
-
-
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue, (e1, e2) -> e2, new Supplier<Map<Integer, String>>() {
+                    @Override
+                    public Map<Integer, String> get() {
+                        return new LinkedHashMap<>();
+                    }
+                })) ;
     }
-
 }

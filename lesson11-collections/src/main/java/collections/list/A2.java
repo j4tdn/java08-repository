@@ -56,13 +56,6 @@ public class A2 {
 			}
 		};
 
-
-		
-
-
-
-
-		
 		//digits.removeIf(el -> el % 5 == 0  );
 		digits.removeIf(new Predicate<Integer>() {
 
@@ -84,6 +77,9 @@ public class A2 {
 		digits.contains(11);
 
 		digits.stream().forEach(el -> System.out.println(el));
+
+
+
 
 	}
 }

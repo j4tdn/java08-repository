@@ -5,8 +5,6 @@ package lambda;
 
 // using local variable
 
-
-
 public class LocalVariable {
 
     private static int b ;
@@ -16,8 +14,6 @@ public class LocalVariable {
     }
 
     private static void test(){
-
-
 
         // local variable
          int a = 10 ;

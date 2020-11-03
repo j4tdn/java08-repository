@@ -1,6 +1,10 @@
 package collections.map;
 
+import com.sun.jdi.Value;
+
 import java.util.*;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class Ex01 {
     // luu toan bo danh sach bien so xe
@@ -16,6 +20,8 @@ public class Ex01 {
 
         System.out.println("size" + modelMap.size());
         printf(modelMap);
+
+
 
        
 
@@ -46,14 +52,16 @@ public class Ex01 {
         // loop entry
         Set<Map.Entry<Integer,String>> entrySet = modelMap.entrySet();
 
-        for(Map.Entry<Integer,String> entry : entrySet){
+       List<Map.Entry<Integer,String>> dn = entrySet.stream().filter(entry -> entry.getValue().equals("Da Nang")).collect(Collectors.toList());
+        dn.forEach(entry -> System.out.println(entry.getKey() + " " +entry.getValue()));
 
-            System.out.println("Entry" + entry);
-            System.out.println("Key" + entry.getKey());
-            System.out.println("Value" + entry.getValue());
-
-
-        }
+//        for(Map.Entry<Integer,String> entry : entrySet){
+//
+//            System.out.println("Entry" + entry);
+//            System.out.println("Key" + entry.getKey());
+//            System.out.println("Value" + entry.getValue());
+//
+//        }
     }
 
 

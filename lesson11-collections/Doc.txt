@@ -22,7 +22,7 @@
 
 
 // behavior cua cai local variable in function cua lop
-khi dua vao functional interface thi no se .....
+khi dua vao functional interface thi no se ngam la khai bao la finallll
 
 //
  	
