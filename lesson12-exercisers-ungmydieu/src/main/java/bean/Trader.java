@@ -1,5 +1,7 @@
 package bean;
 
+import java.util.Objects;
+
 public class Trader 
 {
 	private String name;
@@ -29,18 +31,27 @@ public class Trader
 	}
 	
 	@Override
-	public String toString() {
-		return name + " - " + city;
-	}
-	
-	@Override
-	public boolean equals(Object t) {
-		Trader temp = (Trader) t;
-		return name.equals(temp.getName()) && city.equals(temp.getCity());
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		
+		if (!(obj instanceof Trader)) {
+			return false;
+		}
+		
+		Trader that = (Trader) obj;
+
+		return getName().equals(that.getName()) && getCity().equals(that.getCity());
 	}
 	
 	@Override
 	public int hashCode() {
-		return name.length() * 10 + city.length();
+		return Objects.hash(name, city);
+	}
+	
+	@Override
+	public String toString() {
+		return "Trader: [name: " + name + ", city: " + city + "]";
 	}
 }

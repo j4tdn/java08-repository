@@ -1,16 +1,29 @@
 package bean;
 
+import java.util.Objects;
+
 public class Transaction {
+	private int id;
 	private Trader trader;
 	private int year;
 	private int value;
 	
 	public Transaction() {}
 
-	public Transaction(Trader trader, int year, int value) {
+	public Transaction(int id, Trader trader, int year, int value) {
+		super();
+		this.id = id;
 		this.trader = trader;
 		this.year = year;
 		this.value = value;
+	}
+
+	public int getId() {
+		return id;
+	}
+
+	public void setId(int id) {
+		this.id = id;
 	}
 
 	public Trader getTrader() {
@@ -38,7 +51,27 @@ public class Transaction {
 	}
 	
 	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) {
+			return true;
+		}
+		
+		if (!(obj instanceof Transaction)) {
+			return false;
+		}
+		
+		Transaction that = (Transaction) obj;
+
+		return getId() == that.getId() && getTrader().equals(that.getTrader()) && getYear() == that.getYear() && getValue() == that.getValue();
+	}
+	
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, trader, year, value);
+	}
+	
+	@Override
 	public String toString() {
-		return trader + ": " + year + "  " + value;
+		return "Trader: [id: " + id + ", trader: " + trader + ", year: " + year + ", value: " + value + "]";
 	}
 }
