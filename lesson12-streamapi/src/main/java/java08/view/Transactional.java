@@ -1,6 +1,5 @@
 package java08.view;
 
-import com.sun.java.accessibility.util.Translator;
 import java08.bean.Trader;
 import java08.bean.Transaction;
 
@@ -27,16 +26,16 @@ public class Transactional {
         List<Transaction> second = transactions.stream()
                 .filter(t -> t.getValue() > 300)
                 .sorted(comparing(t -> t.getTrader().getCity()))
-                .collect(Collectors.toList());
+                .collect(toList());
 
         // 3. What are all the unique cities where the traders work?
         List<String> three = traders.stream()
                 .map(Trader::getCity)
-                .distinct().collect(Collectors.toList());
+                .distinct().collect(toList());
 
         // 3.1 What are all the unique transactions where the traders work?
         transactions.stream()
-                .collect(Collectors.toMap(Transaction::getId,
+                .collect(toMap(Transaction::getId,
                         Function.identity(),
                         (t1, t2) -> t1,
                         LinkedHashMap::new));
@@ -44,13 +43,84 @@ public class Transactional {
         Set<Integer> uniqueTrans = new HashSet<>();
         transactions.stream()
                 .filter(distinctByKey(Transaction::getId))
-                .collect(Collectors.toList()).forEach(System.out::println);
+                .collect(toList()).forEach(System.out::println);
 
         // 3.2
         List<Integer> numbers = Arrays.asList(2, 1, 1, 2, 3, 3, 4);
-        Map<Integer, Long> xx = numbers.stream()
+        Map<Integer, Long> qtyMap = numbers.stream()
                 .collect(groupingBy(Function.identity(), counting()));
+        System.out.println(qtyMap);
 
+//        qtyMap.entrySet().stream().filter(entry)
+
+        // 4. Find all traders from Cambridge and sort them by name desc.
+        traders.stream().filter(t -> "Cambridge".equals(t.getCity()))
+                .sorted(comparing(Trader::getName).reversed())
+                .collect(toList());
+
+        // 5. Return a string of all traders’ names sorted alphabetically.
+        String fifth = traders.stream()
+                .map(Trader::getName)
+                .sorted()
+                .collect(joining(", "));
+        System.out.println("Trader's name: " + fifth);
+
+        // 6. Are any traders based in Milan?
+        boolean isMilanBased = traders.stream().anyMatch(t -> "Milan".equals(t.getCity()));
+        System.out.println("Milan Based ?: " + isMilanBased);
+
+        // 7. Count the number of traders in Milan.
+        long count = traders.stream().filter(t -> "Milan".equals(t.getCity())).count();
+        System.out.println("Milan: " + count);
+
+        // 8. Print all transactions’ values from the traders living in Cambridge.
+        transactions.stream()
+                .filter(transaction -> "Cambridge".equals(transaction.getTrader().getCity()))
+                .map(Transaction::getValue)
+                .collect(toList());
+
+        // 9. What’s the highest value of all the transactions?
+        Integer max = transactions.stream()
+                .max(comparing(Transaction::getValue))
+                .map(Transaction::getValue).orElse(Integer.MIN_VALUE);
+
+//        if (optional.isPresent()) {
+//            System.out.println(optional.get());
+//        }
+
+        Optional<Integer> optional = Optional.ofNullable(max);
+        System.out.println("optional: " + optional);
+
+        //Stream<Integer> = Stream<T>
+        Integer max2 = transactions.stream()
+                .map(Transaction::getValue)
+                .max(comparing(Function.identity()))
+                .orElse(Integer.MIN_VALUE);
+
+        // IntStream, DoubleStream, LongStream: Primitive Stream
+        Integer max3 = transactions.stream()
+                .mapToInt(Transaction::getValue)
+                .max()
+                .orElse(Integer.MIN_VALUE);
+
+        // 11. Sum of Transaction value in year 2021
+        int sum = transactions.stream()
+                .filter(t -> t.getYear() == 2011)
+                .mapToInt(Transaction::getValue)
+                .sum();
+
+        transactions.stream()
+                .map(Transaction::getValue)
+//                .reduce((o1, o2) -> o1 + o2)
+                .reduce(Integer::sum);
+
+        Integer a = transactions.stream()
+                .map(Transaction::getValue)
+//                .reduce(Integer::max)
+                .reduce((o1, o2) -> o1 > o2 ? o1 : o2)
+                .orElse(Integer.MIN_VALUE);
+
+        System.out.println("a: " + a);
 
     }
 
