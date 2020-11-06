@@ -4,6 +4,7 @@ import java.util.Comparator;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Optional;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -46,8 +47,28 @@ public class Transactional {
 		List<Trader> four = traders.stream().filter(t -> t.getCity().equals("Cambridge"))
 				.sorted(Comparator.comparing(Trader::getName).reversed()).collect(Collectors.toList());
 
-		String five = traders.stream().map(Trader::getName).sorted(Comparator.reverseOrder())
-				.collect(Collectors.joining(" - "));
+		String five = traders.stream().map(Trader::getName).sorted().collect(Collectors.joining(" - "));
+		// any match, none match, all match, find first, find any
+
+		boolean isMilanBased = traders.stream().anyMatch(t -> "Cambridge".equals(t.getCity()));
+
+		transactions.stream().filter(t -> "Cambridge".equals(t.getTrader().getCity())).map(Transaction::getValue)
+				.collect(Collectors.toList());
+
+		Optional<Integer> optional = transactions.stream().map(Transaction::getValue)
+				.max(Comparator.comparing(Function.identity()));
+
+		Integer optional1 = transactions.stream().mapToInt(Transaction::getValue).max().orElse(Integer.MIN_VALUE);
+
+		Integer sum = transactions.stream().filter(t -> 2010 == t.getYear()).mapToInt(Transaction::getValue).sum();
+
+		transactions.stream().map(Transaction::getValue).reduce(0,Integer::sum);
+
+		int max = 1;
+
+		Optional<Integer> optional2 = Optional.ofNullable(max);
+
+		System.out.println("max : " + optional.orElse(null));
 	}
 
 	private static <T, R> Predicate<T> distinctByKey(Function<T, R> function) {
