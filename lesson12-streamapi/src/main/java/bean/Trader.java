@@ -3,57 +3,55 @@ package bean;
 import java.util.Objects;
 
 public class Trader {
-	private String name;
-	private String city;
+    private String name;
+    private String city;
 
-	public Trader(String name, String city) {
-		super();
-		this.name = name;
-		this.city = city;
-	}
+    public Trader() {
+    }
 
-	public Trader() {
-		super();
-	}
+    public Trader(String name, String city) {
+        this.name = name;
+        this.city = city;
+    }
 
-	public String getName() {
-		return name;
-	}
+    public String getName() {
+        return name;
+    }
 
-	public void setName(String name) {
-		this.name = name;
-	}
+    public void setName(String name) {
+        this.name = name;
+    }
 
-	public String getCity() {
-		return city;
-	}
+    public String getCity() {
+        return city;
+    }
 
-	public void setCity(String city) {
-		this.city = city;
-	}
+    public void setCity(String city) {
+        this.city = city;
+    }
 
-	@Override
-	public int hashCode() {
-		// TODO Auto-generated method stub
-		return Objects.hashCode(name);
-	}
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) {
+            return true;
+        }
+        if (!(obj instanceof Trader)){
+            return false;
+        }
+        Trader trader = (Trader) obj;
+        return getName().equals(trader.getName()) && getCity().equals(trader.getCity());
+    }
 
-	@Override
-	public boolean equals(Object o) {
-		if (this == o) {
-			return true;
-		}
-		if (!(o instanceof Trader)) {
-			return false;
-		}
+    @Override
+    public int hashCode() {
+        return Objects.hash(name, city);
+    }
 
-		Trader that = (Trader) o;
-		return getCity().equals(that.getCity()) && getName().equals(that.getName());
-	}
-
-	@Override
-	public String toString() {
-		return "Trader [name=" + name + ", city=" + city + "]";
-	}
-
+    @Override
+    public String toString() {
+        return "Trader{" +
+                "name='" + name + '\'' +
+                ", city='" + city + '\'' +
+                '}';
+    }
 }

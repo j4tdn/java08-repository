@@ -1,5 +1,7 @@
 package bean;
 
+import java.util.Objects;
+
 public class Transaction {
 	private int id;
 	private Trader trader;
@@ -7,11 +9,9 @@ public class Transaction {
 	private int value;
 
 	public Transaction() {
-		super();
 	}
 
 	public Transaction(int id, Trader trader, int year, int value) {
-		super();
 		this.id = id;
 		this.trader = trader;
 		this.year = year;
@@ -51,21 +51,23 @@ public class Transaction {
 	}
 
 	@Override
-	public String toString() {
-		return "Transaction [id=" + id + ", trader=" + trader + ", year=" + year + ", value=" + value + "]";
+	public boolean equals(Object o) {
+		if (this == o)
+			return true;
+		if (!(o instanceof Transaction))
+			return false;
+		Transaction that = (Transaction) o;
+		return getId() == that.getId() && getYear() == that.getYear() && getValue() == that.getValue()
+				&& getTrader().equals(that.getTrader());
 	}
 
-//	@Override
-//	public boolean equals(Object o) {
-//		if (this == o) {
-//			return true;
-//		}
-//		if (!(o instanceof Transaction)) {
-//			return false;
-//		}
-//
-//		Trader that = (Trader) o;
-//		return get().equals(that.getCity()) && getName().equals(that.getName());
-//	}
+	@Override
+	public int hashCode() {
+		return Objects.hash(id, trader, year, value);
+	}
 
+	@Override
+	public String toString() {
+		return "Transaction{" + "id=" + id + ", trader=" + trader + ", year=" + year + ", value=" + value + '}';
+	}
 }
