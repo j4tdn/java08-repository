@@ -48,37 +48,39 @@ public class Ex01 {
 		List<Trader> traders4 = traders.stream().filter(x -> x.getCity().equals("Cambridge"))
 				.sorted(Comparator.comparing(Trader::getName).reversed()).collect(Collectors.toList());
 		print(traders4);
-		
+
 		// 5. Return a string of all traders’ names sorted alphabetically.
-		List<String> traders5 = traders.stream()
-				.map(Trader::getName)
-				.distinct()
-				.sorted(Comparator.comparing(Function.identity()))
-				.collect(Collectors.toList());
+		List<String> traders5 = traders.stream().map(Trader::getName).distinct()
+				.sorted(Comparator.comparing(Function.identity())).collect(Collectors.toList());
 		print(traders5);
-		
+
 		// 6. Are any traders based in Milan?
 		boolean isBasedMilan = traders.stream().map(Trader::getCity).collect(Collectors.toList()).contains("Milan");
 		System.out.println(isBasedMilan);
 		System.out.println("===================================");
 
 		// 7. Count the number of traders in Milan.
-		int numberTraderInMilan = traders.stream().filter(x -> x.getCity().equals("Milan")).collect(Collectors.toList()).size();
+		int numberTraderInMilan = traders.stream().filter(x -> x.getCity().equals("Milan")).collect(Collectors.toList())
+				.size();
 		System.out.println(numberTraderInMilan);
 		System.out.println("===================================");
 
 		// 8. Print all transactions’ values from the traders living in Cambridge.
-		List<Transaction> transactions8 = transactions.stream().filter(x -> x.getTrader().getCity().equals("Cambridge")).collect(Collectors.toList());
+		List<Transaction> transactions8 = transactions.stream().filter(x -> x.getTrader().getCity().equals("Cambridge"))
+				.collect(Collectors.toList());
 		print(transactions8);
-		
+
 		// 9. What’s the highest value of all the transactions?
-		int highestValue = transactions.stream().mapToInt(x -> x.getValue()).max().getAsInt();
+		int highestValue = transactions.stream().mapToInt(x -> x.getValue()).max().orElse(0);
 		System.out.println(highestValue);
 		System.out.println("===================================");
-		
+
 		// 10. Find the transaction with the smallest value.
-		Transaction smallestValueTransaction = transactions.stream().sorted(Comparator.comparing(Transaction::getValue)).collect(Collectors.toList()).get(0);
+		Transaction smallestValueTransaction = transactions.stream().sorted(Comparator.comparing(Transaction::getValue))
+				.collect(Collectors.toList()).get(0);
 		System.out.println(smallestValueTransaction);
+
+		transactions.parallelStream().map(Transaction::getValue).reduce((o1, o2) -> o1 + o2);	
 	}
 
 	private static <T> void print(List<T> list) {

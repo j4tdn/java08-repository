@@ -4,6 +4,7 @@ import java.util.Arrays;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -27,7 +28,10 @@ public class Transactional {
 		transactions.stream().filter(distinctByKey(Transaction::getValue)).collect(Collectors.toList()).forEach(System.out::println);
 		
 		List<Integer> numbers = Arrays.asList(1,3,4,2,2,1);
-	var x =	numbers.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		Map<Integer, Long> qtyMap =	numbers.stream().collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
+		
+		//6. base isMilanBased
+		boolean isMilanBased = traders.stream().anyMatch(t -> t.getCity().equals("Milan"));
 	}
 	
 	private static <T, R> Predicate<T> distinctByKey(Function<T, R> func){
