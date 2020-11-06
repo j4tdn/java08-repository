@@ -4,6 +4,7 @@ import java.util.HashSet;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Predicate;
@@ -42,13 +43,53 @@ public class Transactional {
 				.collect(toMap(Transaction::getId, Function.identity(), (t1,t2) -> t1, LinkedHashMap::new));
 		
 		// C2
-		transactions.stream().filter(distinctByKey(Transaction::getId))
-							 .collect(toList()).forEach(System.out::println);
+		transactions.stream()
+					.filter(distinctByKey(Transaction::getId))
+					.collect(toList()).forEach(System.out::println);
 		
 		// 3.2
 		List<Integer> numbers = Arrays.asList(2,1,2,1,3,3,4);
 		Map<Integer, Long> qtyMap = numbers.stream()
-				.collect(groupingBy(Function.identity(), counting()));
+											.collect(groupingBy(Function.identity(), counting()));
+		
+		System.out.println("Qty map: " + qtyMap);
+		
+		// 4. Find all traders from Cambridge and sort them by name desc.
+		List<Trader> fourth = traders.stream().filter(t -> t.getCity().equals("Cambridge"))
+												.sorted(comparing(Trader::getName).reversed())
+													.collect(toList());
+		
+		// 5. Return a string of all traders’ names sorted alphabetically.
+		String fifth = traders.stream().map(Trader::getName).sorted(reverseOrder()).collect(joining(", "));
+		System.out.println("Trader's name: " + fifth);
+		
+		// 6. Are any traders based in Milan?
+		boolean isMilanBased = traders.stream().anyMatch(t -> "Milan".equals(t.getCity()));
+		System.out.println("Is Milan based ? " + isMilanBased);
+		
+		// 8. Print all transactions’ values from the traders living in Cambridge.
+		transactions.stream().filter(t -> "Cambridge".equals(t.getTrader().getCity())).map(Transaction::getValue).collect(toList());
+		
+		// 9. What’s the highest value of all the transactions?
+		Integer max = transactions.stream().max(comparing(Transaction::getValue)).map(Transaction::getValue).orElse(Integer.MIN_VALUE);
+		Optional<Integer> optional = Optional.ofNullable(max);
+		System.out.println(optional);
+		
+		// 9.2
+		Integer max2 = transactions.stream().map(Transaction::getValue).max(comparing(Function.identity())).orElse(Integer.MIN_VALUE);
+		
+		// 9.3: Stream<T>
+		//	  : IntStream, DoubleStream, LongStream: Primitive Stream
+		// Stream<Integer> != IntStream -> different data type
+		// unboxing, boxing
+		transactions.stream().mapToInt(Transaction::getValue).max().orElse(Integer.MIN_VALUE);
+		
+		// 11. Sum of Transaction value in 2011
+		System.out.println("Sum value in 2011: " + transactions.stream().filter(t -> t.getYear() == 2011).mapToInt(Transaction::getValue).sum());
+		
+		// 11.
+		transactions.stream().map(Transaction::getValue)		// Stream<Integer>
+							 .reduce(0, Integer::sum);
 	}
 	
 	// type reference
