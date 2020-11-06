@@ -17,6 +17,7 @@
       <module fileurl="file://$PROJECT_DIR$/lesson11-collections/lesson11-collections.iml" filepath="$PROJECT_DIR$/lesson11-collections/lesson11-collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson12-phanhuynhduc/lesson12-exercises.iml" filepath="$PROJECT_DIR$/lesson12-phanhuynhduc/lesson12-exercises.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson12-streamAPI/lesson12-streamAPI.iml" filepath="$PROJECT_DIR$/lesson12-streamAPI/lesson12-streamAPI.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson13-fileAPI/lesson13-fileAPI.iml" filepath="$PROJECT_DIR$/lesson13-fileAPI/lesson13-fileAPI.iml" />
     </modules>
   </component>
 </project>

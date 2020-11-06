@@ -21,6 +21,13 @@ public class Transaction {
 
     }
 
+    public int getId(){
+        return this.id ;
+    }
+    public void setId(int id){
+        this.id = id ;
+    }
+
     public Trader getTrader(){
         return this.trader;
     }
@@ -66,6 +73,7 @@ public class Transaction {
                 "trader=" + trader +
                 ", year=" + year +
                 ", value=" + value +
+                ", id=" + id +
                 '}';
     }
 }
