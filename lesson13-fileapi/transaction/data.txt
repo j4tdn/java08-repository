@@ -1,0 +1,19 @@
+Wel come to the file
+Wel come to the file
+Wel come to the file
+Wel come to the file
+Wel come to the file
+Wel come to the file
+Wel come to the file
+=====================================Transaction [id=1, trader=Trader [name=Raoul, city=Cambridge], year=2011, value=300]
+Transaction [id=1, trader=Trader [name=Mario, city=Milan], year=2012, value=1000]
+Transaction [id=2, trader=Trader [name=Raoul, city=Cambridge], year=2011, value=400]
+Transaction [id=3, trader=Trader [name=Mario, city=Milan], year=2012, value=710]
+Transaction [id=4, trader=Trader [name=Alan, city=Cambridge], year=2012, value=700]
+Transaction [id=5, trader=Trader [name=Alan, city=Cambridge], year=2012, value=950]
+Transaction [id=1, trader=Trader [name=Raoul, city=Cambridge], year=2011, value=300]
+Transaction [id=1, trader=Trader [name=Mario, city=Milan], year=2012, value=1000]
+Transaction [id=2, trader=Trader [name=Raoul, city=Cambridge], year=2011, value=400]
+Transaction [id=3, trader=Trader [name=Mario, city=Milan], year=2012, value=710]
+Transaction [id=4, trader=Trader [name=Alan, city=Cambridge], year=2012, value=700]
+Transaction [id=5, trader=Trader [name=Alan, city=Cambridge], year=2012, value=950]
