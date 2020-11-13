@@ -1,15 +1,3 @@
-Trader: [id: 1, trader: Trader: [name: Raoul, city: Cambridge], year: 2011, value: 300]
-Trader: [id: 2, trader: Trader: [name: Mario, city: Milan], year: 2012, value: 1000]
-Trader: [id: 3, trader: Trader: [name: Raoul, city: Cambridge], year: 2011, value: 400]
-Trader: [id: 4, trader: Trader: [name: Mario, city: Milan], year: 2012, value: 710]
-Trader: [id: 3, trader: Trader: [name: Brian, city: Cambridge], year: 2012, value: 700]
-Trader: [id: 6, trader: Trader: [name: Alan, city: Cambridge], year: 2012, value: 950]
-Trader: [id: 1, trader: Trader: [name: Raoul, city: Cambridge], year: 2011, value: 300]
-Trader: [id: 2, trader: Trader: [name: Mario, city: Milan], year: 2012, value: 1000]
-Trader: [id: 3, trader: Trader: [name: Raoul, city: Cambridge], year: 2011, value: 400]
-Trader: [id: 4, trader: Trader: [name: Mario, city: Milan], year: 2012, value: 710]
-Trader: [id: 3, trader: Trader: [name: Brian, city: Cambridge], year: 2012, value: 700]
-Trader: [id: 6, trader: Trader: [name: Alan, city: Cambridge], year: 2012, value: 950]
 1 - (Raoul, Cambridge) - 2011 - 300
 2 - (Mario, Milan) - 2012 - 1000
 3 - (Raoul, Cambridge) - 2011 - 400
