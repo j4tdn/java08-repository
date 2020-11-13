@@ -1,0 +1,61 @@
+package file.dml;
+
+import java.io.BufferedWriter;
+import java.io.Closeable;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.List;
+import bean.Trader;
+import bean.Transaction;
+
+public class Ex01 {
+	public static void main(String[] args) {
+		String path = "transaction/data.txt";
+		File file = new File(path);
+		FileWriter fw = null;
+
+		BufferedWriter bw = null;
+
+		try {
+			fw = new FileWriter(file, true);
+			bw = new BufferedWriter(fw);
+			
+					
+			bw.write("================");
+			bw.newLine();
+			
+			List<Transaction> inputdata=getTransaction(getTrader());
+			for(Transaction transaction: inputdata) {
+				bw.write(transaction.toString());
+				bw.newLine();
+			}
+
+		} catch (IOException e) {
+			e.printStackTrace();
+		} finally {
+			close(bw);
+			close(fw);
+		}
+	}
+	private static List<Transaction> getTransaction(List<Trader> traders) {
+		return List.of(new Transaction(1, traders.get(0), 2011, 300), new Transaction(2, traders.get(1), 2012, 1000),
+				new Transaction(3, traders.get(0), 2011, 400), new Transaction(4, traders.get(1), 2012, 710),
+				new Transaction(3, traders.get(3), 2012, 700), new Transaction(4, traders.get(2), 2012, 950));
+
+	}
+	private static List<Trader> getTrader() {
+		return List.of(new Trader("Raoul", "Cambridge"), new Trader("Mario", "Milan"), new Trader("Alan", "Cambridge"),
+				new Trader("Brian", "Cambridge"));
+	}
+	private static <T extends Closeable> void close(T closaeble) {
+		if (closaeble != null) {
+			try {
+				closaeble.close();
+			} catch (IOException e) {
+				e.printStackTrace();
+			}
+		}
+
+	}
+}
