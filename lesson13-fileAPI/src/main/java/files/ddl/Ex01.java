@@ -1,45 +1,35 @@
 package files.ddl;
 
-import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
-import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class Ex01 {
     public static void main(String[] args) throws IOException {
-        // java07
-        // txt, properties
-
         boolean isFile = false;
-
-        File file = new File("transaction\\data.txt");
-
+        File file = new File("transactions\\data.txt");
         File parent = file.getParentFile();
-        if(!parent.exists()){
+
+        if (!parent.exists()) {
             parent.mkdirs();
         }
 
-        if(!file.exists()){
-
+        if (!file.exists()) {
             try {
-                isFile=  file.createNewFile();
-                Desktop.getDesktop().open(file);
-            }
-            catch (IOException e){
+                isFile = file.createNewFile();
+                // Desktop.getDesktop().open(file);
+            } catch (IOException e) {
+                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
-        System.out.println("isFile" + isFile);
-        System.out.println("path" + file.getPath());
-        System.out.println("absolute path" + file.getAbsolutePath());
-        System.out.println("Canonical path" + file.getCanonicalPath());
+        System.out.println("is File: " + isFile);
+        System.out.println("Absolute Path: " + file.getAbsolutePath());
+        System.out.println("Canonical Path: " + file.getCanonicalPath());
 
-        //java08
-        // Files
-        Files.createFile(Paths.get("transaction","result.txt"));
+
+        Files.createFile(Paths.get("transactions","result"));
         Files.createDirectories(Paths.get("trader"));
-
     }
 }
