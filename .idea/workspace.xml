@@ -3,25 +3,8 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="6c4391f5-d10e-4b88-8557-559ecf5bba10" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
@@ -29,18 +12,18 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson13-fileAPI/src/main/java/files/ddl/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson13-fileAPI/src/main/java/files/ddl/Ex01.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson13-fileAPI/target/classes/files/ddl/Ex01.class" beforeDir="false" afterPath="$PROJECT_DIR$/lesson13-fileAPI/target/classes/files/ddl/Ex01.class" afterDir="false" />
+=======
+    <list default="true" id="66f3d207-85fb-4b79-9e0c-7b026bec1f5b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson13-fileAPI/lesson13-fileAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson13-fileAPI/lesson13-fileAPI.iml" afterDir="false" />
+>>>>>>> 1de7873 (File API 14/11/2020)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -52,19 +35,16 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1ipIb64bPKZDkpkVVRxuijeTjxZ" />
-  <component name="ProjectLevelVcsManager">
-    <ConfirmationsSetting value="1" id="Add" />
-  </component>
+  <component name="ProjectId" id="1kQABgo3WB9Vlkf8WYyvKH3j69Z" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
-    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -146,13 +126,13 @@
         <item itemvalue="Application.Ex01 (1)" />
       </list>
     </recent_temporary>
+=======
+>>>>>>> 1de7873 (File API 14/11/2020)
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
       <changelist id="6c4391f5-d10e-4b88-8557-559ecf5bba10" name="Default Changelist" comment="" />
       <created>1602598186449</created>
       <option name="number" value="Default" />
@@ -224,12 +204,22 @@
       <workItem from="1604668972585" duration="8013000" />
       <workItem from="1605274035141" duration="413000" />
       <workItem from="1605277514807" duration="986000" />
+=======
+      <changelist id="66f3d207-85fb-4b79-9e0c-7b026bec1f5b" name="Default Changelist" comment="" />
+      <created>1605622307541</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605622307541</updated>
+      <workItem from="1605622309419" duration="101000" />
+      <workItem from="1605622416502" duration="1156000" />
+>>>>>>> 1de7873 (File API 14/11/2020)
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+<<<<<<< HEAD
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -342,4 +332,6 @@
       </breakpoints>
     </breakpoint-manager>
   </component>
+=======
+>>>>>>> 1de7873 (File API 14/11/2020)
 </project>
