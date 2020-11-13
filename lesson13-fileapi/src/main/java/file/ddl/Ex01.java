@@ -34,7 +34,7 @@ public class Ex01
     	                            + "\nAbsolutePath: " + file.getAbsolutePath()
     	                            + "\ncannonical path: " + file.getCanonicalPath());
     	//java 8
-    	Files.createFile(Paths.get("transaction", "result.txt"));
+    	//Files.createFile(Paths.get("transaction", "result.txt"));
     	Files.createDirectories(Paths.get("trader"));
     }
 }

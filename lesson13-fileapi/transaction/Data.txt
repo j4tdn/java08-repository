@@ -1,0 +1,12 @@
+Transaction: 1 , 300, 2011 , Trader: Raoul , Cambridge
+Transaction: 2 , 1000, 2012 , Trader: Mario , Milan
+Transaction: 3 , 400, 2011 , Trader: Raoul , Cambridge
+Transaction: 4 , 710, 2012 , Trader: Mario , Milan
+Transaction: 5 , 700, 2012 , Trader: Brian , Cambridge
+Transaction: 6 , 950, 2012 , Trader: Alan , Cambridge
+Transaction: 1 , 300, 2011 , Trader: Raoul , Cambridge
+Transaction: 2 , 1000, 2012 , Trader: Mario , Milan
+Transaction: 3 , 400, 2011 , Trader: Raoul , Cambridge
+Transaction: 4 , 710, 2012 , Trader: Mario , Milan
+Transaction: 5 , 700, 2012 , Trader: Brian , Cambridge
+Transaction: 6 , 950, 2012 , Trader: Alan , Cambridge
