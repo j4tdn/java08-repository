@@ -1,0 +1,8 @@
+welcome to file!!
+===========================
+Transaction [name=bean.Trader@402a079c, year=2011, value=300]
+Transaction [name=bean.Trader@59ec2012, year=2012, value=1000]
+Transaction [name=bean.Trader@59ec2012, year=2011, value=400]
+Transaction [name=bean.Trader@4cf777e8, year=2012, value=710]
+Transaction [name=bean.Trader@4cf777e8, year=2012, value=700]
+Transaction [name=bean.Trader@2f686d1f, year=2012, value=950]

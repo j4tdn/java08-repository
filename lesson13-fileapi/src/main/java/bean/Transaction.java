@@ -1,7 +1,12 @@
 package bean;
 
 public class Transaction {
-	private String name;
+	@Override
+	public String toString() {
+		return "Transaction [name=" + name + ", year=" + year + ", value=" + value + "]";
+	}
+
+	private Trader name;
 	private int year;
 	private int value;
 	
@@ -14,18 +19,18 @@ public class Transaction {
 	 * @param year
 	 * @param value
 	 */
-	public Transaction(String name, int year, int value) {
+	public Transaction(Trader name, int year, int value) {
 		super();
 		this.name = name;
 		this.year = year;
 		this.value = value;
 	}
 
-	public String getName() {
+	public Trader getName() {
 		return name;
 	}
 
-	public void setName(String name) {
+	public void setName(Trader name) {
 		this.name = name;
 	}
 
@@ -49,3 +54,4 @@ public class Transaction {
 	
 
 }
+
