@@ -35,7 +35,7 @@ public class Ex01 {
 				"\nCanoniacal Path: "+file.getCanonicalPath());//chính xác hơn getAbsolutePath()
 		
 		//Files.createFile(Paths.get("trasaction", "result.txt" ));
-		Files.createDirectory(Paths.get("traders"));
+		//Files.createDirectory(Paths.get("traders"));
 		
 		// java 08
 		
