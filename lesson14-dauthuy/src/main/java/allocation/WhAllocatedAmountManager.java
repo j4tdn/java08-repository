@@ -45,7 +45,7 @@ public class WhAllocatedAmountManager {
 		 
 		 //step 2: Calculation of "Allocation Key"
 		 BigDecimal sum = interpolateExpectedSalesMap.values().stream().reduce(BigDecimal.ZERO, BigDecimal::add);
-		 System.out.println("SUM: "+sum);
+		 System.out.println("SUM: " + sum);
 		 for (Map.Entry<Long, BigDecimal> entry : interpolateExpectedSalesMap.entrySet()) {
 		        System.out.println(entry.getValue().divide(sum, 10, RoundingMode.HALF_UP));
 		    }
