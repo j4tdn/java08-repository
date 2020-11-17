@@ -49,7 +49,7 @@ public class Ex06 {
 			start.add(Calendar.DAY_OF_MONTH, 1);
 		}
 		
-		// find the left sundays in month
+		// find the left sunday in month
 		while(start.before(end)) {
 			count ++;
 			start.add(Calendar.DAY_OF_MONTH, 7);

@@ -1,7 +1,5 @@
 package immuatable;
 
-import com.sun.xml.internal.bind.v2.WellKnownNamespace;
-
 public class Ex01 {
 	public static void main(String[] args) {
 		// String literal

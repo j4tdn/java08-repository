@@ -11,11 +11,11 @@ public class Ex01 {
 		// regex pattern: Biểu thức chính quy
 		System.out.println("def: " + Locale.getDefault());
 		// da_DK: denmark formatted
-		NumberFormat nf = NumberFormat.getCurrencyInstance(new Locale("da", "DK"));
+		NumberFormat nf = NumberFormat.getCurrencyInstance(new Locale("vi", "VN"));
 		System.out.println(nf.format(7));
 		
-		double number = 1123456789.7d;
-		DecimalFormat df = new DecimalFormat("#.###,000");
+		double number = 1123456789.7657d;
+		DecimalFormat df = new DecimalFormat("#,###.000");
 		System.out.println("formatted: " + df.format(number));
 	}
 }

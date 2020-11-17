@@ -1,7 +1,5 @@
 package immuatable;
 
-import java.util.function.Consumer;
-
 import utils.StringUtils;
 
 public class Ex07SplitParsing {
