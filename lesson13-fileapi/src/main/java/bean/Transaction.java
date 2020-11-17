@@ -23,11 +23,11 @@ public class Transaction {
 	 * create Transaction from each line of inputData
 	 */
 	public Transaction(String stringLine) {
-		String[] elements = stringLine.split("-");
+		String[] elements = stringLine.split(" - ");
 		this.id = Integer.parseInt(elements[0]);
 		String traderAttributes = elements[1];
 		String name = traderAttributes.substring(1, traderAttributes.lastIndexOf(","));
-		String city = traderAttributes.substring(traderAttributes.lastIndexOf(", "), traderAttributes.length() - 1);
+		String city = traderAttributes.substring(traderAttributes.lastIndexOf(" ") + 1, traderAttributes.length() - 1);
 		this.trader = new Trader(name, city);
 		this.year = Integer.parseInt(elements[2]);
 		this.value = Integer.parseInt(elements[3]);
