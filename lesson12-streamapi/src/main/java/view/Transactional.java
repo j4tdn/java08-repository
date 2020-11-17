@@ -2,10 +2,12 @@ package view;
 
 import java.util.List;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.function.Supplier;
+import java.util.stream.Collectors;
 
 import bean.Trader;
 import bean.Transaction;
@@ -13,6 +15,7 @@ import static java.util.Comparator.*;
 import static java.util.stream.Collectors.*;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.HashSet;
 import java.util.LinkedHashMap;
 
@@ -58,10 +61,79 @@ public class Transactional {
         
         //3.2
         List<Integer> numbers = Arrays.asList(2, 1, 1, 2, 3, 3, 4);
-        Map<Integer, Long> atyMap = numbers.stream()
-        									.collect(groupingBy(Function.identity(), counting()));
+        Map<Integer, Long> qtyMap = numbers.stream()
+        									.collect(groupingBy(Function.identity(), counting())); //gom nhóm theo chính nó, key là value
+        //countin: số nhóm
+        System.out.println("Qtymap: " + qtyMap);
         
-        }
+        //4
+        List<Trader> fourth = traders.stream().filter(t -> "Cambridge".equals(t.getCity()))
+		.sorted(Comparator.comparing(Trader::getName).reversed())
+		.collect(Collectors.toList());
+        
+        //5
+        String fifth = traders.stream()
+        .map(Trader::getName)
+        .sorted()
+        .collect(joining(", ")); //return string
+        
+        System.out.println("Trader's names: " + fifth);
+        
+        //6
+        boolean isMilanBased = traders.stream().anyMatch(t -> "Milan".equals(t.getCity()));
+        		//.filter().(t -> "Milan".equals(t.getCity())).count();
+       // System.out.println("Milan: " + (count > 0));
+        
+        //7
+        
+        //8
+        transactions.stream()
+        	.filter(t -> "Cambridge".equals(t.getTrader().getCity()))
+        	.map(Transaction::getValue)
+        	.collect(toList());
+        
+        //9
+        List<Transaction> test = Arrays.asList();
+        Integer max = test.stream()
+        			.max(comparing(Transaction::getValue))
+        			.map(Transaction::getValue)
+        			.orElse(Integer.MIN_VALUE);
+        
+      //  Optional<Integer> optional = Optional<Integer>.
+        		
+        //9.2
+        Integer max2 = test.stream()
+    			.map(Transaction::getValue)
+    			.max(comparing(Function.identity()))
+    			.orElse(Integer.MIN_VALUE);
+        
+        //9.3: Stream<T>
+        // 		:IntStream, DoubleStream, LongStream: Primitive Stream
+        //Stream<Integer> != IntStream
+        //unboxing (Obj -> nguyen thuy), boxing (nguoc lai)
+        Integer max3 = test.stream()
+        					.mapToInt(Transaction::getValue) //return IntStream
+        					//.boxed();
+        					.max()
+        					.orElse(Integer.MIN_VALUE);
+        
+        //find sum of Transaction in year 2021
+        System.out.println("tenth: " + transactions.stream()
+													.filter(t -> t.getYear() == 2011) //->return 1 Stream<Transaction>
+													.mapToInt(Transaction::getValue)
+													.sum());
+        
+        transactions.stream()
+        			.map(Transaction::getValue)
+        			//.reduce((a, b) -> a > b ? a : b);
+        			.reduce(Integer::max);
+        
+        transactions.stream()
+        			.map(Transaction::getValue)
+        			.reduce(0, Integer::sum);
+	}
+	
+		
 	
 	private static <T, R> Predicate<T> distinctByKey(Function<T,R> func) {
 		Set<Object> uniqueTrans= new HashSet<>();
