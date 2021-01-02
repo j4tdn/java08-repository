@@ -3,7 +3,26 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
+<<<<<<< HEAD
 <<<<<<< HEAD
     <list default="true" id="6c4391f5-d10e-4b88-8557-559ecf5bba10" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
@@ -14,16 +33,45 @@
       <change beforePath="$PROJECT_DIR$/lesson13-fileAPI/target/classes/files/ddl/Ex01.class" beforeDir="false" afterPath="$PROJECT_DIR$/lesson13-fileAPI/target/classes/files/ddl/Ex01.class" afterDir="false" />
 =======
     <list default="true" id="66f3d207-85fb-4b79-9e0c-7b026bec1f5b" name="Default Changelist" comment="">
+=======
+    <list default="true" id="4e226607-1afa-44e7-bdb3-a173893d540b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_10.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_surefire_api_2_22_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_surefire_booter_2_22_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_surefire_logger_api_2_22_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_guice_2_1_7.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
+>>>>>>> 42ec90a (Database)
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson07-libraries/src/main/java/DateTime08/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson07-libraries/src/main/java/DateTime08/Ex01.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lesson12-streamAPI/lesson12-streamAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12-streamAPI/lesson12-streamAPI.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lesson13-fileAPI/lesson13-fileAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson13-fileAPI/lesson13-fileAPI.iml" afterDir="false" />
+<<<<<<< HEAD
 >>>>>>> 1de7873 (File API 14/11/2020)
+=======
+      <change beforePath="$PROJECT_DIR$/lesson13-fileAPI/src/main/java/files/dml/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson13-fileAPI/src/main/java/files/dml/Ex03.java" afterDir="false" />
+>>>>>>> 42ec90a (Database)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -35,15 +83,18 @@
       </MavenGeneralSettings>
     </option>
   </component>
-  <component name="ProjectId" id="1kQABgo3WB9Vlkf8WYyvKH3j69Z" />
+  <component name="ProjectId" id="1kS2nHeQugSt20DwY2CEequ5F71" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
 <<<<<<< HEAD
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
@@ -58,6 +109,17 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lambda.*" />
+=======
+    <property name="last_opened_file_path" value="C:/Lesson14-phanhuynhduc" />
+  </component>
+  <component name="RunManager" selected="Application.App">
+    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App.App" />
+      <module name="Lesson14-phanhuynhduc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App.*" />
+>>>>>>> 42ec90a (Database)
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -65,8 +127,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="Ex01 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="collections.map.Ex01" />
+=======
+    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="collections.map.Test" />
+>>>>>>> 42ec90a (Database)
       <module name="lesson11-collections" />
       <extension name="coverage">
         <pattern>
@@ -78,6 +145,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="files.ddl.Ex01" />
       <module name="lesson13-fileAPI" />
@@ -87,16 +155,30 @@
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+=======
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Test" />
+      <module name="lesson08-string" />
+>>>>>>> 42ec90a (Database)
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="Ex02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="collections.map.Ex02" />
       <module name="lesson11-collections" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="collections.map.*" />
+=======
+    <configuration name="WhAllocatedAmountManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App.WhAllocatedAmountManager" />
+      <module name="Lesson14-phanhuynhduc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App.*" />
+>>>>>>> 42ec90a (Database)
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +186,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <configuration name="Transactional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="view.Transactional" />
       <module name="lesson12-streamAPI" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="view.*" />
+=======
+    <configuration name="WhyAllocatedAmountManagerPlus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="App.WhyAllocatedAmountManagerPlus" />
+      <module name="Lesson14-phanhuynhduc" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="App.*" />
+>>>>>>> 42ec90a (Database)
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -117,6 +208,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+<<<<<<< HEAD
     <recent_temporary>
       <list>
         <item itemvalue="Application.Ex01" />
@@ -128,10 +220,16 @@
     </recent_temporary>
 =======
 >>>>>>> 1de7873 (File API 14/11/2020)
+=======
+>>>>>>> 42ec90a (Database)
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
+<<<<<<< HEAD
 <<<<<<< HEAD
       <changelist id="6c4391f5-d10e-4b88-8557-559ecf5bba10" name="Default Changelist" comment="" />
       <created>1602598186449</created>
@@ -213,6 +311,32 @@
       <workItem from="1605622309419" duration="101000" />
       <workItem from="1605622416502" duration="1156000" />
 >>>>>>> 1de7873 (File API 14/11/2020)
+=======
+      <changelist id="4e226607-1afa-44e7-bdb3-a173893d540b" name="Default Changelist" comment="" />
+      <created>1605679837000</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1605679837000</updated>
+      <workItem from="1605679838056" duration="1256000" />
+      <workItem from="1605683022978" duration="727000" />
+      <workItem from="1605715841153" duration="3654000" />
+      <workItem from="1605747883296" duration="990000" />
+      <workItem from="1605748886313" duration="3066000" />
+      <workItem from="1605754405828" duration="1546000" />
+      <workItem from="1605773285354" duration="692000" />
+      <workItem from="1605782339350" duration="1867000" />
+      <workItem from="1605803255928" duration="1022000" />
+      <workItem from="1605837724914" duration="11916000" />
+      <workItem from="1605912947284" duration="622000" />
+      <workItem from="1605939882726" duration="684000" />
+      <workItem from="1606470490002" duration="2903000" />
+      <workItem from="1606520561529" duration="1837000" />
+      <workItem from="1606557518540" duration="1901000" />
+      <workItem from="1606565637252" duration="1203000" />
+      <workItem from="1606612880119" duration="598000" />
+      <workItem from="1607099408785" duration="2098000" />
+      <workItem from="1607140220571" duration="1772000" />
+>>>>>>> 42ec90a (Database)
     </task>
     <servers />
   </component>
@@ -220,6 +344,9 @@
     <option name="version" value="3" />
   </component>
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 42ec90a (Database)
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
       <map>
@@ -233,6 +360,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+<<<<<<< HEAD
     <state x="249" y="0" key="#Project_Structure" timestamp="1604675147607">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -334,4 +462,67 @@
   </component>
 =======
 >>>>>>> 1de7873 (File API 14/11/2020)
+=======
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605803401460">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605803401460" />
+    <state x="549" y="122" key="FileChooserDialogImpl" timestamp="1607009110041">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="549" y="122" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607009110041" />
+    <state width="1493" height="253" key="GridCell.Tab.0.bottom" timestamp="1605852457679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
+    <state width="1493" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605841985371" />
+    <state width="1493" height="253" key="GridCell.Tab.0.center" timestamp="1605852457679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
+    <state width="1493" height="212" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605841985371" />
+    <state width="1493" height="253" key="GridCell.Tab.0.left" timestamp="1605852457678">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457678" />
+    <state width="1493" height="212" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605841985371" />
+    <state width="1493" height="253" key="GridCell.Tab.0.right" timestamp="1605852457679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
+    <state width="1493" height="212" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605841985371" />
+    <state width="1493" height="253" key="GridCell.Tab.1.bottom" timestamp="1605852457679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
+    <state width="1493" height="253" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605840685512" />
+    <state width="1493" height="253" key="GridCell.Tab.1.center" timestamp="1605852457679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
+    <state width="1493" height="253" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605840685511" />
+    <state width="1493" height="253" key="GridCell.Tab.1.left" timestamp="1605852457679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
+    <state width="1493" height="253" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605840685511" />
+    <state width="1493" height="253" key="GridCell.Tab.1.right" timestamp="1605852457679">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1493" height="253" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
+    <state width="1493" height="253" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605840685512" />
+    <state x="439" y="31" key="NewModule_or_Project.wizard" timestamp="1605683067914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="439" y="31" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1605683067914" />
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1607008267128">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1607008267128" />
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605749525098">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605749525098" />
+  </component>
+>>>>>>> 42ec90a (Database)
 </project>

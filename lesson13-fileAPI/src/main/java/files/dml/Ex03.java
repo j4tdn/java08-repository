@@ -25,9 +25,9 @@ public class Ex03 {
 
 //        File file = new File(path);
 
-//        List<String> list = getTransactions().stream().map(Transaction::toString).collect(Collectors.toList());
+        List<String> list = getTransactions().stream().map(Transaction::toString).collect(Collectors.toList());
 //
-//        Files.write(path,list, StandardOpenOption.APPEND);
+        Files.write(path,list, StandardOpenOption.APPEND);
 
         List<String> lines = Files.readAllLines(path);
 

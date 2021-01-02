@@ -1,0 +1,4 @@
+ cac bang 
+	+ mat hang ( san pham )  : ma MH, ten mat hang , so luong ton kho 
+	+ don hang  : ma don , ma loai , so luong ban , ngay ban , tinh trang ( da ban hay chưa ) , ma KH 
+	+ khach hang : maKH , ten khach hang, sdt 

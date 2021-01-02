@@ -10,6 +10,7 @@
         <module name="lesson13-fileAPI" />
         <module name="lesson13-fileAPI (1) (org.example)" />
         <module name="lesson12-streamAPI" />
+        <module name="Lesson14-phanhuynhduc" />
         <module name="lesson12-exercises" />
       </profile>
     </annotationProcessing>
@@ -23,7 +24,11 @@
 =======
       <module name="lesson13-fileAPI" target="9" />
       <module name="lesson13-fileAPI (1) (org.example)" target="9" />
+<<<<<<< HEAD
 >>>>>>> 1de7873 (File API 14/11/2020)
+=======
+      <module name="Lesson14-phanhuynhduc" target="8" />
+>>>>>>> 42ec90a (Database)
     </bytecodeTargetLevel>
   </component>
 </project>
