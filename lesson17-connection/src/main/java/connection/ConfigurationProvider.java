@@ -1,5 +1,7 @@
 package connection;
 
-public interface ConfigurationProvider {
+import java.util.Properties;
 
+public interface ConfigurationProvider {
+	Properties getProperties();
 }
