@@ -25,8 +25,4 @@ public class ConnectionManagerImpl implements ConnectionManager {
 		return conn;
 	}
 	
-	public static void main(String[] args) {
-		ConnectionManager connectionManager = new ConnectionManagerImpl();
-		System.out.println("conn: " + connectionManager.getConnection());
-	}
 }
