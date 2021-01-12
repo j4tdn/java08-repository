@@ -22,7 +22,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8981dca4-d329-48b1-a180-e6047be82031" name="Default Changelist" comment="" />
+    <list default="true" id="8981dca4-d329-48b1-a180-e6047be82031" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -74,17 +77,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.ConnectionManagerImpl" />
@@ -99,7 +91,9 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1610115187975</updated>
-      <workItem from="1610115189539" duration="4276000" />
+      <workItem from="1610115189539" duration="4681000" />
+      <workItem from="1610434613483" duration="614000" />
+      <workItem from="1610458167164" duration="507000" />
     </task>
     <servers />
   </component>
@@ -116,6 +110,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="53" key="#Plugins" timestamp="1610119255304">
@@ -138,26 +133,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="167" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1610117416672" />
-    <state width="1493" height="220" key="GridCell.Tab.0.bottom" timestamp="1610118823331">
+    <state width="1493" height="94" key="GridCell.Tab.0.bottom" timestamp="1610124902322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="220" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610118823331" />
-    <state width="1493" height="220" key="GridCell.Tab.0.center" timestamp="1610118823331">
+    <state width="1493" height="94" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1610124902322" />
+    <state width="1493" height="94" key="GridCell.Tab.0.center" timestamp="1610124902322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="220" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610118823331" />
-    <state width="1493" height="220" key="GridCell.Tab.0.left" timestamp="1610118823331">
+    <state width="1493" height="94" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1610124902322" />
+    <state width="1493" height="94" key="GridCell.Tab.0.left" timestamp="1610124902322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="220" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610118823331" />
-    <state width="1493" height="220" key="GridCell.Tab.0.right" timestamp="1610118823331">
+    <state width="1493" height="94" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1610124902322" />
+    <state width="1493" height="94" key="GridCell.Tab.0.right" timestamp="1610124902322">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="220" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610118823331" />
-    <state x="270" y="57" key="SettingsEditor" timestamp="1610119494680">
+    <state width="1493" height="94" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1610124902322" />
+    <state x="270" y="57" key="SettingsEditor" timestamp="1610124897151">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1610119494680" />
+    <state x="270" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1610124897151" />
     <state x="425" y="187" width="672" height="677" key="run.anything.popup" timestamp="1610117256721">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
