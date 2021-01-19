@@ -20,6 +20,7 @@
       <module fileurl="file://$PROJECT_DIR$/lesson12-streamAPI/lesson12-streamAPI.iml" filepath="$PROJECT_DIR$/lesson12-streamAPI/lesson12-streamAPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/lesson13-fileAPI/lesson13-fileAPI.iml" filepath="$PROJECT_DIR$/lesson13-fileAPI/lesson13-fileAPI.iml" />
       <module fileurl="file://$PROJECT_DIR$/../../../../phdSA/lesson13-fileAPI/lesson13-fileAPI (1) (org.example).iml" filepath="$PROJECT_DIR$/../../../../phdSA/lesson13-fileAPI/lesson13-fileAPI (1) (org.example).iml" />
+      <module fileurl="file://$PROJECT_DIR$/../lesson17-connection.iml" filepath="$PROJECT_DIR$/../lesson17-connection.iml" />
     </modules>
   </component>
 </project>
