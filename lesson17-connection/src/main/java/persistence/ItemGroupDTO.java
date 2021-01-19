@@ -41,16 +41,15 @@ public class ItemGroupDTO {
 	public List<Pair<String, Integer>> getItemList() {
 		return itemList;
 	}
-	
-	//A:10 - B: 30
-		public void setItemListTranformer(String itemListString) {
-			this.itemList = Pattern.compile("-").splitAsStream(itemListString).map(pair -> {
-				String[] array = pair.split(":");
-				return Pair.of(array[0], Integer.valueOf(array[1]));
-			}).collect(Collectors.toList());
-		}
 
-	
+	// A:10 - B: 30
+	public void setItemListTranformer(String itemListString) {
+		this.itemList = Pattern.compile("-").splitAsStream(itemListString).map(pair -> {
+			String[] array = pair.split(":");
+			return Pair.of(array[0], Integer.valueOf(array[1]));
+		}).collect(Collectors.toList());
+	}
+
 	public void setItemList(List<Pair<String, Integer>> itemList) {
 		this.itemList = itemList;
 	}

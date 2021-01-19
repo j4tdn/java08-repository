@@ -8,8 +8,6 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import com.mysql.cj.xdevapi.PreparableStatement;
-
 import connection.ConnectionManager;
 import connection.ConnectionManagerImpl;
 import entities.ItemGroup;
