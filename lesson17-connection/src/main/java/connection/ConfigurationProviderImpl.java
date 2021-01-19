@@ -13,7 +13,7 @@ public class ConfigurationProviderImpl implements ConfigurationProvider {
 			props.load(new FileInputStream(file));
 		} catch (Exception e) {
 		}
-		return null;
+		return props;
 	}
 
 }
