@@ -17,8 +17,8 @@ public class ItemView {
 	}
 
 	public static void main(String[] args) {
-//		List<Item> items = itemService.getItems(1, 100, 500);
-//		IOUtils.printf(items);
+		List<Item> items = itemService.getItems(1, 100, 500);
+		IOUtils.printf(items);
 		
 		System.out.println("-------------------------");
 		List<Item> itemsBySaleDate = itemService.getItemsByBuyDate(LocalDate.of(2020, 12, 18));

@@ -28,12 +28,31 @@ public class ItemDaoImpl implements ItemDao {
 	
 	@Override
 	public List<Item> getItems(int itemGroupId, double saleFrom, double saleTo) {
-		final String query = "SELECT *\n"
-				+ "FROM MatHang\n"
+		List<Item> result = new ArrayList<>();
+		final String query = "SELECT mh.MaMH AS " + Item.ID + ",\n"
+				+" 					 mh.TenMH AS " + Item.NAME + ",\n"
+				+" 					 mh.GiaBan AS " + Item.SALES_OUT + ",\n"
+				+" 					 mh.SoLuong AS " + Item.QUANTITY + "\n"
+				+ "FROM MatHang mh\n"
 				+ "WHERE MaLoai = ?\n"
 				+ "AND GiaBan BETWEEN ? AND ?";
 		
-		return null;
+		try {
+			pst = conn.prepareStatement(query);
+			pst.setInt(1, itemGroupId);
+			pst.setDouble(2, 100);
+			pst.setDouble(3, 500);	
+			rs = pst.executeQuery();
+			while (rs.next()) {
+				Item item = new Item();
+				transformer(item);
+				result.add(item);
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+		
+		return result;
 	}
 	
 	@Override
