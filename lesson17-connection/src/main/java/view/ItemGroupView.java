@@ -4,6 +4,7 @@ import java.util.Collections;
 import java.util.List;
 
 import entities.ItemGroup;
+import persistence.ItemGroupDto;
 import service.ItemGroupService;
 import service.ItemGroupServiceImpl;
 import utils.IOUtils;
@@ -34,5 +35,7 @@ public class ItemGroupView {
 		IOUtils.printf(Collections.singletonList(selectByName));
 		System.out.println("------");
 		
+		List<ItemGroupDto> selectDto = itemGroupService.getItemGroupDetail();
+		IOUtils.printf(selectDto);
 	}
 }
