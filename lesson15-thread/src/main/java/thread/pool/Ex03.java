@@ -31,7 +31,7 @@ public class Ex03 {
 		List<String> stringResult = stringTask.get();
 		List<Integer> integerResult = integerTask.get();
 
-		// cron job, quart job
+		// cron job, quartz job
 		// cron job time setting
 		
 		System.out.println("String Size: " + stringResult.size());
