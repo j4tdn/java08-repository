@@ -5,13 +5,19 @@ import org.hibernate.cfg.Configuration;
 
 public class HibernateUtils {
 
+	private static  SessionFactory sessionFactory;
 	private HibernateUtils() {
 
 	}
 
 	public static SessionFactory getSessionFactory() {
-		SessionFactory sessionfactory = null;
+		
+		if(sessionFactory == null) {
+			
 		Configuration configuration = new Configuration();
-		return configuration.configure("hibernate.cfg.xml").buildSessionFactory();
+		sessionFactory= configuration.configure("hibernate.cfg.xml").buildSessionFactory();
+		}
+//		return configuration.configure("hibernate.cfg.xml").buildSessionFactory();
+		return sessionFactory;
 	}
 }
