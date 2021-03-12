@@ -11,11 +11,11 @@ import org.apache.commons.lang3.tuple.Pair;
 import dao.ItemGroupDao;
 import dao.ItemGroupDaoImpl;
 import entities.ItemGroup;
-import persistence.ItemGroupDto;
-import persistence.ItemGroupDtoRaw;
+import persistence.ItemGroupDTO;
+import persistence.ItemGroupDTORaw;
+import persistence.ItemGroupDtoHelper;
 
 public class ItemGroupServiceImpl implements ItemGroupService {
-
 	private ItemGroupDao itemGroupDao;
 
 	public ItemGroupServiceImpl() {
@@ -28,36 +28,36 @@ public class ItemGroupServiceImpl implements ItemGroupService {
 	}
 
 	@Override
-	public ItemGroup getById(Integer id) {
-		Objects.requireNonNull(id, "Id cannot be null");
-
-		return itemGroupDao.getById(id);
+	public ItemGroup get(Integer id) {
+		Objects.requireNonNull(id, "id can not null");
+		return itemGroupDao.get(id);
 	}
 
 	@Override
-	public ItemGroup getByName(String name) {
-		Objects.requireNonNull(name, "Name cannot be null");
-		return itemGroupDao.getByName(name);
-
+	public ItemGroup get(String name) {
+		Objects.requireNonNull(name, "name can not null");
+		return itemGroupDao.get(name);
 	}
 
 	@Override
-	public List<ItemGroupDto> getListItemGroupDetail() {
-
-		var rawData = itemGroupDao.getListItemGroupDetailRaw();
+	public List<ItemGroupDTO> getItemGroupDetail() {
+		// TODO Auto-generated method stub
+		List<ItemGroupDTORaw> rawData = itemGroupDao.getItemGroupDetailRaw();
 		if (rawData.isEmpty()) {
 			return Collections.emptyList();
 		}
-		Map<Pair<Integer, String>, List<ItemGroupDtoRaw>> rawDataByItemParameter = rawData.stream()
+		Map<Pair<Integer, String>, List<ItemGroupDTORaw>> rawDataByItemParameter = rawData.stream()
 				.collect(Collectors.groupingBy(entry -> Pair.of(entry.getItemGroupId(), entry.getItemGroupName())));
 
 		return rawDataByItemParameter.entrySet().stream().map(entry -> {
-			ItemGroupDto dto = new ItemGroupDto();
-			dto.setItemGroupId(entry.getKey().getLeft());
-			dto.setItemGroupName(entry.getKey().getValue());
-
-			return dto;
+			return ItemGroupDtoHelper.convert(entry);
 		}).collect(Collectors.toList());
+	}
+
+	@Override
+	public List<ItemGroupDTORaw> getItemGroupDetailRaw() {
+		// TODO Auto-generated method stub
+		return itemGroupDao.getItemGroupDetailRaw();
 	}
 
 }

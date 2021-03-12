@@ -9,7 +9,7 @@ public class ItemGroup {
 	private String name;
 
 	public ItemGroup() {
-		// TODO Auto-generated constructor stub
+		super();
 	}
 
 	public ItemGroup(Integer id, String name) {
@@ -34,27 +34,24 @@ public class ItemGroup {
 		this.name = name;
 	}
 
-	
 	@Override
-	public int hashCode() {
-		return new HashCodeBuilder().append(getId()).append(getName()).hashCode();
-	}
-
-	@Override
-	public boolean equals(Object obj) {
-		if (this == obj) {
+	public boolean equals(Object o) {
+		if (this == o) {
 			return true;
 		}
-		if (!(obj instanceof ItemGroup)) {
+		if (!(o instanceof ItemGroup)) {
 			return false;
-
 		}
 
-		ItemGroup that = (ItemGroup) obj;
-
+		ItemGroup that = (ItemGroup) o;
 		return new EqualsBuilder().append(getId(), that.getId()).append(getName(), that.getName()).isEquals();
 	}
-	
+
+	@Override
+	public int hashCode() {
+		return new HashCodeBuilder().append(getId()).append(getName()).toHashCode();
+	}
+
 	@Override
 	public String toString() {
 		return new ToStringBuilder(this).append(getId()).append(getName()).toString();

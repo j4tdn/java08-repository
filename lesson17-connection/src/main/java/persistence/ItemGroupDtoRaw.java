@@ -3,31 +3,18 @@ package persistence;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 
-public class ItemGroupDtoRaw {
+import entities.ItemGroup;
 
+public class ItemGroupDTORaw {
 	public static String ITEM_GROUP_ID = "itemGroupId";
 	public static String ITEM_GROUP_NAME = "itemGroupName";
 	public static String ITEM_NAME = "itemName";
-	public static String NUMBER_OF_ITEMS = "numberOfItems";
+	public static String NUMBER_OF_ITEM = "numberOfItems";
 
 	private Integer itemGroupId;
 	private String itemGroupName;
 	private String itemName;
 	private Integer numberOfItems;
-
-	public ItemGroupDtoRaw() {
-		// TODO Auto-generated constructor stub
-	}
-
-	public ItemGroupDtoRaw(Integer itemGroupId, String itemGroupName, String itemName, Integer numberOfItems) {
-		super();
-		this.itemGroupId = itemGroupId;
-		this.itemGroupName = itemGroupName;
-		this.itemName = itemName;
-		this.numberOfItems = numberOfItems;
-	}
-
-	
 
 	public Integer getItemGroupId() {
 		return itemGroupId;
@@ -62,16 +49,15 @@ public class ItemGroupDtoRaw {
 	}
 
 	@Override
-	public boolean equals(Object obj) {
-		if (this == obj) {
+	public boolean equals(Object o) {
+		if (this == o) {
 			return true;
 		}
-		if (!(obj instanceof ItemGroupDtoRaw)) {
+		if (!(o instanceof ItemGroup)) {
 			return false;
 		}
 
-		ItemGroupDtoRaw that = (ItemGroupDtoRaw) obj;
-
+		ItemGroupDTORaw that = (ItemGroupDTORaw) o;
 		return new EqualsBuilder().append(getItemGroupId(), that.getItemGroupId())
 				.append(getItemGroupName(), that.getItemGroupName()).append(getItemName(), that.getItemName())
 				.append(getNumberOfItems(), that.getNumberOfItems()).isEquals();
@@ -80,14 +66,13 @@ public class ItemGroupDtoRaw {
 	@Override
 	public int hashCode() {
 		return new HashCodeBuilder().append(getItemGroupId()).append(getItemGroupName()).append(getItemName())
-				.append(getNumberOfItems()).hashCode();
+				.append(getNumberOfItems()).toHashCode();
 	}
 
 	@Override
 	public String toString() {
-		return "ItemGroupDtoRaw [itemGroupId=" + itemGroupId + ", itemGroupName=" + itemGroupName + ", itemName="
-				+ itemName + ", numberOfItems=" + numberOfItems + "]";
+		return "ItemGroupDTO [itemGroupId=" + itemGroupId + ", itemGroupName=" + itemGroupName + ", itemList="
+				+ getItemName() + ", totalOfItems=" + getNumberOfItems() + "]";
 	}
 
-	
 }

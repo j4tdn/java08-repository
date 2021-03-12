@@ -6,25 +6,20 @@ import java.util.Objects;
 
 import dao.ItemDao;
 import dao.ItemDaoImpl;
-import entities.Item;
+import entities.Items;
 
 public class ItemServiceImpl implements ItemService {
-	
-	private final ItemDao itemDao;
-	
+
+	private ItemDao itemDao;
+
 	public ItemServiceImpl() {
 		itemDao = new ItemDaoImpl();
 	}
 
 	@Override
-	public List<Item> getItems(int itemGroupId, double saleFrom, double saleTo) {
-		return itemDao.getItems(itemGroupId, saleFrom, saleTo);
-	}
-
-	@Override
-	public List<Item> getItems(LocalDate salesDate) {
-		Objects.requireNonNull(salesDate, "Sales Date can not be null");
-		return itemDao.getItems(salesDate);
+	public List<Items> getItems(LocalDate saleDate) {
+		Objects.requireNonNull(saleDate, "Sale date is not null");
+		return itemDao.getItems(saleDate);
 	}
 
 }

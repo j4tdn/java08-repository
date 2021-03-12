@@ -3,16 +3,17 @@ package service;
 import java.util.List;
 
 import entities.ItemGroup;
-import persistence.ItemGroupDto;
+import persistence.ItemGroupDTO;
+import persistence.ItemGroupDTORaw;
 
 public interface ItemGroupService {
 	List<ItemGroup> getAll();
-	
-	ItemGroup getById(Integer id);
-	ItemGroup getByName(String name);
-	
-	List<ItemGroupDto> getListItemGroupDetail();
-	
-	
 
+	ItemGroup get(Integer id);
+
+	ItemGroup get(String name);
+
+	List<ItemGroupDTO> getItemGroupDetail();
+	
+	List<ItemGroupDTORaw> getItemGroupDetailRaw();
 }

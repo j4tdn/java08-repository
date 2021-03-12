@@ -1,37 +1,45 @@
 package view;
 
+import java.time.LocalDate;
 import java.util.Collections;
 import java.util.List;
 
 import entities.ItemGroup;
-import persistence.ItemGroupDto;
+import entities.Items;
+import persistence.ItemGroupDTO;
 import service.ItemGroupService;
 import service.ItemGroupServiceImpl;
+import service.ItemService;
+import service.ItemServiceImpl;
 import utils.IOUtils;
 
 public class ItemGroupView {
 	private static ItemGroupService itemGroupService;
-	
+	private static ItemService itemService;
+
 	static {
 		itemGroupService = new ItemGroupServiceImpl();
+		itemService = new ItemServiceImpl();
 	}
-	public static void main(String[] args) {
-		List<ItemGroup> result = 	itemGroupService.getAll();
-		System.out.println("result size: " + result.size());
-		IOUtils.printf(result);
-		
-		System.out.println("------------------------");
-		ItemGroup itemGroup = itemGroupService.getById(2);
-		IOUtils.printf(Collections.singletonList((itemGroup)));
-		
-		System.out.println("------------------------");
-		ItemGroup itemGroup2 = itemGroupService.getByName("Áo");
-		IOUtils.printf(Collections.singletonList((itemGroup2)));
-		
-		System.out.println("----------------------------");
-		
-		List<ItemGroupDto> itemGroupDtos= itemGroupService.getListItemGroupDetail();
-		IOUtils.printf(Collections.singletonList((itemGroupDtos)));
 
+	public static void main(String[] args) {
+		List<ItemGroup> itemGroups = itemGroupService.getAll();
+		System.out.println("result: " + itemGroups.size());
+		IOUtils.println(itemGroups);
+
+		ItemGroup itemGroupById = itemGroupService.get(2);
+		IOUtils.println(Collections.singletonList(itemGroupById));
+
+		ItemGroup itemGroupByName = itemGroupService.get("Áo");
+		IOUtils.println(Collections.singletonList(itemGroupByName));
+
+//		itemGroups.stream().filter(ig -> ig.getId().equals(2)).findFirst().ifPresent(System.out::println);
+
+		List<ItemGroupDTO> selectDTO = itemGroupService.getItemGroupDetail();
+		IOUtils.println(selectDTO);
+		System.out.println("-----------------");
+
+		List<Items> item = itemService.getItems(LocalDate.of(2020, 12, 17));
+		IOUtils.println(item);
 	}
 }

@@ -3,10 +3,8 @@ package dao;
 import java.time.LocalDate;
 import java.util.List;
 
-import entities.Item;
+import entities.Items;
 
 public interface ItemDao {
-	List<Item> getItems(int itemGroupId, double saleFrom, double saleTo);
-
-	List<Item> getItems(LocalDate salesDate);
+	List<Items> getItems(LocalDate saleDate);
 }

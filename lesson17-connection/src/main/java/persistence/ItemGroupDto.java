@@ -6,31 +6,21 @@ import java.util.stream.Collectors;
 
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
+import org.apache.commons.lang3.builder.ToStringBuilder;
 import org.apache.commons.lang3.tuple.Pair;
 
-public class ItemGroupDto {
-	//
+import entities.ItemGroup;
+
+public class ItemGroupDTO {
 	public static String ITEM_GROUP_ID = "itemGroupId";
 	public static String ITEM_GROUP_NAME = "itemGroupName";
 	public static String ITEM_LIST = "itemList";
-	public static String TOTAL_OF_ITEMS = "totalOfItems";
+	public static String TOTAL_OF_ITEM = "totalOfItems";
 
 	private Integer itemGroupId;
 	private String itemGroupName;
 	private List<Pair<String, Integer>> itemList;
 	private Integer totalOfItems;
-
-	public ItemGroupDto() {
-		// TODO Auto-generated constructor stub
-	}
-
-	public ItemGroupDto(Integer itemGroupId, String itemGroupName, List<Pair<String, Integer>> itemList, Integer totalOfItems) {
-		super();
-		this.itemGroupId = itemGroupId;
-		this.itemGroupName = itemGroupName;
-		this.itemList = itemList;
-		this.totalOfItems = totalOfItems;
-	}
 
 	public Integer getItemGroupId() {
 		return itemGroupId;
@@ -48,18 +38,16 @@ public class ItemGroupDto {
 		this.itemGroupName = itemGroupName;
 	}
 
-	public void setItemListTransformer(String itemListString) {
-		this.itemList  = Pattern.compile("-")
-				.splitAsStream(itemListString)
-				.map(x -> {
-					String[] array = x.split(":");
-					return Pair.of(array[0], Integer.valueOf(array[1]));
-				})
-				.collect(Collectors.toList());
-	}
-
 	public List<Pair<String, Integer>> getItemList() {
 		return itemList;
+	}
+
+	// A:10 - B: 30
+	public void setItemListTranformer(String itemListString) {
+		this.itemList = Pattern.compile("-").splitAsStream(itemListString).map(pair -> {
+			String[] array = pair.split(":");
+			return Pair.of(array[0], Integer.valueOf(array[1]));
+		}).collect(Collectors.toList());
 	}
 
 	public void setItemList(List<Pair<String, Integer>> itemList) {
@@ -75,16 +63,15 @@ public class ItemGroupDto {
 	}
 
 	@Override
-	public boolean equals(Object obj) {
-		if (this == obj) {
+	public boolean equals(Object o) {
+		if (this == o) {
 			return true;
 		}
-		if (!(obj instanceof ItemGroupDto)) {
+		if (!(o instanceof ItemGroup)) {
 			return false;
 		}
 
-		ItemGroupDto that = (ItemGroupDto) obj;
-
+		ItemGroupDTO that = (ItemGroupDTO) o;
 		return new EqualsBuilder().append(getItemGroupId(), that.getItemGroupId())
 				.append(getItemGroupName(), that.getItemGroupName()).append(getItemList(), that.getItemList())
 				.append(getTotalOfItems(), that.getTotalOfItems()).isEquals();
@@ -93,14 +80,13 @@ public class ItemGroupDto {
 	@Override
 	public int hashCode() {
 		return new HashCodeBuilder().append(getItemGroupId()).append(getItemGroupName()).append(getItemList())
-				.append(getTotalOfItems()).hashCode();
+				.append(getTotalOfItems()).toHashCode();
 	}
 
 	@Override
 	public String toString() {
-		return "ItemGroupDto [itemGroupId=" + itemGroupId + ", itemGroupName=" + itemGroupName + ", itemList="
+		return "ItemGroupDTO [itemGroupId=" + itemGroupId + ", itemGroupName=" + itemGroupName + ", itemList="
 				+ itemList + ", totalOfItems=" + totalOfItems + "]";
 	}
-	
-	
+
 }
