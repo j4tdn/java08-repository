@@ -11,8 +11,8 @@ import org.apache.commons.lang3.tuple.Pair;
 import dao.ItemGroupDao;
 import dao.ItemGroupDaoImpl;
 import entities.ItemGroup;
-import persistence.ItemGroupDTO;
-import persistence.ItemGroupDTORaw;
+import persistence.ItemGroupDto;
+import persistence.ItemGroupDtoRaw;
 import persistence.ItemGroupDtoHelper;
 
 public class ItemGroupServiceImpl implements ItemGroupService {
@@ -36,17 +36,18 @@ public class ItemGroupServiceImpl implements ItemGroupService {
 	@Override
 	public ItemGroup get(String name) {
 		Objects.requireNonNull(name, "name can not null");
+		
 		return itemGroupDao.get(name);
 	}
 
 	@Override
-	public List<ItemGroupDTO> getItemGroupDetail() {
+	public List<ItemGroupDto> getItemGroupDetail() {
 		// TODO Auto-generated method stub
-		List<ItemGroupDTORaw> rawData = itemGroupDao.getItemGroupDetailRaw();
+		List<ItemGroupDtoRaw> rawData = itemGroupDao.getItemGroupDetailRaw();
 		if (rawData.isEmpty()) {
 			return Collections.emptyList();
 		}
-		Map<Pair<Integer, String>, List<ItemGroupDTORaw>> rawDataByItemParameter = rawData.stream()
+		Map<Pair<Integer, String>, List<ItemGroupDtoRaw>> rawDataByItemParameter = rawData.stream()
 				.collect(Collectors.groupingBy(entry -> Pair.of(entry.getItemGroupId(), entry.getItemGroupName())));
 
 		return rawDataByItemParameter.entrySet().stream().map(entry -> {
@@ -55,7 +56,7 @@ public class ItemGroupServiceImpl implements ItemGroupService {
 	}
 
 	@Override
-	public List<ItemGroupDTORaw> getItemGroupDetailRaw() {
+	public List<ItemGroupDtoRaw> getItemGroupDetailRaw() {
 		// TODO Auto-generated method stub
 		return itemGroupDao.getItemGroupDetailRaw();
 	}

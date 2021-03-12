@@ -11,7 +11,7 @@ import org.apache.commons.lang3.tuple.Pair;
 
 import entities.ItemGroup;
 
-public class ItemGroupDTO {
+public class ItemGroupDto {
 	public static String ITEM_GROUP_ID = "itemGroupId";
 	public static String ITEM_GROUP_NAME = "itemGroupName";
 	public static String ITEM_LIST = "itemList";
@@ -71,7 +71,7 @@ public class ItemGroupDTO {
 			return false;
 		}
 
-		ItemGroupDTO that = (ItemGroupDTO) o;
+		ItemGroupDto that = (ItemGroupDto) o;
 		return new EqualsBuilder().append(getItemGroupId(), that.getItemGroupId())
 				.append(getItemGroupName(), that.getItemGroupName()).append(getItemList(), that.getItemList())
 				.append(getTotalOfItems(), that.getTotalOfItems()).isEquals();

@@ -6,7 +6,7 @@ import java.util.List;
 
 import entities.ItemGroup;
 import entities.Items;
-import persistence.ItemGroupDTO;
+import persistence.ItemGroupDto;
 import service.ItemGroupService;
 import service.ItemGroupServiceImpl;
 import service.ItemService;
@@ -35,7 +35,7 @@ public class ItemGroupView {
 
 //		itemGroups.stream().filter(ig -> ig.getId().equals(2)).findFirst().ifPresent(System.out::println);
 
-		List<ItemGroupDTO> selectDTO = itemGroupService.getItemGroupDetail();
+		List<ItemGroupDto> selectDTO = itemGroupService.getItemGroupDetail();
 		IOUtils.println(selectDTO);
 		System.out.println("-----------------");
 

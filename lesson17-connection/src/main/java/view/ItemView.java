@@ -4,6 +4,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 import entities.Item;
+import entities.Items;
 import service.ItemService;
 import service.ItemServiceImpl;
 import utils.IOUtils;
@@ -21,7 +22,7 @@ public class ItemView {
 		
 		System.out.println("=========================================");
 		
-		List<Item> itemInSalesDate = itemService.getItems(LocalDate.of(2020, 12, 18));
-		IOUtils.printf(itemInSalesDate);
+		List<Items> itemInSalesDate = itemService.getItems(LocalDate.of(2020, 12, 18));
+		IOUtils.println(itemInSalesDate);
 	}
 }

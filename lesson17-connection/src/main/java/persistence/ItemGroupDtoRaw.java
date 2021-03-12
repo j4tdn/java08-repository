@@ -5,7 +5,7 @@ import org.apache.commons.lang3.builder.HashCodeBuilder;
 
 import entities.ItemGroup;
 
-public class ItemGroupDTORaw {
+public class ItemGroupDtoRaw {
 	public static String ITEM_GROUP_ID = "itemGroupId";
 	public static String ITEM_GROUP_NAME = "itemGroupName";
 	public static String ITEM_NAME = "itemName";
@@ -57,7 +57,7 @@ public class ItemGroupDTORaw {
 			return false;
 		}
 
-		ItemGroupDTORaw that = (ItemGroupDTORaw) o;
+		ItemGroupDtoRaw that = (ItemGroupDtoRaw) o;
 		return new EqualsBuilder().append(getItemGroupId(), that.getItemGroupId())
 				.append(getItemGroupName(), that.getItemGroupName()).append(getItemName(), that.getItemName())
 				.append(getNumberOfItems(), that.getNumberOfItems()).isEquals();
