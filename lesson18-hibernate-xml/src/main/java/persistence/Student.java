@@ -5,15 +5,25 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 
 @Entity
 @Table(name = "sinhvien")
+@NamedQueries({
+	@NamedQuery(name = "Student.GET_ALL", 
+			    query = "SELECT st FROM Student st") //HQL
+})
 public class Student {
+	
+	public static final String GET_ALL = "Student.GET_ALL";
+	
+	//sequence
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name = "mssv")
+	// @GeneratedValue(strategy = GenerationType.IDENTITY)
+	@Column(name = "masv")
 	private Integer id;
 	
 	@Column(name = "ten")
@@ -25,10 +35,20 @@ public class Student {
 	@Column(name = "email")
 	private String email;
 	
+	
+	//JPA default constructor
 	public Student() {
 		
 	}
-	
+		
+	public Student(Integer id, String firstName, String lastName, String email) {
+		super();
+		this.id = id;
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.email = email;
+	}
+
 	public Integer getId() {
 		return id;
 	}
