@@ -2,27 +2,32 @@ package persistence;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "sinhvien")
+@NamedQueries({ @NamedQuery(name = "Student.GET_ALL", query = "SELECT st FROM Student st") })
 public class Student {
+	public static final String GET_ALL = "Student.GET_ALL";
 	
+	// JPA default contructor
+	public Student() {
+	}
+
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
-	@Column(name= "masv")
+	@Column(name = "masv")
 	private Integer id;
-	
-	@Column(name= "ten")
+
+	@Column(name = "ten")
 	private String firstName;
-	
-	@Column(name= "ho")
+
+	@Column(name = "ho")
 	private String LastName;
-	
-	@Column(name= "email")
+
+	@Column(name = "email")
 	private String email;
 
 	public Student(Integer id, String firstName, String lastName, String email) {

@@ -1,13 +1,25 @@
 package view;
 
-import org.hibernate.Session;
+import java.util.List;
 
-import utils.hibernateUtil;
+import dao.HibernateStudentDao;
+import dao.StudentDao;
+import persistence.Student;
 
 public class App {
+	
+	private static StudentDao studentDao;
+	
+	static {
+		studentDao = new HibernateStudentDao();
+	}
+	
 	public static void main(String[] args) {
-		Session session =hibernateUtil.getSessionFactory().openSession();
+		studentDao.save(new Student(3, "Thang", "Ngoc", "namngoc@gmail.com"));
+		List<Student> students = studentDao.getAll();
 		
-		System.out.println("session" + session);
+		for (Student student : students) {
+			System.out.println(student.getFirstName());
+		}
 	}
 }
