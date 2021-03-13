@@ -10,6 +10,7 @@ public class HibernateUtil {
 
 	}
 
+	// xml - configuration
 	public static SessionFactory getSessionFactory() {
 		if (sessionFactory == null) {
 			// SessionFactory sessionFactory = null;
@@ -19,4 +20,5 @@ public class HibernateUtil {
 		// return configuration.configure("hibernate.cfg.xml").buildSessionFactory();
 		return sessionFactory;
 	}
+
 }
