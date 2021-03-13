@@ -11,6 +11,7 @@ public class HibernateUtil {
 
 	}
 
+	
 	public static SessionFactory getSessionFactory() {
 		if(sessionFactory == null) {
 			Configuration configuration = new Configuration();
@@ -20,4 +21,5 @@ public class HibernateUtil {
 		return sessionFactory;
 		
 	}
-}
+	
+	}

@@ -1,7 +1,5 @@
 package view;
 
-import java.util.List;
-
 import dao.HibernateStudentDao;
 import dao.StudentDao;
 import persistence.Student;
@@ -15,8 +13,11 @@ public class App {
 	}
 
 	public static void main(String[] args) {
-		List<Student> a = studentDao.getAll();
-		a.forEach(x -> System.out.println(x));
+		
+		studentDao.delete(new Student(2, "Hoang", "Nam", "hoangnam@gmail.com"));
+		var result = studentDao.getAll();
+		
+		result.forEach(x -> System.out.println(x));
 	}
 
 }
