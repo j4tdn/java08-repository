@@ -5,14 +5,19 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.NamedQueries;
+import javax.persistence.NamedQuery;
 import javax.persistence.Table;
 
 @Entity
 @Table(name = "sinhvien")
+@NamedQueries({
+	@NamedQuery(name="Student.GET_ALL", query = "SELECT st FROM Student st") // HQL
+})
 public class Student {
+	public static final String GET_ALL = "Student.GET_ALL";
 	
 	@Id
-	@GeneratedValue(strategy = GenerationType.AUTO)
 	@Column(name= "masv")
 	private Integer id;
 	

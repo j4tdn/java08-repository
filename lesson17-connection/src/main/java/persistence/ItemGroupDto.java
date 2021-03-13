@@ -47,6 +47,7 @@ public class ItemGroupDto {
 		this.itemList = Pattern.compile("-").splitAsStream(itemListString).map(pair -> {
 			String[] array = pair.split(":");
 			return Pair.of(array[0], Integer.valueOf(array[1]));
+			
 		}).collect(Collectors.toList());
 	}
 
