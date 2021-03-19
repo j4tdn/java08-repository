@@ -6,8 +6,6 @@ public class Ex01 {
 
         // thread # start => check state => thread #run => runnable #run
 
-
-
         // state : new
         Thread t0 = new Thread(new Runnable() {
             public void run() {

@@ -2,7 +2,7 @@ package thread;
 
 import java.util.concurrent.TimeUnit;
 
-public class Ex02 {
+public class Ex02JoinKeyWord {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Thread main start");
 
@@ -26,7 +26,6 @@ public class Ex02 {
         t0.start();
         // bat buoc t0 phai chay xong roi current thread moi chay duoc
         t0.join();
-
 
         System.out.println("Thread main end");
     }

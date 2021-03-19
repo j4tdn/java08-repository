@@ -2,7 +2,7 @@ package thread;
 
 import java.util.concurrent.atomic.AtomicInteger;
 
-public class Ex03 {
+public class Ex03VolatileWithLogger {
 
     //private static volatile int counter  = 2 ;
     // hoac dung Atomic ( trong do co volatile)
