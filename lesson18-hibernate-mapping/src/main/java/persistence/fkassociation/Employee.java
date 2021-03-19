@@ -1,7 +1,8 @@
-package persistence;
+package persistence.fkassociation;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
@@ -25,7 +26,7 @@ public class Employee {
 	@Column(name = "email")
 	private String email;
 	
-	@OneToOne
+	@OneToOne(fetch = FetchType.LAZY)
 	@JoinColumn(name = "account_id", nullable = false)
 	private Account account;
 	
