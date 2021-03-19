@@ -1,5 +1,6 @@
-package persistence;
+package persistence.jointable;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -17,7 +18,7 @@ public class Account {
 	@Column(name = "account_number")
 	private String accountNumber;
 	
-	@OneToOne(mappedBy = "account")
+	@OneToOne(mappedBy = "account", cascade = { CascadeType.ALL })
 	private Employee employee;
 
 	public Account() {

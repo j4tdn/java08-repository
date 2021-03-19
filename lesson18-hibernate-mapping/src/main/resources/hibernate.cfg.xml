@@ -24,8 +24,10 @@
 		<property name="hbm2ddl.auto">create-drop</property>
 
 		<!-- persistence class -->
-		<mapping class="persistence.Employee" />
-		<mapping class="persistence.Account" />
+		<!-- <mapping class="persistence.fkassociation.Employee" />
+		<mapping class="persistence.fkassociation.Account" /> -->
+		<mapping class="persistence.jointable.Employee" />
+		<mapping class="persistence.jointable.Account" />
 
 	</session-factory>
 
