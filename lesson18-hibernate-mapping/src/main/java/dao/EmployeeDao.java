@@ -1,8 +1,10 @@
 package dao;
 
-import persistence.Employee;
+import persistence.jointable.Employee;
 
 public interface EmployeeDao {
-	void save(Employee employee);	
+	void save(Employee employee);
+
+	Employee get(Integer id);	
 	
 }

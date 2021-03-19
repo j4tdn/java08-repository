@@ -7,7 +7,7 @@ import dao.HibernateEmployeeDao;
 import persistence.jointable.Account;
 import persistence.jointable.Employee;
 
-public class App {
+public class DemoJointable {
 
 	private static AccountDao accountDao;
 	private static EmployeeDao employeeDao;
@@ -22,10 +22,8 @@ public class App {
 		accountDao.save(account);
 
 		Employee employee = new Employee(1, "hau", "bui", "hauviptt@gmail.com", account);
+		employee.setAccount(account);
 		employeeDao.save(employee);
-
-		Employee emp =  employeeDao.get(1);
-		System.out.println(emp.getAccount().getId());
 		
 	}
 }

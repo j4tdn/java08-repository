@@ -1,4 +1,4 @@
-package persistence;
+package persistence.jointable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
