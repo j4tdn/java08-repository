@@ -1,4 +1,4 @@
-package persistence;
+package persistence.fkassociation;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;

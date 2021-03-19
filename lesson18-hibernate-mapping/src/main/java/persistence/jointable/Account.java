@@ -1,4 +1,4 @@
-package persistence;
+package persistence.jointable;
 
 import javax.persistence.CascadeType;
 import javax.persistence.Column;
@@ -22,8 +22,8 @@ public class Account {
 		this.accountNumber = accountNumber;
 	}
 	
-	//@OneToOne(mappedBy = "account", cascade = CascadeType.ALL) //quan hệ 2 chiều, bên kia cũng lấy được, account là tên table 
-	@OneToOne(mappedBy = "account", cascade = {CascadeType.ALL}) //quan hệ 2 chiều, bên kia cũng lấy được, account là tên table 
+	//@OneToOne(mappedBy = "account", cascade = CascadeType.ALL) //quan hệ 2 chi�?u, bên kia cũng lấy được, account là tên table 
+	@OneToOne(mappedBy = "account", cascade = {CascadeType.ALL}) //quan hệ 2 chi�?u, bên kia cũng lấy được, account là tên table 
 	private Employee employee;
 
 	public Account() {
