@@ -1,67 +1,83 @@
-package persistence;
+package persistence.fkassociation;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
-import javax.persistence.NamedQueries;
-import javax.persistence.NamedQuery;
+import javax.persistence.JoinColumn;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table (name = "sinhvien")
-@NamedQueries({
-	@NamedQuery(name = "Student.GET_ALL", 
-			query = "SELECT st FROM Student st")
-})
-public class Student {
-	
-	public static final String GET_ALL = "Student.GET_ALL";
-	
+@Table(name = "employee")
+public class Employee {
 	@Id
-	@Column(name = "masv")
-	//@GeneratedValue(strategy = GenerationType.AUTO)
+	@Column(name = "id")
 	private Integer id;
-	@Column(name = "ten")
+	
+	@Column(name = "firstName")
 	private String firstName;
-	@Column(name = "ho")
+	
+	@Column(name = "lastName")
 	private String lastName;
+	
 	@Column(name = "email")
 	private String email;
 	
-	//JPA default constructor
-	public Student() {
+	@OneToOne(fetch = FetchType.LAZY)	// LAZY, EAGER
+	@JoinColumn(name = "account_id", nullable = false)
+	private Account account;
+	
+	public Employee() {
 	}
-	public Student(Integer id, String firstName, String lastName, String email) {
+
+	public Employee(Integer id, String firstName, String lastName, String email) {
+		super();
 		this.id = id;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
 	}
+
 	public Integer getId() {
 		return id;
 	}
+
 	public void setId(Integer id) {
 		this.id = id;
 	}
+
 	public String getFirstName() {
 		return firstName;
 	}
+
 	public void setFirstName(String firstName) {
 		this.firstName = firstName;
 	}
+
 	public String getLastName() {
 		return lastName;
 	}
+
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
 	}
+
 	public String getEmail() {
 		return email;
 	}
+
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-	
 
+	public Account getAccount() {
+		return account;
+	}
+
+	public void setAccount(Account account) {
+		this.account = account;
+	}
+	
+	
 }
