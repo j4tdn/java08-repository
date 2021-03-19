@@ -19,10 +19,13 @@
 		
 
 		<!-- Drop and re-create the database schema on startup -->
-		 <property name="hbm2ddl.auto">create-drop</property> 
+	 	<property name="hbm2ddl.auto">create-drop</property>
 		<!-- persistence class -->
-		<mapping class="persistence.Account" />
-		<mapping class="persistence.Employee" />
+		<!-- <mapping class="persistence.fkassociation.Account" />  -->
+		<!-- <mapping class="persistence.fkassociation.Employee" />  -->
+		
+		 <mapping class="persistence.jointable.Account" />
+		 <mapping class="persistence.jointable.Employee" />
 
 	</session-factory>
 

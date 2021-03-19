@@ -1,9 +1,11 @@
-package persistence;
+package persistence.jointable;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
@@ -23,8 +25,20 @@ public class Employee {
 	@Column(name = "last_name")
 	private String lastName;
 	
-	@OneToOne
-	@JoinColumn(name = "account_id", nullable = false)
+	@OneToOne(fetch = FetchType.LAZY)
+	@JoinTable(
+			name = "employee_account",
+			//join with owner
+			joinColumns = {
+					@JoinColumn(name = "employee_id",
+								referencedColumnName = "id")
+			},
+			
+			//another parent table
+			inverseJoinColumns = {
+					@JoinColumn(name = "account_id",
+								referencedColumnName = "id"),
+			})
 	private Account account;
 
 	public Employee() {

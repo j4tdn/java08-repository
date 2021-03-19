@@ -4,10 +4,11 @@ import dao.AccountDao;
 import dao.EmployeeDao;
 import dao.HibernateAccountDao;
 import dao.HibernateEmployeeDao;
-import persistence.Account;
-import persistence.Employee;
+import persistence.jointable.Account;
+import persistence.jointable.Employee;
 
-public class App {
+
+public class DemoJoinTable {
 
 	private static AccountDao accountDao;
 	private static EmployeeDao employeeDao;
@@ -19,9 +20,10 @@ public class App {
 
 	public static void main(String[] args) {
 		Account account = new Account(1, "123-132-134");
-		Employee employee = new Employee(1, "lam@gmail.com", "lamquan", "tran", account);
-		
+		Employee employees = new Employee(1, "lam@gmail.com", "lamquan", "tran", account);
 		accountDao.save(account);
-		employeeDao.save(employee);
+		employeeDao.save(employees);
+		
+		
 	}
 }
