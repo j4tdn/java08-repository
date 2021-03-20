@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lesson18-hibernate-mapping" />
+        <module name="lesson18-hibernate-mapping-onetoone" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="lesson18-hibernate-mapping" target="1.5" />
+      <module name="lesson18-hibernate-mapping-onetoone" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>

@@ -7,6 +7,7 @@
         <setting name="provider-name" value="Hibernate" />
         <datasource-mapping>
           <factory-entry name="lesson18-hibernate-mapping" />
+          <factory-entry name="lesson18-hibernate-mapping-onetoone" />
         </datasource-mapping>
         <naming-strategy-map />
       </configuration>

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/lesson18-hibernate-mapping.iml" filepath="$PROJECT_DIR$/lesson18-hibernate-mapping.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson18-hibernate-mapping-onetoone.iml" filepath="$PROJECT_DIR$/lesson18-hibernate-mapping-onetoone.iml" />
     </modules>
   </component>
 </project>

@@ -1,6 +1,8 @@
 package persistence.jointable;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.Setter;
 import persistence.jointable.Employee;
 
 import javax.persistence.*;
@@ -8,6 +10,8 @@ import javax.persistence.*;
 @Entity
 @Table(name = "account")
 @AllArgsConstructor
+@Getter
+@Setter
 public class Account {
 	@Id
 	@Column(name = "id")
@@ -17,6 +21,7 @@ public class Account {
 	private String accountNumber;
 	
 	@OneToOne(mappedBy = "account")
+
 	private Employee employee;
 	
 	public Account() {

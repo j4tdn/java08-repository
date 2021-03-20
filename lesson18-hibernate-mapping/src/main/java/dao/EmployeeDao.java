@@ -1,6 +1,6 @@
 package dao;
 
-import persistence.jointable.Employee;
+import persistence.sharePk.Employee;
 
 public interface EmployeeDao {
 	void save(Employee employee);
