@@ -1,6 +1,6 @@
 package dao;
 
-import persistence.jointable.*;
+import persistence.sharepk.*;
 
 public interface AccountDao {
 	void save(Account account);

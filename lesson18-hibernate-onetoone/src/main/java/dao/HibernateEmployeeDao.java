@@ -3,7 +3,7 @@ package dao;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import persistence.jointable.*;
+import persistence.sharepk.*;
 
 public class HibernateEmployeeDao extends AbstractHibernateDao implements EmployeeDao{
 
