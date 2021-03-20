@@ -1,9 +1,11 @@
 package dao;
 
 import org.hibernate.Session;
+
+
 import org.hibernate.Transaction;
 
-import persistence.fkassociation.Account;
+import persistence.sharepk.Account;
 
 public class HibernateAccountDao extends AbstractHibernateDao implements AccountDao {
 
@@ -23,4 +25,6 @@ public class HibernateAccountDao extends AbstractHibernateDao implements Account
 		}
 		transaction.commit();
 	}
+
+	
 }

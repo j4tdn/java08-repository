@@ -24,8 +24,8 @@
 		<mapping class="persistence.fkassociation.Account" />-->
 		
 				
-		<mapping class="persistence.jointable.Employee" />
-		<mapping class="persistence.jointable.Account" />
+		<mapping class="persistence.sharepk.Employee" />
+		<mapping class="persistence.sharepk.Account" />
 		
  
 	</session-factory>

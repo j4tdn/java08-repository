@@ -1,6 +1,6 @@
 package dao;
 
-import persistence.fkassociation.Account;
+import persistence.sharepk.Account;
 
 public interface AccountDao {
 	void save(Account account);

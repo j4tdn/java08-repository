@@ -1,11 +1,10 @@
 package dao;
 
 import javax.persistence.PersistenceUnitUtil;
-
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import persistence.fkassociation.Employee;
+import persistence.sharepk.Employee;
 
 public class HibernateEmployeeDao extends AbstractHibernateDao implements EmployeeDao {
 
@@ -15,10 +14,11 @@ public class HibernateEmployeeDao extends AbstractHibernateDao implements Employ
 
 		try {
 			session.saveOrUpdate(employee);
-			//session.evict(employee);
-			//System.out.println("state 1:" + session.contains(employee));
-			//PersistenceUnitUtil util = session.getEntityManagerFactory().getPersistenceUnitUtil();
-			//System.out.println("state 2:" + util.getIdentifier(employee));
+			// session.evict(employee);
+			// System.out.println("state 1:" + session.contains(employee));
+			// PersistenceUnitUtil util =
+			// session.getEntityManagerFactory().getPersistenceUnitUtil();
+			// System.out.println("state 2:" + util.getIdentifier(employee));
 		} catch (Exception e) {
 			transaction.rollback();
 		}
@@ -31,6 +31,7 @@ public class HibernateEmployeeDao extends AbstractHibernateDao implements Employ
 		Transaction transaction = session.beginTransaction();
 
 		try {
+			
 			emp = session.get(Employee.class, id);
 		} catch (Exception e) {
 			transaction.rollback();
