@@ -23,13 +23,17 @@
 
 		<!-- persistence class -->
 		<!--  
-		<mapping class="persistence.fkassociationEmployee" />
-		<mapping class="persistence.Account" />
+		<mapping class="persistence.fkassociation.Employee" />
+		<mapping class="persistence.fkassociation.Account" />
 		-->
 		
-	 
+	 <!-- 
 		<mapping class="persistence.jointable.Employee" />
 		<mapping class="persistence.jointable.Account" />
+		-->
+		
+		<mapping class="persistence.sharepk.Employee" />
+		<mapping class="persistence.sharepk.Account" />
 
 	</session-factory>
 

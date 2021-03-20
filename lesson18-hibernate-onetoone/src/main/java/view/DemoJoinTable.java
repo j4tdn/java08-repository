@@ -20,8 +20,8 @@ public class DemoJoinTable {
 		Account account = new Account(123, "123-685-471");
 		Employee emp = new Employee(1, "Teo", "Le", "leteo@gmail.com");
 		
+//		accountDao.save(account);
 		emp.setAccount(account);
-		emp.setAccount(account);
-		employeeDao.save(emp);
+	//	employeeDao.save(emp);
 	}
 }

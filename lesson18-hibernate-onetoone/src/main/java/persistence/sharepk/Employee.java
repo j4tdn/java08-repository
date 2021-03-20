@@ -1,12 +1,12 @@
-package persistence.jointable;
+package persistence.sharepk;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
 import javax.persistence.OneToOne;
+import javax.persistence.PrimaryKeyJoinColumn;
 import javax.persistence.Table;
 
 
@@ -26,18 +26,9 @@ public class Employee {
 	@Column(name = "email")
 	private String email;
 	
-	@OneToOne(fetch = FetchType.LAZY) 
-	@JoinTable(
-			name = "employee_account", 
-			joinColumns = { //join entity owner (thằng hien tai)
-					@JoinColumn(name  = "employee_id", referencedColumnName = "id")//khoa ngoai
-							
-			},
-			
-			inverseJoinColumns = {//cho bang cha khac
-					@JoinColumn(name = "account_id", referencedColumnName = "id") 
-			}
-	)
+	@OneToOne(cascade = CascadeType.ALL)
+	@PrimaryKeyJoinColumn
+//	@JoinColumn(name = "account_id")
 	private Account account;
 	
 	public Employee() {

@@ -1,12 +1,11 @@
 package dao;
 
-import javax.persistence.PersistenceUnitUtil;
-
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import persistence.Account;
-import persistence.jointable.Employee;
+import persistence.sharepk.Account;
+import persistence.sharepk.Employee;
+
 //import persistence.Employee;
 
 public class HibernateEmployeeDao extends AbstractHibernateDao implements EmployeeDao {
@@ -15,6 +14,9 @@ public class HibernateEmployeeDao extends AbstractHibernateDao implements Employ
 		Session session = getCurrentSession();
 		Transaction transaction = session.beginTransaction();
 		try {
+			Account account = new Account(123, "123-685-471");
+			account.setEmployee(employee);
+			employee.setAccount(account);
 			session.saveOrUpdate(employee);
 		//	session.evict(employee);
 			
@@ -38,8 +40,8 @@ public class HibernateEmployeeDao extends AbstractHibernateDao implements Employ
 			
 			emp = session.get(Employee.class, id);
 			
-		//	Account accReult = emp.getAccount();
-		//	System.out.println("xx: " + accReult);
+			Account accReult = emp.getAccount();
+			System.out.println("xx: " + accReult);
 		} catch (Exception e) {
 			transaction.rollback();
 		}
