@@ -11,11 +11,13 @@ public class HibernateUtil {
 
 	}
 
+	// xml - configuration
 	public static SessionFactory getSessionFactory() {
-		Configuration configuration = new Configuration();
 		if (sessionFactory == null) {
-			sessionFactory = configuration.configure("hibernate.cfg.xml").buildSessionFactory();
+			Configuration cfg = new Configuration();
+			sessionFactory = cfg.configure("hibernate.cfg.xml").buildSessionFactory();
 		}
 		return sessionFactory;
 	}
+
 }
