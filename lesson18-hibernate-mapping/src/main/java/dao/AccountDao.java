@@ -1,7 +1,9 @@
 package dao;
 
-import persistence.Account;
+import persistence.jointable.Account;
+
+//import persistence.fkassociation.Account;
 
 public interface AccountDao {
-	void save(Account acc);
+	void save(Account account);
 }

@@ -1,5 +1,6 @@
-package persistence;
+package persistence.jointable;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
@@ -7,24 +8,21 @@ import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name = " account")
+@Table(name = "account")
 public class Account {
-	
 	@Id
-	@Column(name= "id")
+	@Column(name = "id")
 	private Integer id;
-	@Column(name= "accountNumber")
+	
+	@Column(name = "account_number")
 	private String accountNumber;
-	@OneToOne(mappedBy = "account_id")
+	
+	@OneToOne(mappedBy = "account", cascade = CascadeType.ALL)
 	private Employee employee;
+	
 	public Account() {
-		// TODO Auto-generated constructor stub
 	}
 
-	/**
-	 * @param id
-	 * @param accountNumber
-	 */
 	public Account(Integer id, String accountNumber) {
 		super();
 		this.id = id;
@@ -43,10 +41,12 @@ public class Account {
 		return accountNumber;
 	}
 
-	public void setAccountNumber(String accountNumber) {
+	public void setAccount_number(String accountNumber) {
 		this.accountNumber = accountNumber;
 	}
 	
-	
-
+	@Override
+	public String toString() {
+		return id + " - " + accountNumber;
+	}
 }

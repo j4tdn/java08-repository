@@ -1,12 +1,7 @@
 package utils;
 
-import java.util.Properties;
-
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
-import org.hibernate.cfg.Environment;
-
-
 
 public class HibernateUtil {
 	private static SessionFactory sessionFactory;
@@ -14,8 +9,7 @@ public class HibernateUtil {
 	private HibernateUtil() {
 		
 	}
-	
-	
+
 	public static SessionFactory getSessionFactory() {
 		//SessionFactory sessionFactory = null;
 		if (sessionFactory == null) {
@@ -24,9 +18,5 @@ public class HibernateUtil {
 		}
 		return sessionFactory;
 	}
-	
-	
-	
-
 
 }
