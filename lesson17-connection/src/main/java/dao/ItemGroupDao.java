@@ -3,6 +3,8 @@ package dao;
 import java.util.List;
 
 import entities.ItemGroup;
+import persistence.ItemGroupDTO;
+import persistence.ItemGroupDTORaw;
 
 public interface ItemGroupDao {
 	List<ItemGroup> getAll();
@@ -10,6 +12,8 @@ public interface ItemGroupDao {
 	ItemGroup get(Integer id);
 
 	ItemGroup get(String name);
+	
+	//ItemGroup getItems();
 
 	List<ItemGroupDTO> getItemGroupDetail();
 

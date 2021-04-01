@@ -12,6 +12,8 @@ import org.apache.commons.lang3.tuple.Pair;
 import entities.ItemGroup;
 
 public class ItemGroupDTO {
+	
+	//PROPERTIES ALIAS
 	public static String ITEM_GROUP_ID = "itemGroupId";
 	public static String ITEM_GROUP_NAME = "itemGroupName";
 	public static String ITEM_LIST = "itemList";
@@ -19,8 +21,21 @@ public class ItemGroupDTO {
 
 	private Integer itemGroupId;
 	private String itemGroupName;
-	private List<Pair<String, Integer>> itemList;
+	private List<Pair<String, Integer>> itemList; //Pair la con Entry
 	private Integer totalOfItems;
+	
+	public ItemGroupDTO() {
+		
+	}
+	
+	public ItemGroupDTO(Integer itemGroupId, String itemGroupName, List<Pair<String, Integer>> itemList,
+			Integer totalOfItems) {
+		super();
+		this.itemGroupId = itemGroupId;
+		this.itemGroupName = itemGroupName;
+		this.itemList = itemList;
+		this.totalOfItems = totalOfItems;
+	}
 
 	public Integer getItemGroupId() {
 		return itemGroupId;
@@ -42,12 +57,15 @@ public class ItemGroupDTO {
 		return itemList;
 	}
 
-	//A:10 - B: 30
+	//A:10-B:12-C:20
 		public void setItemListTranformer(String itemListString) {
-			this.itemList = Pattern.compile("-").splitAsStream(itemListString).map(pair -> {
-				String[] array = pair.split(":");
-				return Pair.of(array[0], Integer.valueOf(array[1]));
-			}).collect(Collectors.toList());
+			this.itemList = Pattern.compile("-") //String
+					.splitAsStream(itemListString) //Stream<String> element: A: 10 => B: 12 => C:20
+					.map(pair -> { //pair: A:10
+						String[] array = pair.split(":");
+						return Pair.of(array[0], Integer.valueOf(array[1]));
+					}) //Stream<Pair>
+					.collect(Collectors.toList()); //List<Pair>
 		}
 
 
@@ -73,15 +91,22 @@ public class ItemGroupDTO {
 		}
 
 		ItemGroupDTO that = (ItemGroupDTO) o;
-		return new EqualsBuilder().append(getItemGroupId(), that.getItemGroupId())
-				.append(getItemGroupName(), that.getItemGroupName()).append(getItemList(), that.getItemList())
-				.append(getTotalOfItems(), that.getTotalOfItems()).isEquals();
+		return new EqualsBuilder()
+				.append(getItemGroupId(), that.getItemGroupId())
+				.append(getItemGroupName(), that.getItemGroupName())
+				.append(getItemList(), that.getItemList())
+				.append(getTotalOfItems(), that.getTotalOfItems())
+				.isEquals();
 	}
 
 	@Override
 	public int hashCode() {
-		return new HashCodeBuilder().append(getItemGroupId()).append(getItemGroupName()).append(getItemList())
-				.append(getTotalOfItems()).toHashCode();
+		return new HashCodeBuilder()
+				.append(getItemGroupId())
+				.append(getItemGroupName())
+				.append(getItemList())
+				.append(getTotalOfItems())
+				.toHashCode();
 	}
 
 	@Override

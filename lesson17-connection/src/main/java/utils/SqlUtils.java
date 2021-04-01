@@ -5,11 +5,11 @@ public class SqlUtils {
 
 	}
 
-	public static <T extends AutoCloseable> void close(T... ts) {
-		for (T t : ts) {
-			if (t != null) {
+	public static void close(AutoCloseable... elements) {
+		for (AutoCloseable element : elements) {
+			if (element != null) {
 				try {
-					t.close();
+					element.close();
 				} catch (Exception e) {
 					e.printStackTrace();
 				}

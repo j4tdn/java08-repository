@@ -137,6 +137,11 @@ public class Item {
 				.append(getId(), that.getId())
 				.append(getName(), that.getName())
 				.append(getPriceBuy(), that.getPriceBuy())
+				.append(getPriceSell(), that.getPriceSell())
+				.append(getCount(), that.getCount())
+				.append(getColor(), that.getColor())
+				.append(getItemGroup(), that.getItemGroup())
+				.append(getQuantity(), that.getQuantity())
 				.isEquals();
 	}
 	
@@ -145,6 +150,12 @@ public class Item {
 		return new HashCodeBuilder()
 					.append(getId())
 					.append(getName())
+					.append(getPriceBuy())
+					.append(getPriceSell())
+					.append(getCount())
+					.append(getColor())
+					.append(getItemGroup())
+					.append(getQuantity())
 					.toHashCode();
 	}
 	

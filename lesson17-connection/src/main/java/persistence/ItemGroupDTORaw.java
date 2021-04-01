@@ -15,6 +15,18 @@ public class ItemGroupDTORaw {
 	private String itemGroupName;
 	private String itemName;
 	private Integer numberOfItems;
+	
+	public ItemGroupDTORaw() {
+	
+	}
+	
+	public ItemGroupDTORaw(Integer itemGroupId, String itemGroupName, String itemName, Integer numberOfItems) {
+		super();
+		this.itemGroupId = itemGroupId;
+		this.itemGroupName = itemGroupName;
+		this.itemName = itemName;
+		this.numberOfItems = numberOfItems;
+	}
 
 	public Integer getItemGroupId() {
 		return itemGroupId;
@@ -58,15 +70,22 @@ public class ItemGroupDTORaw {
 		}
 
 		ItemGroupDTORaw that = (ItemGroupDTORaw) o;
-		return new EqualsBuilder().append(getItemGroupId(), that.getItemGroupId())
-				.append(getItemGroupName(), that.getItemGroupName()).append(getItemName(), that.getItemName())
-				.append(getNumberOfItems(), that.getNumberOfItems()).isEquals();
+		return new EqualsBuilder()
+				.append(getItemGroupId(), that.getItemGroupId())
+				.append(getItemGroupName(), that.getItemGroupName())
+				.append(getItemName(), that.getItemName())
+				.append(getNumberOfItems(), that.getNumberOfItems())
+				.isEquals();
 	}
 
 	@Override
 	public int hashCode() {
-		return new HashCodeBuilder().append(getItemGroupId()).append(getItemGroupName()).append(getItemName())
-				.append(getNumberOfItems()).toHashCode();
+		return new HashCodeBuilder()
+				.append(getItemGroupId())
+				.append(getItemGroupName())
+				.append(getItemName())
+				.append(getNumberOfItems())
+				.toHashCode();
 	}
 
 	@Override

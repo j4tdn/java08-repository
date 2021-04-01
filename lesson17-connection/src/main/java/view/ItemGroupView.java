@@ -4,6 +4,7 @@ import java.util.Collections;
 import java.util.List;
 
 import entities.ItemGroup;
+import persistence.ItemGroupDTO;
 import service.ItemGroupService;
 import service.ItemGroupServiceImpl;
 import utils.IOUtils;
@@ -18,13 +19,22 @@ public class ItemGroupView {
 		List<ItemGroup> result = itemGroupService.getAll();
 		System.out.println("result size: "+result.size());
 		IOUtils.printf(result);
+		
+		System.out.println("========================");
+		List<ItemGroup> selectAll = itemGroupService.getAll();
+		IOUtils.printf(selectAll);
 
 		System.out.println("========================");
-		ItemGroup selectId=itemGroupService.get(2);
-		IOUtils.printf(Collections.singletonList(selectId));
+		ItemGroup selectById = itemGroupService.get(2);
+		IOUtils.printf(Collections.singletonList(selectById)); //List chỉ chứa 1 ptu
 
 		System.out.println("========================");
-		ItemGroup selectname=itemGroupService.get("Q");
-		IOUtils.printf(Collections.singletonList(selectname));
+		ItemGroup selectByName = itemGroupService.get("Q");
+		IOUtils.printf(Collections.singletonList(selectByName));
+		
+		System.out.println("========================");
+		List<ItemGroupDTO> selectDTO = itemGroupService.getItemGroupDetail();
+		System.out.println("Alooo");
+		IOUtils.printf(selectDTO);
 	}
 }

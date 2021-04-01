@@ -18,6 +18,11 @@ public class ItemView {
 	}
 
 	public static void main(String[] args) {
+		List<Item> items = itemService.getItems(1, 100, 500);
+		IOUtils.printf(items);
+		
+		System.out.println("===============================");
+		
 		List<Item> result = itemService.getItems(LocalDate.of(2020, 12, 18));
 		IOUtils.printf(result);
 	}

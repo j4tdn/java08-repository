@@ -15,6 +15,7 @@ import javax.xml.transform.Transformer;
 import connection.ConnectionManager;
 import connection.ConnectionManagerImpl;
 import entities.Item;
+import persistence.ItemGroupDTO;
 import utils.SqlUtils;
 
 public class ItemDaoImpl implements ItemDao  {
@@ -38,7 +39,8 @@ public class ItemDaoImpl implements ItemDao  {
 				+ "\n WHERE MaLoai = ?"
 				+ "\nAND GiaBan BETWEEN ? AND ?";
 		
-		//todo
+		//todo: homework
+		
 		return Collections.EMPTY_LIST;
 	}
 
@@ -70,17 +72,24 @@ public class ItemDaoImpl implements ItemDao  {
 		} catch (SQLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}finally {
+		} finally {
 			SqlUtils.close(rs, pst);
 		}
 		return result;
 	}
 	
+	//transfrom sql's return to obj's attributes
 	private void transformer (Item item) throws SQLException {
-		item.setId(rs.getInt(Item.ID)); //lay column trong reshowset map sang 
+		item.setId(rs.getInt(Item.ID)); //lay column trong resultSet map sang 
 		item.setName(rs.getString(Item.NAME));
 		item.setPriceBuy(rs.getDouble(Item.SALES_OUT));
 		item.setQuantity(rs.getInt(Item.QUANTITY));
 		
 	}
+
+//	@Override
+//	public List<ItemGroupDTO> getItemGroupDetail() {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
 }
