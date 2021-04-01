@@ -50,8 +50,8 @@ public class HibernateStudentDao extends AbstractHibernateDao implements Student
 		Session session = getCurrentSession();
 		Transaction transaction = session.beginTransaction();
 		String sql = "SELECT l.TenLop " +  GradeInfo.GRADE_NAME + ", \n" + 
-				"	           concat(sv.ho, ' ', sv.ten) studentName ,\n" + 
-				"	           sv.email emailName\n" + 
+				"	           concat(sv.ho, ' ', sv.ten) "+ GradeInfo.STUDENT_NAME  +",\n" + 
+				"	           sv.email "+ GradeInfo.EMAIL + "\n" + 
 				"	   FROM sinhvien sv\n" + 
 				"	   JOIN lop l ON l.MaLop = sv.MaLop;";
 
