@@ -1,0 +1,10 @@
+List<T>
++ ArrayList<T>
+=> Structure same as Array
+=> Dynamic length
+=> capacity
+=> attribute: Object[] elementData
+=> call List#remove, List#contains
+   + Override T#equals
+   
++ Setup JDK11   
