@@ -1,6 +1,6 @@
 package dao;
 
-import persistence.jointable.Employee;
+import persistence.Employee;
 
 //import persistence.fkassociation.Employee;
 

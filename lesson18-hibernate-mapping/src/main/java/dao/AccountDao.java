@@ -1,6 +1,6 @@
 package dao;
 
-import persistence.jointable.Account;
+import persistence.Account;
 
 //import persistence.fkassociation.Account;
 
