@@ -17,7 +17,7 @@
 		<property name="show_sql">true</property>
 		<property name="current_session_context_class">thread</property>
 
-		<!-- Drop and re-create the database schema on startup -->
+		 <!--Drop and re-create the database schema on startup-->
 		 <property name="hbm2ddl.auto">create-drop</property>
 
 		<!-- persistence class -->
@@ -27,11 +27,9 @@
 		<!-- <mapping class="persistence.jointable.Employee" />
 		<mapping class="persistence.jointable.Account" /> -->
 		
-		<mapping class="persistence.sharepk.Employee" />
-		<mapping class="persistence.sharepk.Account" />
+		<mapping class="persistence.Employee" />
+		<mapping class="persistence.Project" />
 		
-		
-
 	</session-factory>
 
 </hibernate-configuration>

@@ -1,7 +1,8 @@
-package persistence;
+package persistence.fkassociation;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
@@ -24,7 +25,7 @@ public class Employee {
 	@Column(name="last_name")
 	private String lastName;
 	
-	@OneToOne
+	@OneToOne(fetch = FetchType.LAZY)  // fetch Lazy: khi get employee thì ko get account, Eager:(khi get owner thì sẽ get cả association) khi get employee thì get cả account
 	@JoinColumn(name="account_id", nullable = false)
 	private Account account;
 

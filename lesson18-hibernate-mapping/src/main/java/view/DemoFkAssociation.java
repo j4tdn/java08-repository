@@ -1,18 +1,13 @@
 package view;
 
-import java.util.List;
-
-import org.hibernate.Session;
-
 import dao.AccountDao;
 import dao.EmployeeDao;
 import dao.HibernateAccountDao;
 import dao.HibernateEmployeeDao;
-import persistence.Account;
-import persistence.Employee;
-import utils.HibernateUtil;
+import persistence.fkassociation.Account;
+import persistence.fkassociation.Employee;
 
-public class App {
+public class DemoFkAssociation {
 
 	private static AccountDao accountDao;
 	private static EmployeeDao employeeDao;
@@ -24,11 +19,15 @@ public class App {
 
 	public static void main(String[] args) {
 		Account account = new Account(123, "123-685-471");
-		Employee emp = new Employee(1, "Teo", "Le", "leteo@gmail.com");
+		Employee emp = new Employee(1, "Teo", " Le", "leteo@gmail.com");
 		emp.setAccount(account);
 		
-		accountDao.save(account);
-		employeeDao.save(emp);
+//		accountDao.save(account);
+		/*
+		 * employeeDao.save(emp);
+		 * 
+		 * Employee result = employeeDao.get(1); System.out.println(result);
+		 */
 	}
 
 }
