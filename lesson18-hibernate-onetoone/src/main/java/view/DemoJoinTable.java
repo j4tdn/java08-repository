@@ -14,15 +14,15 @@ public class DemoJoinTable {
 	private static EmployeeDao employeeDao;
 
 	static {
-		accountDao = new HibernateAccountDao();
-		employeeDao = new HibernateEmployeeDao();
+//		accountDao = new HibernateAccountDao();
+//		employeeDao = new HibernateEmployeeDao();
 	}
 
 	public static void main(String[] args) {
-		Account account = new Account(1, "123-132-134");
-		Employee employees = new Employee(1, "lam@gmail.com", "lamquan", "tran", account);
-		accountDao.save(account);
-		employeeDao.save(employees);
+//		Account account = new Account(1, "123-132-134");
+//		Employee employees = new Employee(1, "lam@gmail.com", "lamquan", "tran", account);
+//		accountDao.save(account);
+//		employeeDao.save(employees);
 		
 		
 	}

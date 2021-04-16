@@ -1,12 +1,10 @@
 package dao;
 
-import javax.persistence.PersistenceUnitUtil;
-
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import persistence.jointable.Account;
-import persistence.jointable.Employee;
+import persistence.sharepk.Account;
+import persistence.sharepk.Employee;
 
 public class HibernateEmployeeDao extends AbstracHibernateDao implements EmployeeDao {
 
@@ -15,13 +13,16 @@ public class HibernateEmployeeDao extends AbstracHibernateDao implements Employe
 
 		Transaction transaction = session.beginTransaction();
 		try {
+			
+			Account account = new Account(1, "123-132-134");
+			employee.setAccount(account);
 			session.saveOrUpdate(employee);
 //			session.evict(employee);
-			System.out.println("state contain e: " + session.contains(employee));
+//			System.out.println("state contain e: " + session.contains(employee));
 			
 			
-			PersistenceUnitUtil unit = session.getEntityManagerFactory().getPersistenceUnitUtil();
-			System.out.println("state  e: " +  unit.getIdentifier(employee));
+//			PersistenceUnitUtil unit = session.getEntityManagerFactory().getPersistenceUnitUtil();
+//			System.out.println("state  e: " +  unit.getIdentifier(employee));
 		} catch (Exception e) {
 			transaction.rollback();
 		}
@@ -36,8 +37,6 @@ public class HibernateEmployeeDao extends AbstracHibernateDao implements Employe
 		Transaction transaction = session.beginTransaction();
 		try {
 			 employee = session.get(Employee.class, i);
-			 Account account2 = employee.getAccount();
-				System.out.println(account2);
 			
 		} catch (Exception e) {
 			transaction.rollback();
