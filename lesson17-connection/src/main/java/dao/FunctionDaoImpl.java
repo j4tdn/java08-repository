@@ -31,7 +31,7 @@ public class FunctionDaoImpl implements FunctionDao {
 
 			cst.setInt(2, number);
 			cst.execute();
-
+			
 			result = cst.getInt(1);
 		} catch (Exception e) {
 			e.printStackTrace();
