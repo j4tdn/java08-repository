@@ -21,8 +21,11 @@ public class Department {
 	@Column(name = "dept_name")
 	private String deptName;
 	
-	@OneToMany(mappedBy = "department", cascade = CascadeType.ALL)
+	@OneToMany(mappedBy = "department")
 	private Set<Employee> employees = new HashSet<>();
+	
+	@OneToMany(mappedBy = "department")
+	private Set<Project> projects = new HashSet<>();
 
 	public Department() {
 	}
@@ -55,6 +58,14 @@ public class Department {
 
 	public void setEmployees(Set<Employee> employees) {
 		this.employees = employees;
+	}
+	
+	public Set<Project> getProjects() {
+		return projects;
+	}
+	
+	public void setProjects(Set<Project> projects) {
+		this.projects = projects;
 	}
 
 	@Override

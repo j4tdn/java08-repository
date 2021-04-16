@@ -12,12 +12,13 @@ import persistence.Employee;
 
 public class EmployeeDao extends AbstractHibernateDao {
 
-	public List<Employee> getEmps(String deptId) {
+	public List<Employee> getEmployeesByDepartmentId(String deptId) {
 		Session session = getCurrentSession();
 		Transaction transaction = session.beginTransaction();
 		List<Employee> result = new ArrayList<>();
 		try {
-			String sql = "SELECT * FROM employee" + "\nWHERE dept_id = :id";
+			String sql = "SELECT * FROM employee"
+					+ "\nWHERE dept_id = :id";
 			NativeQuery<Employee> query = session.createNativeQuery(sql, Employee.class);
 			query.setParameter("id", deptId);
 			result = query.getResultList();

@@ -12,8 +12,8 @@ public class EmployeeService {
 		employeeDao = new EmployeeDao();
 	}
 	
-	public List<Employee> getEmps(String deptId) {
-		return employeeDao.getEmps(deptId);
+	public List<Employee> getEmployeesByDepartmentId(String deptId) {
+		return employeeDao.getEmployeesByDepartmentId(deptId);
 	}
 	
 	public List<Employee> getAll() {
