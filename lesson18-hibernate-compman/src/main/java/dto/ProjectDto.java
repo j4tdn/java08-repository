@@ -1,21 +1,29 @@
 package dto;
 
+import java.util.AbstractMap.SimpleEntry;
+import java.util.List;
+import java.util.Map.Entry;
+
 public class ProjectDto {
+
+
+	
 	private String departmentName;
-	private String projectName;
-	private Integer budget;
+	private List<SimpleEntry<String, Integer>> proBuds;
+	private Integer totalOfBudget;
 
 	public ProjectDto() {
 		// TODO Auto-generated constructor stub
 	}
 
-	public ProjectDto(String departmentName, String projectName, Integer budget) {
+	public ProjectDto(String departmentName, List<SimpleEntry<String, Integer>> proBuds, Integer totalOfBudget) {
 		super();
 		this.departmentName = departmentName;
-		this.projectName = projectName;
-		this.budget = budget;
+		this.proBuds = proBuds;
+		this.totalOfBudget = totalOfBudget;
 	}
 
+	
 	public String getDepartmentName() {
 		return departmentName;
 	}
@@ -24,20 +32,26 @@ public class ProjectDto {
 		this.departmentName = departmentName;
 	}
 
-	public String getProjectName() {
-		return projectName;
+	public List<SimpleEntry<String, Integer>> getProBuds() {
+		return proBuds;
 	}
 
-	public void setProjectName(String projectName) {
-		this.projectName = projectName;
+	public void setProBuds(List<SimpleEntry<String, Integer>> proBuds) {
+		this.proBuds = proBuds;
 	}
 
-	public Integer getBudget() {
-		return budget;
+	public Integer getTotalOfBudget() {
+		return totalOfBudget;
 	}
 
-	public void setBudget(Integer budget) {
-		this.budget = budget;
+	public void setTotalOfBudget(Integer totalOfBudget) {
+		this.totalOfBudget = totalOfBudget;
+	}
+
+	@Override
+	public String toString() {
+		return "ProjectDto [departmentName=" + departmentName + ", proBuds=" + proBuds + ", totalOfBudget="
+				+ totalOfBudget + "]";
 	}
 
 }

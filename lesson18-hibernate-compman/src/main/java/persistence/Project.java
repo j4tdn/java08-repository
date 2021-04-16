@@ -2,6 +2,7 @@ package persistence;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
@@ -13,32 +14,25 @@ public class Project {
 	@Id
 	@Column(name = "pro_id")
 	private String id;
-	
+
 	@Column(name = "pro_name")
 	private String name;
-	
+
 	@Column(name = "budget")
 	private Integer budget;
-	
-	
-	@ManyToOne()
-	@JoinColumn(name = "dept_id", nullable = false)
+
+	@ManyToOne(fetch = FetchType.LAZY)
+	@JoinColumn(name = "dept_id")
 	private Department department;
-	
+
 	public Project() {
-		// TODO Auto-generated constructor stub
 	}
-	
-	
 
 	public Project(String id, String name, Integer budget) {
-		super();
 		this.id = id;
 		this.name = name;
 		this.budget = budget;
 	}
-
-
 
 	public String getId() {
 		return id;
@@ -71,6 +65,10 @@ public class Project {
 	public void setDepartment(Department department) {
 		this.department = department;
 	}
-	
-	
+
+	@Override
+	public String toString() {
+		return "Project name: " + name + ", budget: " + budget + ", departmentName: " + department.getName();
+	}
+
 }

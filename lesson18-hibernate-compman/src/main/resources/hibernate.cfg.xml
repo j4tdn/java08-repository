@@ -31,7 +31,6 @@
 
 		<mapping class="persistence.Employee" />
 		<mapping class="persistence.Project" />
-		<mapping class="persistence.ProjectEmployee" />
 
 
 	</session-factory>
