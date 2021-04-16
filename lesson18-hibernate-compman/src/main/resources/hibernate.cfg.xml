@@ -20,6 +20,7 @@
 	
 		<!-- persistence class -->
 		<mapping class="persistence.Project" />
+		<mapping class="persistence.ProjectEmployee" />
 		<mapping class="persistence.Employee" />
 		<mapping class="persistence.Department" />
 		

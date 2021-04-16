@@ -5,7 +5,6 @@ import java.util.List;
 import dao.EmployeeDao;
 import dao.HibernateEmployeeDao;
 import persistence.Employee;
-import persistence.EmployeeDto;
 
 public class EmployeeService {
 	private static EmployeeDao employeeDao;
@@ -17,7 +16,7 @@ public class EmployeeService {
 		return employeeDao.get(id);
 	}
 
-	public List<EmployeeDto> getAll() {
+	public List<Employee> getAll() {
 		return employeeDao.getAll();
 	}
 }

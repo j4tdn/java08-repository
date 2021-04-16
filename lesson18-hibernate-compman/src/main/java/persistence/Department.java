@@ -8,11 +8,8 @@ import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
-import lombok.NoArgsConstructor;
-
 @Entity
 @Table(name = "department")
-@NoArgsConstructor
 public class Department {
 	@Id
 	@Column(name = "dept_id")
@@ -24,8 +21,47 @@ public class Department {
 	@OneToMany(mappedBy = "department")
 	private Set<Employee> employees;
 
-	@OneToMany(mappedBy = "dept_id")
+	@OneToMany(mappedBy = "department")
 	private Set<Project> projects;
 
+	public Department() {
+	}
+
+	public String getDeptId() {
+		return deptId;
+	}
+
+	public void setDeptId(String deptId) {
+		this.deptId = deptId;
+	}
+
+	public String getDeptName() {
+		return deptName;
+	}
+
+	public void setDeptName(String deptName) {
+		this.deptName = deptName;
+	}
+
+	public Set<Employee> getEmployees() {
+		return employees;
+	}
+
+	public void setEmployees(Set<Employee> employees) {
+		this.employees = employees;
+	}
+
+	public Set<Project> getProjects() {
+		return projects;
+	}
+
+	public void setProjects(Set<Project> projects) {
+		this.projects = projects;
+	}
+
+	@Override
+	public String toString() {
+		return deptId + " | " + deptName;
+	}
 
 }
