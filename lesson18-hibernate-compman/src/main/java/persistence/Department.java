@@ -18,6 +18,9 @@ public class Department {
     @OneToMany(mappedBy = "department")
     private Set<Employee> employees;
 
+    @OneToMany(mappedBy = "department")
+    private Set<Project> projects;
+
     public Department() {
     }
 

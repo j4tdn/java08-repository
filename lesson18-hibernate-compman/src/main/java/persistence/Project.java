@@ -16,7 +16,9 @@ public class Project {
     @Column(name = "budget")
     private String budget;
 
-    @ManyToOne
+    @ManyToOne //default FetchType.EAGER
+    // name is name of attribute in the this table
+    @JoinColumn(name = "dept_id", referencedColumnName = "dept_id")
     private Department department;
 
     public Project() {
@@ -57,17 +59,13 @@ public class Project {
         return department;
     }
 
-    @Override
-    public String toString() {
-        return "Project{" +
-                "proId='" + proId + '\'' +
-                ", proName='" + proName + '\'' +
-                ", budget='" + budget + '\'' +
-                ", department=" + department +
-                '}';
-    }
-
     public void setDepartment(Department department) {
         this.department = department;
     }
+
+    @Override
+    public String toString() {
+        return department.getDeptName() + ", " + getProName() + ", " + getBudget();
+    }
+
 }
