@@ -41,11 +41,22 @@ public class ProjectService {
 			
 		}
 		return result;
-		
-//		var haha = rawData.stream()
-//				.collect(Collectors.groupingBy(ProjectDtoRawData::getDepartmentName, Collectors.mapping(t -> {
-//					return new AbstractMap.SimpleEntry<String, Integer>(t.getProjectName(), t.getBudget());
-//				}, Collectors.toSet())));
+//		
+//		public List<ProjectDto> getProBudgets() {
+//	        List<ProjectDto> result = new ArrayList<>();
+//	        List<ProjectRawData> rawData = projectDao.getProBudgets();
+//	        Map<String, List<ProjectRawData>> dataMap = rawData.stream().collect(Collectors.groupingBy(ProjectRawData::getDeptName));
+//	        for (Map.Entry<String, List<ProjectRawData>> entry : dataMap.entrySet()) {
+//	            List<AbstractMap.SimpleEntry<String, Double>> proBuds = entry.getValue().stream().map(rawItem -> new AbstractMap.SimpleEntry<>(rawItem.getProName(), rawItem.getBudget()))
+//	                    .collect(Collectors.toList());
+//	            Double budget = entry.getValue().stream().mapToDouble(ProjectRawData::getBudget).sum();
+//	            result.add(new ProjectDto(entry.getKey(), proBuds, budget));
+//	        }
+//	        return result;
+//	    }
+//	
+
+
 
 	}
 }
