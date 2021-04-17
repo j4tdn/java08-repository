@@ -21,6 +21,9 @@ public class Department {
 	@OneToMany(mappedBy = "department")
 	Set<Employee> employees;
 	
+	@OneToMany(mappedBy = "department")
+	Set<Project> projects;
+	
 	public Department() {
 	}
 
@@ -43,6 +46,22 @@ public class Department {
 
 	public void setDeptName(String deptName) {
 		this.deptName = deptName;
+	}
+	
+	public Set<Employee> getEmployees() {
+		return employees;
+	}
+	
+	public void setEmployees(Set<Employee> employees) {
+		this.employees = employees;
+	}
+	
+	public Set<Project> getProjects() {
+		return projects;
+	}
+	
+	public void setProjects(Set<Project> projects) {
+		this.projects = projects;
 	}
 
 	@Override
