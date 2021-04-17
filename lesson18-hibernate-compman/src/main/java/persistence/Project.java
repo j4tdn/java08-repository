@@ -68,7 +68,5 @@ public class Project {
 	public String toString() {
 		return proId + " | " + proName + " | " + budget + " | " + department;
 	}
-	
-	
 
 }

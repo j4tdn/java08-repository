@@ -10,7 +10,7 @@ import org.hibernate.transform.Transformers;
 import org.hibernate.type.StandardBasicTypes;
 
 import persistence.Project;
-import persistence.ProjectInfo;
+import persistence.ProjectDtoRawData;
 
 public class HibernateProjectDao extends AbstractHibernateDao implements ProjectDao {
 
@@ -22,8 +22,7 @@ public class HibernateProjectDao extends AbstractHibernateDao implements Project
 			String sql = "SELECT * FROM project WHERE budget > :budget";
 
 			NativeQuery<Project> query = session.createNativeQuery(sql, Project.class);
-			query.setParameter("budget", budget);
-
+			query.setParameter("budget", budget,StandardBasicTypes.DOUBLE);
 			projects = query.getResultList();
 			transaction.commit();
 		} catch (Exception e) {
@@ -35,14 +34,14 @@ public class HibernateProjectDao extends AbstractHibernateDao implements Project
 
 	@SuppressWarnings("deprecation")
 	@Override
-	public List<ProjectInfo> getTotalOfBudget(Integer year) {
-		List<ProjectInfo> projectInfos = new ArrayList<ProjectInfo>();
+	public List<ProjectDtoRawData> getTotalOfBudget(Integer year) {
+		List<ProjectDtoRawData> projectInfos = new ArrayList<ProjectDtoRawData>();
 		Session session = getCurrentSession();
 		Transaction transaction = session.beginTransaction();
 		try {
-			String sql = "SELECT d.dept_name " + ProjectInfo.DEPT_NAME
-					+ ", group_concat(concat(p.pro_name, ': ', p.budget) SEPARATOR ', ') " + ProjectInfo.PROJECT_DETAILS
-					+ ", SUM(p.budget) " + ProjectInfo.BUDGET + "\nFROM project p \n"
+			String sql = "SELECT d.dept_name " + ProjectDtoRawData.DEPT_NAME
+					+ ", group_concat(concat(p.pro_name, ': ', p.budget) SEPARATOR ', ') " + ProjectDtoRawData.PROJECT_DETAILS
+					+ ", SUM(p.budget) " + ProjectDtoRawData.BUDGET + "\nFROM project p \n"
 					+ "JOIN department d ON p.dept_id = d.dept_id \n"
 					+ "WHERE p.pro_id in (SELECT pe.pro_id FROM project_employee pe WHERE year(pe.start_date) = :year)\r\n"
 					+ "GROUP BY p.dept_id;";
@@ -50,10 +49,10 @@ public class HibernateProjectDao extends AbstractHibernateDao implements Project
 			NativeQuery<?> query = session.createNativeQuery(sql);
 			query.setParameter("year", year);
 
-			query.addScalar(ProjectInfo.DEPT_NAME, StandardBasicTypes.STRING)
-					.addScalar(ProjectInfo.PROJECT_DETAILS, StandardBasicTypes.STRING)
-					.addScalar(ProjectInfo.BUDGET, StandardBasicTypes.DOUBLE)
-					.setResultTransformer(Transformers.aliasToBean(ProjectInfo.class));
+			query.addScalar(ProjectDtoRawData.DEPT_NAME, StandardBasicTypes.STRING)
+					.addScalar(ProjectDtoRawData.PROJECT_DETAILS, StandardBasicTypes.STRING)
+					.addScalar(ProjectDtoRawData.BUDGET, StandardBasicTypes.DOUBLE)
+					.setResultTransformer(Transformers.aliasToBean(ProjectDtoRawData.class));
 
 			projectInfos = safeList(query);
 			transaction.commit();
