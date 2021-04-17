@@ -8,7 +8,7 @@ import org.hibernate.query.NativeQuery;
 
 import persistence.Department;
 
-public class HibernateDepartmetDao extends AbstractHibernateDao implements DepartmentDao{
+public class HibernateDepartmentDao extends AbstractHibernateDao implements DepartmentDao{
 
 	public List<Department> dept() {
 		Session session = getCurreSession();

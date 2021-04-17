@@ -25,6 +25,7 @@
 
 		<mapping class="persistence.Employee" />
 		<mapping class="persistence.Department" />
+		<mapping class="persistence.Project" />
 
 
 

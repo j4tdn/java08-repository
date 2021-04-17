@@ -22,6 +22,7 @@ public class Department {
 	
 	@OneToMany(cascade = CascadeType.ALL, mappedBy = "department")
 	private Set<Employee> employees = new HashSet<Employee>();
+	private Set<Project> project;
 	
 	public Department() {
 		// TODO Auto-generated constructor stub
