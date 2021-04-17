@@ -50,9 +50,4 @@ public class ProjectDtoRawData {
 		return deptName + " | " + projectDetails + " | " + budget;
 	}
 
-	public String getProName() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
 }

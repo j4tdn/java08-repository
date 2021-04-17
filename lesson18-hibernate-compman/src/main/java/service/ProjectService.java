@@ -31,7 +31,7 @@ public class ProjectService {
 		for (Entry<String, List<ProjectDtoRawData>> entry : dataMap.entrySet()) {
 			
 			List<SimpleEntry<String, Double>> proBuds = entry.getValue().stream()
-					.map(rawItem -> new SimpleEntry<String, Double>(rawItem.getProName(), rawItem.getBudget()))
+					.map(rawItem -> new SimpleEntry<String, Double>(rawItem.getProjectDetails(), rawItem.getBudget()))
 					.collect(Collectors.toList());
 			
 			Double sum = entry.getValue().stream().mapToDouble(ProjectDtoRawData::getBudget).sum();
