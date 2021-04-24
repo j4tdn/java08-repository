@@ -10,6 +10,10 @@ import utils.HibernateUtil;
 public class AbstractHibernateDao {
 
 	Session getCurrentSession() {
+		return HibernateUtil.getSessionFactory().getCurrentSession();
+	}
+	
+	Session openSession() {
 		return HibernateUtil.getSessionFactory().openSession();
 	}
 	

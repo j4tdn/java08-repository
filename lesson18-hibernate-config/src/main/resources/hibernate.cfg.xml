@@ -16,20 +16,9 @@
 		<!-- Echo the SQL to stdout -->
 		<property name="show_sql">true</property>
 
-		<!-- Drop and re-create the database schema on startup -->
-		<!-- NOT USE
-			create-drop
-			+ Drop and re-create the database schema on startup
-			update: 
-			+ create table if not exists 
-			+ alter table if something diff with db tables
-		-->
-		<!-- <property name="hbm2ddl.auto">update</property>  -->
-
 		<!-- Set the current session context -->
 		<property name="current_session_context_class">thread</property>
 		
-		<!-- application has to handle modifications explicitly through transactions itself -->
         <!-- <property name="connection.autocommit">false</property>  -->
 		
 		<!-- persistence class -->
