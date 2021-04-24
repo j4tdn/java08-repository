@@ -6,10 +6,12 @@ public class MatHangDTORawData {
 	public static final String MA_MH = "maMH";
 	public static final String TEN_MH = "tenMH";
 	public static final String NGAY_TA0 = "ngayTao";
+	public static final String SO_LUONG = "soLuong";
 
 	private Integer maMH;
 	private String tenMH;
 	private LocalDateTime ngayTao;
+	private Integer soLuong;
 
 	public MatHangDTORawData() {
 	}
@@ -18,6 +20,15 @@ public class MatHangDTORawData {
 		this.maMH = maMH;
 		this.tenMH = tenMH;
 		this.ngayTao = ngayTao;
+	}
+	
+
+	public Integer getSoLuong() {
+		return soLuong;
+	}
+
+	public void setSoLuong(Integer soLuong) {
+		this.soLuong = soLuong;
 	}
 
 	public Integer getMaMH() {

@@ -29,4 +29,19 @@ public class MatHangService {
 		
 		return listDTO;
 	}
+	
+	public List<MatHangDTO> getTop3() {
+		List<MatHangDTORawData> rawDatas = matHangDao.getTop3Sale();
+		List<MatHangDTO> listDTO = new ArrayList<MatHangDTO>();
+
+		for (MatHangDTORawData matHangRawDTO : rawDatas) {
+			MatHangDTO dto = new MatHangDTO();
+			dto.setMaMH(matHangRawDTO.getMaMH());
+			dto.setTenMH(matHangRawDTO.getTenMH());
+			dto.setSoLuong(matHangRawDTO.getSoLuong());
+			listDTO.add(dto);
+		}
+		
+		return listDTO;
+	}
 }

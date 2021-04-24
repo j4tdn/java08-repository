@@ -13,6 +13,7 @@ public class view {
 		MatHangService hangService = new MatHangService();
 		LoaiHangService hangService2 = new LoaiHangService();
 		List<MatHangDTO> dtos = hangService.getProBudget(LocalDate.of(2020, 12, 18));
+		List<MatHangDTO> top3 = hangService.getTop3();
 		List<LoaiHangDTO> dtoLoai = hangService2.getLoaiHang();
 		System.out.println(dtos.size());
 		for (MatHangDTO matHangDTO : dtos) {
@@ -21,5 +22,10 @@ public class view {
 		for (LoaiHangDTO loaiHangDTO : dtoLoai) {
 			System.out.println(loaiHangDTO);
 		}
+		for (MatHangDTO matHang : top3) {
+			System.out.println("---" + matHang);
+		}
+		
+		
 	}
 }
