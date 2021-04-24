@@ -3,63 +3,28 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
-  <component name="BranchesTreeState">
-    <expand>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
-    </expand>
-    <select />
-  </component>
   <component name="ChangeListManager">
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <list default="true" id="6c4391f5-d10e-4b88-8557-559ecf5bba10" name="Default Changelist" comment="">
+    <list default="true" id="a9f7f523-40b4-4e0e-bf1f-ae1cb5343390" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/java08-repository.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson13-fileAPI/src/main/java/files/ddl/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson13-fileAPI/src/main/java/files/ddl/Ex01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson13-fileAPI/target/classes/files/ddl/Ex01.class" beforeDir="false" afterPath="$PROJECT_DIR$/lesson13-fileAPI/target/classes/files/ddl/Ex01.class" afterDir="false" />
-=======
-    <list default="true" id="66f3d207-85fb-4b79-9e0c-7b026bec1f5b" name="Default Changelist" comment="">
-=======
-    <list default="true" id="4e226607-1afa-44e7-bdb3-a173893d540b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_10.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_surefire_api_2_22_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_surefire_booter_2_22_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_surefire_logger_api_2_22_1.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_guice_2_1_7.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
->>>>>>> 42ec90a (Database)
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__aopalliance_aopalliance_1_0.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_lang_commons_lang_2_4.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_inject_javax_inject_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_3_8_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_11.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_10.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_surefire_api_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_surefire_booter_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_maven_surefire_surefire_logger_api_2_22_1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_3.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__org_sonatype_sisu_sisu_guice_2_1_7.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson07-libraries/src/main/java/DateTime08/Ex01.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson07-libraries/src/main/java/DateTime08/Ex01.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson12-streamAPI/lesson12-streamAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson12-streamAPI/lesson12-streamAPI.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lesson13-fileAPI/lesson13-fileAPI.iml" beforeDir="false" afterPath="$PROJECT_DIR$/lesson13-fileAPI/lesson13-fileAPI.iml" afterDir="false" />
-<<<<<<< HEAD
->>>>>>> 1de7873 (File API 14/11/2020)
-=======
-      <change beforePath="$PROJECT_DIR$/lesson13-fileAPI/src/main/java/files/dml/Ex03.java" beforeDir="false" afterPath="$PROJECT_DIR$/lesson13-fileAPI/src/main/java/files/dml/Ex03.java" afterDir="false" />
->>>>>>> 42ec90a (Database)
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,14 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="MavenImportPreferences">
-    <option name="generalSettings">
-      <MavenGeneralSettings>
-        <option name="mavenHome" value="C:\Program Files\JetBrains\IntelliJ IDEA 2020.2.3\plugins\maven\lib\maven3" />
-      </MavenGeneralSettings>
-    </option>
-  </component>
-  <component name="ProjectId" id="1kS2nHeQugSt20DwY2CEequ5F71" />
+  <component name="ProjectId" id="1rbjqfabgsxSWIQ2Avuv5h27U1t" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -94,113 +52,25 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-<<<<<<< HEAD
-<<<<<<< HEAD
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.emmet" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/java08-hibernate-cache" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.proportion" value="0.1310616" />
+    <property name="project.structure.side.proportion" value="0.15105742" />
+    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
-  <component name="RunManager" selected="Application.Ex01">
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lambda.App" />
-      <module name="lesson12-streamAPI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lambda.*" />
-=======
-    <property name="last_opened_file_path" value="C:/Lesson14-phanhuynhduc" />
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Workspace\java08\java08-repository\java08-hibernate-cache" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager">
     <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App.App" />
-      <module name="Lesson14-phanhuynhduc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="App.*" />
->>>>>>> 42ec90a (Database)
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-    <configuration name="Ex01 (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collections.map.Ex01" />
-=======
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collections.map.Test" />
->>>>>>> 42ec90a (Database)
-      <module name="lesson11-collections" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collections.map.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-    <configuration name="Ex01" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="files.ddl.Ex01" />
-      <module name="lesson13-fileAPI" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="files.ddl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-=======
-    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Test" />
-      <module name="lesson08-string" />
->>>>>>> 42ec90a (Database)
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-    <configuration name="Ex02" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="collections.map.Ex02" />
-      <module name="lesson11-collections" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="collections.map.*" />
-=======
-    <configuration name="WhAllocatedAmountManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App.WhAllocatedAmountManager" />
-      <module name="Lesson14-phanhuynhduc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="App.*" />
->>>>>>> 42ec90a (Database)
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-<<<<<<< HEAD
-    <configuration name="Transactional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="view.Transactional" />
-      <module name="lesson12-streamAPI" />
+      <option name="MAIN_CLASS_NAME" value="view.App" />
+      <module name="java08-hibernate-cache" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="view.*" />
-=======
-    <configuration name="WhyAllocatedAmountManagerPlus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App.WhyAllocatedAmountManagerPlus" />
-      <module name="Lesson14-phanhuynhduc" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="App.*" />
->>>>>>> 42ec90a (Database)
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -208,321 +78,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-<<<<<<< HEAD
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Ex01" />
         <item itemvalue="Application.App" />
-        <item itemvalue="Application.Transactional" />
-        <item itemvalue="Application.Ex02" />
-        <item itemvalue="Application.Ex01 (1)" />
       </list>
     </recent_temporary>
-=======
->>>>>>> 1de7873 (File API 14/11/2020)
-=======
->>>>>>> 42ec90a (Database)
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-<<<<<<< HEAD
-<<<<<<< HEAD
-      <changelist id="6c4391f5-d10e-4b88-8557-559ecf5bba10" name="Default Changelist" comment="" />
-      <created>1602598186449</created>
+      <changelist id="a9f7f523-40b4-4e0e-bf1f-ae1cb5343390" name="Default Changelist" comment="" />
+      <created>1619251876828</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1602598186449</updated>
-      <workItem from="1602598190323" duration="11000" />
-      <workItem from="1602598250670" duration="234000" />
-      <workItem from="1602598504490" duration="1010000" />
-      <workItem from="1602599793947" duration="181000" />
-      <workItem from="1602606894133" duration="415000" />
-      <workItem from="1602607337730" duration="35000" />
-      <workItem from="1602607719378" duration="472000" />
-      <workItem from="1602630056065" duration="846000" />
-      <workItem from="1602635394661" duration="3887000" />
-      <workItem from="1602656274808" duration="653000" />
-      <workItem from="1602661752255" duration="719000" />
-      <workItem from="1602664120626" duration="1399000" />
-      <workItem from="1602680153692" duration="603000" />
-      <workItem from="1602743892803" duration="1413000" />
-      <workItem from="1602752469474" duration="1333000" />
-      <workItem from="1602807605670" duration="806000" />
-      <workItem from="1602834847770" duration="161000" />
-      <workItem from="1602847312152" duration="190000" />
-      <workItem from="1602849244898" duration="1080000" />
-      <workItem from="1602853931787" duration="445000" />
-      <workItem from="1602854870707" duration="7436000" />
-      <workItem from="1602864423426" duration="680000" />
-      <workItem from="1602895263960" duration="1332000" />
-      <workItem from="1602923319234" duration="4388000" />
-      <workItem from="1603200045457" duration="6421000" />
-      <workItem from="1603214002646" duration="938000" />
-      <workItem from="1603245546559" duration="3187000" />
-      <workItem from="1603251609021" duration="823000" />
-      <workItem from="1603264992334" duration="50000" />
-      <workItem from="1603407780277" duration="284000" />
-      <workItem from="1603408095575" duration="96000" />
-      <workItem from="1603408215439" duration="1031000" />
-      <workItem from="1603412459980" duration="369000" />
-      <workItem from="1603413716783" duration="3829000" />
-      <workItem from="1603459363596" duration="8333000" />
-      <workItem from="1603468696597" duration="3256000" />
-      <workItem from="1603499212865" duration="798000" />
-      <workItem from="1603595450952" duration="618000" />
-      <workItem from="1603639401252" duration="3653000" />
-      <workItem from="1603673934364" duration="605000" />
-      <workItem from="1603810330579" duration="112000" />
-      <workItem from="1603810474791" duration="1813000" />
-      <workItem from="1603856561421" duration="5159000" />
-      <workItem from="1603957433886" duration="1917000" />
-      <workItem from="1603979942547" duration="5838000" />
-      <workItem from="1604044949425" duration="5407000" />
-      <workItem from="1604060021394" duration="803000" />
-      <workItem from="1604063947865" duration="2850000" />
-      <workItem from="1604076189781" duration="614000" />
-      <workItem from="1604106254753" duration="932000" />
-      <workItem from="1604124387568" duration="169000" />
-      <workItem from="1604152606731" duration="1675000" />
-      <workItem from="1604160112057" duration="633000" />
-      <workItem from="1604194237430" duration="780000" />
-      <workItem from="1604229987506" duration="20000" />
-      <workItem from="1604230059347" duration="47000" />
-      <workItem from="1604242247090" duration="3409000" />
-      <workItem from="1604305759362" duration="271000" />
-      <workItem from="1604306086822" duration="4947000" />
-      <workItem from="1604321341532" duration="1146000" />
-      <workItem from="1604408266976" duration="9993000" />
-      <workItem from="1604421956920" duration="970000" />
-      <workItem from="1604468006011" duration="1949000" />
-      <workItem from="1604668972585" duration="8013000" />
-      <workItem from="1605274035141" duration="413000" />
-      <workItem from="1605277514807" duration="986000" />
-=======
-      <changelist id="66f3d207-85fb-4b79-9e0c-7b026bec1f5b" name="Default Changelist" comment="" />
-      <created>1605622307541</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1605622307541</updated>
-      <workItem from="1605622309419" duration="101000" />
-      <workItem from="1605622416502" duration="1156000" />
->>>>>>> 1de7873 (File API 14/11/2020)
-=======
-      <changelist id="4e226607-1afa-44e7-bdb3-a173893d540b" name="Default Changelist" comment="" />
-      <created>1605679837000</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1605679837000</updated>
-      <workItem from="1605679838056" duration="1256000" />
-      <workItem from="1605683022978" duration="727000" />
-      <workItem from="1605715841153" duration="3654000" />
-      <workItem from="1605747883296" duration="990000" />
-      <workItem from="1605748886313" duration="3066000" />
-      <workItem from="1605754405828" duration="1546000" />
-      <workItem from="1605773285354" duration="692000" />
-      <workItem from="1605782339350" duration="1867000" />
-      <workItem from="1605803255928" duration="1022000" />
-      <workItem from="1605837724914" duration="11916000" />
-      <workItem from="1605912947284" duration="622000" />
-      <workItem from="1605939882726" duration="684000" />
-      <workItem from="1606470490002" duration="2903000" />
-      <workItem from="1606520561529" duration="1837000" />
-      <workItem from="1606557518540" duration="1901000" />
-      <workItem from="1606565637252" duration="1203000" />
-      <workItem from="1606612880119" duration="598000" />
-      <workItem from="1607099408785" duration="2098000" />
-      <workItem from="1607140220571" duration="1772000" />
->>>>>>> 42ec90a (Database)
+      <updated>1619251876828</updated>
+      <workItem from="1619251879419" duration="10664000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 42ec90a (Database)
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State />
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-<<<<<<< HEAD
-    <state x="249" y="0" key="#Project_Structure" timestamp="1604675147607">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="229" y="0" key="#Project_Structure/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604306020131" />
-    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1604675147607" />
-    <state x="525" y="109" key="#com.intellij.ide.util.MemberChooser" timestamp="1604468323543">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="525" y="109" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1604468323543" />
-    <state x="396" y="64" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog" timestamp="1604230070876">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="396" y="64" key="#com.intellij.ide.util.frameworkSupport.AddFrameworkSupportDialog/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604230070876" />
-    <state x="549" y="130" key="FileChooserDialogImpl" timestamp="1605271614739">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="130" key="FileChooserDialogImpl/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604306027505" />
-    <state x="549" y="130" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605271614739" />
-    <state width="1493" height="204" key="GridCell.Tab.0.bottom" timestamp="1605273904163">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604312608285" />
-    <state width="1323" height="176" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604308183193" />
-    <state width="1493" height="204" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605273904163" />
-    <state width="1493" height="204" key="GridCell.Tab.0.center" timestamp="1605273904162">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604312608285" />
-    <state width="1323" height="176" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604308183193" />
-    <state width="1493" height="204" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605273904162" />
-    <state width="1493" height="204" key="GridCell.Tab.0.left" timestamp="1605273904162">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604312608285" />
-    <state width="1323" height="176" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604308183193" />
-    <state width="1493" height="204" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605273904162" />
-    <state width="1493" height="204" key="GridCell.Tab.0.right" timestamp="1605273904162">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1604312608285" />
-    <state width="1323" height="176" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1366.728@1920.0.1366.728" timestamp="1604308183193" />
-    <state width="1493" height="204" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605273904162" />
-    <state x="439" y="31" key="NewModule_or_Project.wizard" timestamp="1604675135786">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="439" y="31" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1604675135786" />
-    <state x="249" y="0" key="SettingsEditor" timestamp="1604413464677">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="249" y="0" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1604413464677" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1603589803322">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1603589803322" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1603467894930" />
-    <state width="600" height="440" key="javadoc.popup" timestamp="1602855846636">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="600" height="440" key="javadoc.popup/0.0.1536.824@0.0.1536.824" timestamp="1602855846636" />
-    <state x="209" y="0" key="new project wizard" timestamp="1605274082525">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="209" y="0" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1605274082525" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1602807727363">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1602807727363" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1604408551282">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1604408551282" />
-    <state x="491" y="317" key="vcs.readOnlyHandler.ReadOnlyStatusDialog" timestamp="1603639465939">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="491" y="317" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1603639465939" />
-    <state x="491" y="317" key="vcs.readOnlyHandler.ReadOnlyStatusDialog/0.0.1536.824@0.0.1536.824" timestamp="1602807641421" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk-13.0.1/lib/src.zip!/java.base/java/util/List.java</url>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk-13.0.1/lib/src.zip!/java.base/java/util/ArrayList.java</url>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk-13.0.1/lib/src.zip!/java.base/java/util/stream/Collectors.java</url>
-          <option name="timeStamp" value="3" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>jar://C:/Program Files/Java/jdk-13.0.1/lib/src.zip!/java.base/java/util/Map.java</url>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
-  </component>
-=======
->>>>>>> 1de7873 (File API 14/11/2020)
-=======
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605803401460">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605803401460" />
-    <state x="549" y="122" key="FileChooserDialogImpl" timestamp="1607009110041">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="549" y="122" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1607009110041" />
-    <state width="1493" height="253" key="GridCell.Tab.0.bottom" timestamp="1605852457679">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.bottom/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
-    <state width="1493" height="212" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605841985371" />
-    <state width="1493" height="253" key="GridCell.Tab.0.center" timestamp="1605852457679">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.center/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
-    <state width="1493" height="212" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605841985371" />
-    <state width="1493" height="253" key="GridCell.Tab.0.left" timestamp="1605852457678">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.left/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457678" />
-    <state width="1493" height="212" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605841985371" />
-    <state width="1493" height="253" key="GridCell.Tab.0.right" timestamp="1605852457679">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="253" key="GridCell.Tab.0.right/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
-    <state width="1493" height="212" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605841985371" />
-    <state width="1493" height="253" key="GridCell.Tab.1.bottom" timestamp="1605852457679">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="253" key="GridCell.Tab.1.bottom/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
-    <state width="1493" height="253" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605840685512" />
-    <state width="1493" height="253" key="GridCell.Tab.1.center" timestamp="1605852457679">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="253" key="GridCell.Tab.1.center/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
-    <state width="1493" height="253" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1605840685511" />
-    <state width="1493" height="253" key="GridCell.Tab.1.left" timestamp="1605852457679">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="253" key="GridCell.Tab.1.left/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
-    <state width="1493" height="253" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1605840685511" />
-    <state width="1493" height="253" key="GridCell.Tab.1.right" timestamp="1605852457679">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1493" height="253" key="GridCell.Tab.1.right/0.0.1536.824/1920.0.1366.728@0.0.1536.824" timestamp="1605852457679" />
-    <state width="1493" height="253" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1605840685512" />
-    <state x="439" y="31" key="NewModule_or_Project.wizard" timestamp="1605683067914">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="439" y="31" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1605683067914" />
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog" timestamp="1607008267128">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="465" y="236" key="com.intellij.ide.util.TipDialog/0.0.1536.824@0.0.1536.824" timestamp="1607008267128" />
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1605749525098">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1605749525098" />
-  </component>
->>>>>>> 42ec90a (Database)
 </project>

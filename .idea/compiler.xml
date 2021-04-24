@@ -2,25 +2,13 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Maven default annotation processors profile" enabled="true">
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="lesson04-exercises-phanhuynhduc" />
-        <module name="lesson13-fileAPI" />
-        <module name="lesson13-fileAPI (1) (org.example)" />
-        <module name="Lesson14-phanhuynhduc" />
-        <module name="lesson12-streamAPI" />
-        <module name="lesson17-connection" />
+        <module name="java08-hibernate-cache" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="lesson04-exercises-phanhuynhduc" target="1.5" />
-      <module name="lesson12-streamAPI" target="9" />
-      <module name="lesson13-fileAPI" target="9" />
-      <module name="lesson13-fileAPI (1) (org.example)" target="9" />
-      <module name="Lesson14-phanhuynhduc" target="8" />
-      <module name="lesson17-connection" target="1.5" />
-    </bytecodeTargetLevel>
   </component>
 </project>

@@ -1,19 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/lesson12-streamAPI/pom.xml" />
-        <option value="$PROJECT_DIR$/lesson12-phanhuynhduc/pom.xml" />
-        <option value="$PROJECT_DIR$/../../../../java08-repository/lesson04-exercises-phanhuynhduc/pom.xml" />
-        <option value="$PROJECT_DIR$/../../../../phdSA/lesson13-fileAPI/pom.xml" />
-        <option value="$PROJECT_DIR$/lesson13-fileAPI/pom.xml" />
-        <option value="C:/Lesson14-phanhuynhduc/pom.xml" />
-        <option value="$PROJECT_DIR$/../pom.xml" />
+        <option value="$PROJECT_DIR$/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_13" project-jdk-name="13" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_15" default="true" project-jdk-name="15" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>
