@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Table</title>
+  </head>
+  <body>
+    <style type="text/css">
+      table tr th,
+      td {
+        text-align: left;
+        font-style: bold;
+      }
+      table tbody tr:nth-child(n + 2) {
+        background: #ddd;
+      }
+    </style>
+    <!-- css selector: an + b
+       a: cycle cize
+       n: count from 0
+       b: offset: min = 1-->
+
+    <table border="1" cellspacing="0" cellpadding="5px">
+      <thead bgcolor="Gray">
+        <tr>
+          <th rowspan="2">Name</th>
+          <th rowspan="2">Age</th>
+          <th rowspan="2">Eye color</th>
+          <th colspan="2">Phone</th>
+        </tr>
+        <tr>
+          <th>Fax 1</th>
+          <th>Fax 2</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr>
+          <td>Peter</td>
+          <td>18</td>
+          <td>Green</td>
+          <td>123</td>
+          <td>456</td>
+        </tr>
+        <tr>
+          <td>Kate</td>
+          <td>20</td>
+          <td>Blue</td>
+          <td>123</td>
+          <td>456</td>
+        </tr>
+        <tr>
+          <td>Oliver</td>
+          <td>22</td>
+          <td>Gray</td>
+          <td>123</td>
+          <td>456</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <!-- Inline -->
+    <h2>Links</h2>
+    <a href="">HomePage</a> <br />
+    <a href="https://www.ebay.com/" target="_blank">Ebay</a> <br />
+    <a href="https://www.google.com/">Google</a> <br />
+    <a href="https://www.apple.com/" target="_blank">Apple</a>
+    <a href="tel:+100000000000000"> Call 100000000000000</a>
+    <a href="mailto:xyz@gmail.com">Send mail to xyz@gmail.com</a>
+ <p>
+   Copyright &copy; by Java08 - 2021
+ </p>
+  </body>
+</html>
