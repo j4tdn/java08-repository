@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table HTML</title>
+  </head>
+  <body>
+    <style type="text/css">
+      th,
+      td {
+        text-align: left;
+      }
+      tr:nth-child(odd) {
+        background: #ddd;
+      }
+    </style>
+    <div id="top">TO TOP</div>
+    <table border="1" cellspacing="0" cellpadding="5" width="400">
+      <thead>
+        <tr>
+          <th rowspan="2">Name</th>
+          <th rowspan="2">Age</th>
+          <th rowspan="2">Eye Color</th>
+          <th colspan="2">phone</th>
+        </tr>
+        <tr>
+          <th>Fax1</th>
+          <th>Fax2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Peter</td>
+          <td>18</td>
+          <td>Green</td>
+          <td>Green</td>
+          <td>Green</td>
+        </tr>
+        <tr>
+          <td>Micheal</td>
+          <td>18</td>
+          <td>Green</td>
+          <td>Green</td>
+          <td>Green</td>
+        </tr>
+        <tr>
+          <td>Oliver</td>
+          <td>18</td>
+          <td>Gray</td>
+          <td>Green</td>
+          <td>Green</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <a href="#top">
+      <img src="images/scroll-top.svg" alt="haha" />
+    </a>
+  </body>
+</html>
