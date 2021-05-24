@@ -12,6 +12,9 @@ public class EntityDao {
 		return HibernateUtils.getSessionFactory().openSession();
 	}
 
+	Session getCurrentSession() {
+		return HibernateUtils.getSessionFactory().getCurrentSession();
+	}
 	@SuppressWarnings("unchecked")
 	<E> List<E> safeList(NativeQuery<?> query){
 		return (List<E>) query.list();

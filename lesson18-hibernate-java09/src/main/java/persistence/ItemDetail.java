@@ -1,5 +1,6 @@
 package persistence;
 
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
@@ -23,7 +24,7 @@ public class ItemDetail {
 	@Column(name = "ThongTin")
 	private String info;
 	
-	@OneToOne(fetch = FetchType.LAZY)
+	@OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
 	@JoinColumn(name = "MaMH", referencedColumnName = "MaMH")
 	private Item item;
 	

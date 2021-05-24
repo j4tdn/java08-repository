@@ -1,16 +1,25 @@
 package persistence;
 
+import java.util.List;
+
+import javax.persistence.CascadeType;
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.FetchType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
+
 @Entity
 @Table(name = "mathang")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Item {
 
 	@Id
@@ -35,7 +44,7 @@ public class Item {
 	@Column(name = "SoLuong")
 	private Double SoLuong;
 
-	@ManyToOne(fetch = FetchType.LAZY) // nameValue: FK_ColumName
+	@ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL) // nameValue: FK_ColumName
 	// referencedColumnName: PK_ColumName ParentTable
 	@JoinColumn(name = "MaLoai", referencedColumnName = "MaLoai")
 	private ItemGroup itemGroup;
@@ -43,6 +52,7 @@ public class Item {
 	@OneToOne(mappedBy = "item")
 	private ItemDetail itemDetail;
 
+	
 	public Item() {
 
 	}
@@ -59,6 +69,9 @@ public class Item {
 		this.SoLuong = soLuong;
 		this.itemGroup = itemGroup;
 	}
+
+	
+	
 
 	public ItemDetail getItemDetail() {
 		return itemDetail;

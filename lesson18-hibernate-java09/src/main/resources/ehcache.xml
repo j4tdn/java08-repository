@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xml>
+<ehcache>
+    <cache name="persistence.Item" 
+     maxElementsInMemory="1" 
+     timeToIdleSeconds ="3"
+     timeToLiveSeconds ="20"
+     />
+    <!-- https://www.ehcache.org/documentation/2.8/configuration/configuration.html -->
+	<!-- https://www.journaldev.com/3633/hibernate-interview-questions-and-answers#hibernate-EHCache -->
+	<!-- 
+		timeToIdleSeconds="120" timeToLiveSeconds="120" diskSpoolBufferSizeMB="30"
+        maxEntriesLocalDisk="10000000" diskExpiryThreadIntervalSeconds="120"
+        memoryStoreEvictionPolicy="LRU" statistics="true"
+        timeToIdleSeconds: out of memory after the last time access with duration
+        timeToLiveSeconds: out of memory after the initial time access with duration
+	 -->
+
+</ehcache> 

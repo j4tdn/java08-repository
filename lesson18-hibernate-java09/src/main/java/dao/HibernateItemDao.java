@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.hibernate.Transaction;
 import org.hibernate.query.NativeQuery;
 import org.hibernate.transform.Transformers;
 import org.hibernate.type.StandardBasicTypes;
@@ -37,7 +38,18 @@ public class HibernateItemDao extends EntityDao implements ItemDao {
 	
 	@Override
 	public Item get(int id) {
-		return openSession().get(Item.class, id);
+		//demo proxy
+		Session session=getCurrentSession();
+		Transaction transaction=session.beginTransaction();
+		try {
+			Item item=session.get(Item.class, id);
+			System.out.println("Item: "+item);
+			transaction.commit();
+		} catch (Exception e) {
+
+		transaction.rollback();
+		}
+		return null;
 	}
 
 	@Override
@@ -55,6 +67,85 @@ public class HibernateItemDao extends EntityDao implements ItemDao {
 
 	@Override
 	public void save(Item item) {
-		openSession().saveOrUpdate(item);
+		Session session = getCurrentSession();
+		Transaction transaction=session.beginTransaction();
+		try {
+			session.saveOrUpdate(item);
+		} catch (Exception e) {
+			transaction.rollback();
+		}
+		transaction.commit();
+	}
+
+	@Override
+	public Item getFirstLevelCache(int id) {
+		Item item=null;
+		Session sesion=getCurrentSession();
+		Transaction transaction=sesion.beginTransaction();
+		try {
+			Item i1=sesion.get(Item.class, id);
+			System.out.println("Item 1: "+i1);
+			
+			
+			Item i2=sesion.get(Item.class, id);
+			System.out.println("Item 2: "+i2);
+			
+			Item i3=sesion.get(Item.class, 2);
+			System.out.println("Item 2: "+i3);
+		} catch (Exception e) {
+			transaction.rollback();
+		}
+		transaction.commit();
+		return item;
+	}
+
+	@Override
+	public Item getFirstLevelCacheInTwoSession(int id) {
+		Session session =openSession();
+		Session session1=openSession();
+		
+		Item i1=session.get(Item.class, id);
+		System.out.println("Item 1: "+i1);
+		
+		Item i2=session1.get(Item.class, id);
+		System.out.println("Item 2: "+i2);
+		
+		//clear cache 
+		session1.evict(i2);
+		//session.clear();
+		
+		// check whether is oject in persistence state
+		
+		session.contains(i2);
+		
+		Item i3=session1.get(Item.class, id);
+		System.out.println("Item 3: "+i3);
+		return null;
+	}
+	
+	@Override
+	public Item getSecondLevelCache(int id) {
+		Session session =getCurrentSession();
+		Session session1=getCurrentSession();
+		Transaction transaction=session.beginTransaction();
+		try {
+			Item i1=session.get(Item.class, id);
+			System.out.println("Item 1: "+i1);
+			
+			Item i2=session1.get(Item.class, id);
+			System.out.println("Item 2: "+i2);
+			
+			Item i3=session1.get(Item.class, id);
+			System.out.println("Item 3: "+i3);
+			transaction.commit();
+		} catch (Exception e) {
+			transaction.rollback();
+			e.printStackTrace();
+		}
+		
+		
+		
+		
+		return null;
 	}
 }

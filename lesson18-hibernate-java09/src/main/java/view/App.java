@@ -2,6 +2,7 @@ package view;
 
 
 
+
 import persistence.Item;
 import persistence.ItemGroup;
 import service.ItemGoupServiceImpl;
@@ -10,6 +11,7 @@ import service.ItemServiceImpl;
 public class App {
 	private static ItemGoupServiceImpl itemGroupService;
 	private static ItemServiceImpl itemService;
+
 	static {
 		itemGroupService=new ItemGoupServiceImpl();
 		itemService=new ItemServiceImpl();
@@ -31,10 +33,13 @@ public class App {
 //		System.out.println("=================");
 //		Item item = itemService.get(5);
 //		System.out.println("item: " + item);
-		ItemGroup ig = new ItemGroup(1, "Áo");
-		Item item = new Item(11, "Ao", 200.0, 400.0, "Den", "S", 2.0, ig);
-		itemService.save(item);
+//		ItemGroup ig = new ItemGroup(1, "Áo");
+//		Item item = new Item(12, "Áo", 200.0, 400.0, "Den", "S", 2.0, ig);
+//		itemService.save(item);
 		
-		
+//		
+		//itemService.getFirstLevelCache(1);
+		//itemService.getFirstLevelCacheInTwoSession(1);
+		itemService.getSecondLevelCache(1);
 	}
 }
