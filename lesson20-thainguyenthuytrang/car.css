@@ -1,0 +1,116 @@
+@font-face{
+	font-family: "fa-brands-400";
+	src: url(webfonts/fa-brands-400.eot) format("eot"),
+	url(webfonts/fa-brands-400.ttf) format("truetype");
+}
+
+
+.navigation-bar {
+	width: 100%;
+	height: 60px;
+	background: black;
+
+}
+.navigation-bar img {
+	float: left;
+	position: absolute;
+	left: 152px;
+	top: 27px;
+}
+.navigation {
+	position: absolute;
+	left: 450px;
+}
+.navigation p{
+	color: white;
+	float: left;
+	width: 170px;
+	margin-top: 20px;
+}
+.background {
+	background-image: url(images/banner.png);
+	height: 550px;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+}
+
+.background-text {
+	font-family: fa-brands-400;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
+
+.background-text button {
+	padding: 14px;
+	box-sizing: border-box;
+	color: #eee;
+	font-size: 9px;
+	background: red;
+}
+.body-car {
+	width: 100%;
+	height: 400px;
+	position: relative;
+	background: -webkit-linear-gradient(rgb(16 15 15), rgba(135, 60, 255, 0.0) 0%), 
+	-webkit-linear-gradient(352deg, rgb(247 247 247) 50%, rgb(26 26 26) 50%);
+
+}
+
+.body-left {
+	float: left;
+	margin-left: 4%;
+	position: absolute;
+	width: 41%;
+	height: 100%;
+}
+
+.body-right {
+    float: left;
+    margin-left: 57%;
+    position: absolute;
+    width: 41%;
+    height: 100%;
+    color: white;
+
+}
+.footer {
+	width: 100%;
+	height: 200px;
+	position: relative;
+	background: black;
+	color: white;
+}
+.about {
+	margin-left: 4%;
+	position: absolute;
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+.Get-Involved {
+	margin-left: 26%;
+	position: absolute;
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+.Help-Center {
+	margin-left: 48%;
+	position: absolute;
+	float: left;
+	width: 20%;
+	height: 100%;
+}
+.social {
+	margin-left: 70%;
+	position: absolute;
+	float: left;
+	width: 20%;
+	height: 100%;
+}
