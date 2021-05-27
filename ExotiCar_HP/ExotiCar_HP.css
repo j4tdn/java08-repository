@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "Font Awesome 5 Brands";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./webfonts/fa-brands-400.eot");
+  src: url("./webfonts/fa-brands-400.eot?#iefix") format("embedded-opentype"), url("./webfonts/fa-brands-400.woff2") format("woff2"), url("./webfonts/fa-brands-400.woff") format("woff"), url("./webfonts/fa-brands-400.ttf") format("truetype"), url("./webfonts/fa-brands-400.svg#fontawesome") format("svg");
+}
+
+body {
+  font-family: "Helvetica";
+  font-weight: 400;
+}
+
+header {
+  background-image: url(./images/banner.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 610px;
+}
+
+nav {
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+}
+
+main {
+  position: relative;
+}
+
+main::before {
+  position: absolute;
+  z-index: -2;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b;
+  content: "";
+  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+          clip-path: polygon(50% 0%, 100% 0%, 100% 100%, 50% 100%);
+}
+
+footer {
+  background: #111111;
+}
+
+ul {
+  padding-left: 0;
+  margin-bottom: 0;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.text-center {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fs-14 {
+  font-size: 14px;
+}
+
+.fs-36 {
+  font-size: 36px;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 66px;
+}
+
+.nav-right__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-right__link {
+  color: white;
+  padding: 10px 20px;
+}
+
+.header__title {
+  position: relative;
+  top: 200px;
+  color: white;
+}
+
+.header__title-top {
+  font-size: 60px;
+  text-transform: uppercase;
+}
+
+.header__title-center {
+  font-size: 21px;
+}
+
+.header__title-btn {
+  background-color: #ca0500;
+  color: white;
+  border: none;
+  padding: 12px 26px;
+}
+
+.main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-left {
+  position: relative;
+  width: 50%;
+  padding: 50px 5% 4px 10px;
+}
+
+.main-left__title {
+  position: relative;
+  padding-bottom: 5px;
+}
+
+.main-left__title::before {
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  bottom: 0;
+  width: 10%;
+  height: 2px;
+  background-color: #ca0500;
+  content: "";
+}
+
+.main-left__note {
+  font-size: 22px;
+  font-style: italic;
+}
+
+.main-left__content {
+  font-size: 15px;
+}
+
+.main-right {
+  width: 50%;
+  padding: 50px 5% 4px 5%;
+  background-color: #1b1b1b;
+  color: white;
+  position: relative;
+}
+
+.main-right::before {
+  position: absolute;
+  z-index: -1;
+  left: -7%;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1b1b1b;
+  content: "";
+  -webkit-clip-path: polygon(7% 0%, 100% 0%, 100% 100%, 0% 100%);
+          clip-path: polygon(7% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px 0px;
+}
+
+.footer-block__title {
+  color: white;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #292929;
+}
+
+.footer-block__link {
+  color: #999999;
+  font-size: 13px;
+}
+
+.footer-block__icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 15px;
+  width: 45px;
+  height: 45px;
+  border-radius: 45px;
+  color: white;
+  background-color: black;
+}
+
+.footer-block__list-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 30px;
+}
+/*# sourceMappingURL=ExotiCar_HP.css.map */
