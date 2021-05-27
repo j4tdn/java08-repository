@@ -1,0 +1,9 @@
+.bg-block {
+  width: 300px;
+  height: 200px;
+  background: orange;
+  background-image: url(https://i.pinimg.com/originals/f6/bd/84/f6bd84153caf3ea4939b66813ade5ec6.jpg);
+  background-size: 100px 100px;
+  background-repeat: no-repeat;
+  background-position: right top;
+}

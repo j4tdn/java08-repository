@@ -1,0 +1,30 @@
+div {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+}
+
+.block-1 {
+  background-color: blue;
+}
+
+.block-1 {
+  background-color: brown;
+}
+
+.block-3 {
+  height: 200px;
+  background: palegreen;
+
+  padding-left: 20px;
+  box-sizing: border-box;
+
+  float: left;
+  margin: 3px;
+  margin-right: 30px;
+}
+
+.block p {
+  font-size: 20px;
+  font-family: "Tahoma";
+}
