@@ -1,0 +1,118 @@
+.navigation{
+	height: 40px;
+	background: black;
+	
+}
+.imagelogo{
+	padding-left: 10%;
+	padding-top: 1%;
+	float: left;
+	margin-right: 20%;
+	width: 20%;
+	box-sizing: border-box;
+}
+.nvg{
+	color: white;
+	padding-right:5%;
+	float: left;
+	padding-top: 0.7%;
+
+}
+.images{
+	position: relative;
+	z-index: 2;
+	top: 0px;
+	padding-bottom:  0;
+	box-sizing: border-box;
+}
+.t1{
+	position: absolute;
+	color: white;
+	font-size: 280%;
+	z-index: 3;
+	top: 40%;
+	left: 20%;
+	
+}
+.t2{
+	position: absolute;
+	color: white;
+	height: 5%;
+	font-size: 150%;
+	z-index: 4;
+	top: 52%;
+	left: 30%;
+}
+.t3{
+	position: absolute;
+	color: white;
+	background: red;
+	height:40px;
+	width: 170px;
+	top: 60%;
+	left: 40%;
+	z-index: 5;
+	padding-top: 1%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.body{
+	position: absolute;
+	top: 98.7%;
+	z-index: 1;
+	font-family: inherit;
+}
+.sport{
+	width: 50%;
+	padding: 5%;
+	padding-top: 0.1%;
+	box-sizing: border-box;
+	float: left;
+
+}
+.seating{
+	padding:5%;
+	padding-top: 0.1%;
+	box-sizing: border-box;
+	float: left;
+	width: 50%;
+	background: black;
+	color: white;
+}
+.footer{
+	background: black;
+	height: 38%;	
+	width: 100%;
+	clear: both;
+	position: absolute;
+	top: 99%;
+}
+.about{
+	float: left;
+	color: white;
+	box-sizing: border-box;
+	padding-left: 10%;
+	padding-right: 100px;
+	width: 30%;
+}
+.involved{
+	float: left;
+	color: white;
+	box-sizing: border-box;
+	padding-right: 100px;
+	width: 25%;
+
+}
+.help{
+	float: left;
+	color: white;
+	box-sizing: border-box;
+	padding-right: 100px;
+	width: 25%;
+}
+.social{
+	color: white;
+	float: left;
+	width: 15%;
+	text-decoration: italic;
+}
