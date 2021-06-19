@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;pom.xml&apos; to &apos;target&apos;&#x0D;&#x0A;- Original project: &apos;lesson18-hibernate-onetomany&apos;&#x0D;&#x0A;- Destination element: &apos;target&apos;&#x0D;&#x0A;- Original element: &apos;pom.xml&apos;" description="Copy file" element1="pom.xml" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1620704883654" target="/lesson18-hibernate-java09/target" units="0" version="1.0"/>
+</session>
