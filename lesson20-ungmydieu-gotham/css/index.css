@@ -1,0 +1,416 @@
+/* ============================= */
+/* CSS Reset =================== */
+/* ============================= */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-spacing: 0;
+}
+/* ============================= */
+@font-face {
+	font-family: Roboto;
+	src: url('../fonts/Roboto-Regular.woff') format('woff'),
+		 url('../fonts/Roboto-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: Roboto;
+	src: url('../fonts/Roboto-Light.woff') format('woff'),
+		 url('../fonts/Roboto-Light.ttf') format('truetype');
+	font-weight: 300;
+}
+@font-face {
+	font-family: Proxima;
+	src: url('../fonts/ProximaNova-Light.woff') format('woff'),
+		 url('../fonts/ProximaNova-Light.ttf') format('truetype');
+	font-weight: 300;
+}
+@font-face {
+	font-family: Proxima;
+	src: url('../fonts/ProximaNova-Regular.woff') format('woff'),
+		 url('../fonts/ProximaNova-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: Proxima;
+	src: url('../fonts/ProximaNova-Bold.woff') format('woff'),
+		 url('../fonts/ProximaNova-Bold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+/* Base 
+-------------------- */
+
+body {
+    font-size: 16px;
+    font-family: Roboto;
+}
+
+/* Header 
+----------------- */
+.page-header, .page-footer {
+    width: 100%;
+    height: 67px;
+    background-color: #f6c61c;
+}
+
+.page-header .wrapper,
+.page-footer .wrapper {
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.page-header nav ul {
+    display: flex;
+    column-gap: 36px;
+}
+
+.page-header nav a {
+    font-family: Proxima;
+    color: #000;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/* Main
+------------------- */
+.main .wrapper {
+    width: 1170px;
+    height: 100%;
+    margin: 0 auto;
+
+    display: flex;
+}
+
+.main main {
+    width: 77%;
+}
+.main aside {
+    width: 23%;
+    width: 23%;
+    padding: 85px 0 0 30px;
+    margin-left: 45px;
+    border-left: 1px solid #a9a9a9; 
+}
+
+.main main h2 {
+    margin: 43px 0 18px;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: Proxima;
+}
+
+/* Main article
+--------------------- */
+.articles article {
+    display: flex;
+    margin-bottom: 65px;
+}
+
+.articles article .article-left {
+    width: 30%;
+}
+
+.articles article .article-right {
+    width: 70%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-left: 30px;
+}
+
+.articles article .article-right h3 {
+    font-size: 30px;
+    font-weight: 300px;
+    font-family: Roboto;
+    line-height: 1.2;
+}
+
+.meta {
+    color: #a9a9a9;
+}
+
+.meta span::after {
+    content: ' | ';
+    font-size: 16px;
+}
+
+.meta span.catagory::after {
+    display: none;
+}
+
+.meta .category {
+    color: #f6c61c;
+}
+
+.description {
+    line-height: 1.4;
+    font-size: 14px;
+    color: rgb(85, 85, 85);
+}
+
+.description::after {
+    content: '>';
+    color: #f6c61c;
+}
+
+.additional {
+    font-size: 14px;
+    color: #a9a9a9;
+}
+
+.additional .view::before {
+    content: "\f06e";
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 8px;
+}
+
+.additional .views::after {
+    content: ' | ';
+    margin: 0 8px;
+}
+
+.additional .comments::before {
+    content: '\f075';
+    font-family: 'Font Awesome 5 Free';
+    margin-right: 8px;
+}
+
+.article-more {
+    display: block;
+    margin: 0 auto;
+    width: 170px;
+    height: 42px;
+    
+    text-transform: uppercase;
+    font-size: 18px;
+    color: #000;
+    border: 1px solid #f9cc35;
+    border-radius: 3px;
+    background: transparent;
+}
+
+/* Right size
+---------------------- */
+
+.main .right-size {
+    margin-left: 45px;
+    padding: 85px 0 0 30px;
+    border-left: 1px solid #a9a9a9;
+}
+
+aside input {
+    width: 100%;
+    height: 28px;
+    border: 1px solid #a9a9a9;
+    border-radius: 28px;
+}
+
+aside .search-wrapper p {
+    margin: -26px 0 auto 12px;
+    color: #a9a9a9;
+}
+
+aside .search-wrapper p>i {
+    color: #000;
+}
+
+aside .calendar {
+    margin-top: 36px;
+    width: 100%;
+}
+aside .calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #a9a9a9;
+    width: 100%;
+    height: 41px;
+    border: 1px solid #a9a9a9;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 0 18px;
+    box-sizing: border-box;
+}
+
+aside .calendar-header .date {
+    color: #000;
+}
+
+aside table {
+    width: 100%;
+    height: 196px;
+    margin: 0;
+    padding: 0;
+}
+
+aside .date-table thead,
+aside .date-table tbody {
+    margin: 0;
+    width: 100%;
+    line-height: 28px;
+    border: 1px solid #a9a9a9;
+} 
+
+aside .date-table tbody {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+aside .date-table thead tr th {
+    width: 34px;
+    height: 28px;
+    background-color: #a9a9a9;
+    color: rgb(85, 85, 85);
+    /* border: 1px solid #a9a9a9; */
+}
+
+aside .date-table tbody tr td {
+    text-align: center;
+    width: 36px;
+    height: 34px;
+    border: 1px solid #a9a9a9;
+}
+
+aside .date-table .prev-month td:nth-child(-n+2), 
+aside .date-table .next-month td:nth-last-child(-n+2) {
+    color: #a9a9a9;
+}
+
+aside .news {
+    margin-top: 50px;
+}
+
+.news .title {
+    display: flex;
+}
+
+.title p {
+    float: left;
+}
+
+.title p::after {
+    content: '';
+    float: right;
+    display: block;
+    height: 1px;
+    width: 134px;
+    background-color: #a9a9a9;
+    margin: 9px 0 auto 8px;
+}
+
+.news .news-item {
+    margin-top: 35px;
+}
+
+.news p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.news-item .date {
+    color: #a9a9a9;
+    font-size: 14px;
+}
+
+.news-item .news-title {
+    line-height: 1.6;
+    font-size: 16px;
+    color: rgb(85, 85, 85);
+}
+
+
+
+/* Footer
+---------------------- */
+
+.page-footer {
+    margin-top:  50px;
+}
+
+.page-footer .wrapper {
+    justify-content: space-between;
+}
+
+.page-footer .copy {
+    font-size: 13px;
+    font-family: Proxima;
+    font-weight: 300px;
+    color: #a78612;
+}
+
+.page-footer nav ul {
+    display: flex;
+    column-gap: 36px;
+}
+
+.page-footer nav a {
+    text-transform: none;
+    text-decoration: none;
+    color: #000;
+    font-family: Proxima;
+}
+
+.page-footer .socials ul {
+    display: flex;
+    gap: 12px;
+}
+
+.page-footer .socials ul li {
+    width:  43px;
+    height: 43px;
+
+    border-radius: 50%;
+    background-color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.page-footer .socials a {
+    font-size: 24px;
+    color: #f9cc35;
+}
