@@ -1,0 +1,39 @@
+a:link {
+  text-decoration: none;
+}
+
+.block {
+  font-size: 22px;
+  text-align: center;
+  width: 160px;
+  height: 47px;
+  border: 2px solid grey;
+  background: #2196f3;
+  margin: 100px 0 0 200px;
+  border-radius: 18px;
+  padding-top: 9px;
+  box-sizing: border-box;
+
+  box-shadow: inset 0px 0px 20px yellow;
+  /* background-image: linear-gradient(10deg, yellow, blue); */
+  /* background-image: radial-gradient(circle, yellow, blue); */
+}
+
+/* div {
+  width: 200px;
+  height: 200px;
+
+  border: 2px solid gray;
+  border-radius: 50%;
+} */
+
+.circle-1 {
+  background: rgb(0, 255, 0);
+}
+
+.circle-2 {
+  background: rgb(0, 0, 255, 0.5);
+  position: absolute;
+  top: 8px;
+  left: 150px;
+}

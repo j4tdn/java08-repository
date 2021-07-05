@@ -1,0 +1,12 @@
+div img {
+  width: 200px;
+  height: 200px;
+}
+
+.derived img {
+  transition: 1s linear;
+}
+
+.derived img:hover {
+  transform: rotate(20deg);
+}

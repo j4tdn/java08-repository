@@ -1,0 +1,27 @@
+h2::after {
+  content: "";
+  width: 50px;
+  display: block;
+  background: red;
+  height: 2px;
+  margin-top: 20px;
+}
+
+p::before {
+  content: "start";
+}
+
+p::after {
+  content: "end";
+  display: block;
+  color: red;
+  margin-top: 10px;
+}
+
+p::first-line {
+  color: orange;
+}
+
+p::first-letter {
+  color: blue;
+}
